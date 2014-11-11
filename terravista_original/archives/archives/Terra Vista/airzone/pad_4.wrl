@@ -1,0 +1,17 @@
+#VRML V1.0 ascii
+Separator {
+	Separator { # Mountains
+		Material {diffuseColor 0.7 0.5 0}
+		Transform {translation 0 6.5 10}
+		Cone {height 15 bottomRadius 15 parts SIDES}
+		Transform {translation 10 -2.75 -5}
+		Cone {height 10 bottomRadius 10 parts SIDES}
+		Transform {translation -20 -1.25 -3}
+		Cone {height 7 bottomRadius 7 parts SIDES}
+	}
+	Separator { # Lake
+		Transform {translation 0 -0.85 -75}
+		Material {diffuseColor 0 0 1}
+		Cylinder {height 0.01 radius 10 parts TOP}
+	}
+}

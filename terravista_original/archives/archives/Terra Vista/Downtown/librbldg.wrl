@@ -1,0 +1,52 @@
+#VRML V1.0 ascii
+
+Separator {
+   Material {diffuseColor 1 1 1}
+   Cube {width 10 height 3 depth 4}
+   Translation {translation 0 2 -1.5}
+   Cube {width 10 height 1 depth 7}
+   Translation {translation 0 -2 -2.5}
+   #Steps
+   Separator{
+      Translation {translation 0 -1.5 1}
+      Cube {width 3 height 0.25 depth 2}
+      Translation {translation 0 0 0.125}
+      Cube {width 2.5 height 0.50 depth 1.75}
+      Translation {translation 0 0 0.125}
+      Cube {width 2 height 0.75 depth 1.5}
+      Translation {translation 0 0 0.125}
+      Cube {width 1.5 height 1 depth 1.25}
+   }
+   #Columns
+   Translation {translation -2 0 0}
+   Cylinder {radius 0.5 height 3}
+   Translation {translation -2 0 0}
+   Cylinder {radius 0.5 height 3}
+   Translation {translation 6 0 0}
+   Cylinder {radius 0.5 height 3}
+   Translation {translation 2 0 0}
+   Cylinder {radius 0.5 height 3}
+   #Front Walk
+   Material {diffuseColor 0.5 0.5 0.5}
+   Translation {translation -4 -1.5 -3.75}
+   Cube {width 1 height 0.25 depth 7.5}
+   Material {diffuseColor 0.5 0.25 0}
+   Translation {translation -1.25 0.25 -1.25}
+   #Some Foliage
+   DEF ShortTree Separator {   
+      Cylinder {radius 0.125 height 1}
+      Translation {translation 0 0.75 0}
+      Material {diffuseColor 0 1 0}
+      Sphere {radius 0.5}
+   }
+   Translation {translation 0 0 2}
+   USE ShortTree
+   Translation {translation 0 0 2}
+   USE ShortTree
+   Translation {translation 3 0 -4}
+   USE ShortTree
+   Translation {translation 0 0 2}
+   USE ShortTree
+   Translation {translation 0 0 2}
+   USE ShortTree
+}

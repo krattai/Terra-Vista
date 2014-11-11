@@ -1,0 +1,81 @@
+General purpose self-explanatory file with news headlines
+%%
+Is there anything new at Terra Vista?
+/article.php?sid=12
+2003-09-07 21:30:54
+kevin
+About this site
+1
+phpnuke.gif
+%%
+Domain change
+/article.php?sid=10
+2002-08-12 13:00:26
+kevin
+About this site
+0
+phpnuke.gif
+%%
+Terra Vista confusion
+/article.php?sid=9
+2002-01-28 01:44:05
+kevin
+Virtual Community
+0
+phpnuke.gif
+%%
+Terra Vista 1.0 is archived
+/article.php?sid=8
+2002-01-09 20:22:45
+Kevin
+The user interface
+0
+phpnuke.gif
+%%
+Ben Shneiderman and the User Interface
+/article.php?sid=7
+2002-01-05 02:38:07
+Kevin
+The user interface
+0
+phpnuke.gif
+%%
+Web 3D Symposium, 2002.
+/article.php?sid=6
+2002-01-05 00:32:42
+Kevin
+X3D
+0
+x.gif
+%%
+Want to know more?
+/article.php?sid=5
+2002-01-04 00:41:23
+Kevin
+X3D
+0
+x.gif
+%%
+There is an X3D specification
+/article.php?sid=4
+2002-01-03 00:15:26
+Kevin
+X3D
+0
+x.gif
+%%
+Is there an X3D and is there a difference?
+/article.php?sid=3
+2002-01-02 18:12:37
+Kevin
+X3D
+0
+x.gif
+%%
+Content is key
+/article.php?sid=2
+2002-01-01 15:39:27
+Kevin
+Virtual Community
+0
+phpnuke.gif

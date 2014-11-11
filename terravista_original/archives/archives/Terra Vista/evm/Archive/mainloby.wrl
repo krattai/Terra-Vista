@@ -1,0 +1,148 @@
+#VRML V2.0 utf8
+#
+# Lobby
+
+# land
+Shape {
+ appearance Appearance {
+  material Material { diffuseColor 0 0.6 0 ambientIntensity 0.1 }
+ }
+ geometry IndexedFaceSet {
+  coord Coordinate { point [ -100 0 -100, 100 0 -100, 100 0 100, -100 0 100. ] }
+  coordIndex [ 2, 1, 0, -1, 3, 2, 0, -1, ]
+ }
+}
+
+# Logoutpost
+Transform {
+ translation -16 0 80
+ children [
+  Inline { url "logoupst.wrl" bboxSize 6 7 6 bboxCenter 0 0 0 }
+ ]
+}
+
+# Back to entrance
+Transform {
+ translation -20 1.5 70
+ children [
+  Anchor {
+   children [
+    Shape {
+     appearance Appearance {
+      material Material { diffuseColor 0.4 0.4 0.75 }
+      texture ImageTexture {
+       url "nextsegm.gif"
+      }
+     }
+     geometry Box { size 2 2 0.1 }
+    }
+    Transform {
+     translation -1.0 1.0 0.0
+     children [
+      Shape {
+       appearance Appearance {
+        material Material { diffuseColor 0.9 0.9 0.0 ambientIntensity 0.4 }
+       }
+       geometry Text {
+        string [ "EVM Entrance" ]
+       }
+      }
+     ]
+    }
+   ]
+   description "EVM Entrance"
+   url "evmenter.wrl"
+  }
+ ]
+}
+
+# trees
+Transform {
+ translation -12 0 -8
+ children [
+  Inline { url "tree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}
+Transform {
+ translation 0 0 -110
+ children [
+  Inline { url "tree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}
+
+# 360post
+Transform {
+ translation 14 0 -10
+ children [
+  Inline { url "t60post.wrl" bboxSize 6 7 6 bboxCenter 0 0 0 }
+ ]
+}
+
+
+# Electricpost
+Transform {
+ translation 60 0 50
+ children [
+  Inline { url "electric.wrl" bboxSize 6 7 6 bboxCenter 0 0 0 }
+ ]
+}
+
+# VRMLpost
+Transform {
+ translation 0 0 -60
+ children [
+  Inline { url "vrmlpost.wrl" bboxSize 6 7 6 bboxCenter 0 0 0 }
+ ]
+}
+
+# Technospost
+Transform {
+ translation -5 0 -10
+ children [
+  Inline { url "techpost.wrl" bboxSize 6 7 6 bboxCenter 0 0 0 }
+ ]
+}
+
+# Alteredpost
+Transform {
+ translation -10 0 -80
+ children [
+  Inline { url "altepost.wrl" bboxSize 6 7 6 bboxCenter 0 0 0 }
+ ]
+}
+
+# Playgroundpost
+Transform {
+ translation 25.0 +3.0 10.0
+# translation 0 -3.0 3.0
+ children [
+  Anchor {
+   children [
+    Shape {
+     appearance Appearance {
+      material Material { diffuseColor 0.4 0.4 0.75 }
+      texture ImageTexture {
+       url "nextsegm.gif"
+      }
+     }
+     geometry Box { size 2 2 0.1 }
+    }
+    Transform {
+     translation -1.0 1.0 0.0
+     children [
+      Shape {
+       appearance Appearance {
+        material Material { diffuseColor 0.9 0.9 0.0 ambientIntensity 0.4 }
+       }
+       geometry Text {
+        string [ "dOghouse" ]
+       }
+      }
+     ]
+    }
+   ]
+   description "dOghouse Lobby"
+   url "doghouse.wrl"
+  }
+ ]
+}

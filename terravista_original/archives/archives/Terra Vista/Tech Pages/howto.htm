@@ -1,0 +1,712 @@
+<html>
+<head>
+<title>How To Build a Terra Vista Home World (draft 0.5)</title>
+</head>
+<body bgcolor="#000000" text="#FFFFFF" link="#00FF00" vlink="#00AF00" background="vrmlbg.gif">
+<h2>How To Build a Terra Vista Home World (draft 0.5)</h2>
+<a href="index.htm"><img src="bar1u.jpg" width=73 height=22 alt="tech page" border=0></a>
+<a href="def.htm"><img src="bar2u.jpg" width=157 height=22 alt="definitions of terms" border=0></a>
+<img src="bar3s.jpg" width=50 height=22 alt="how to" border=0>
+<a href="browsers.htm"><img src="bar4u.jpg" width=60 height=22 alt="reviews" border=0></a>
+<a href="b20.htm"><img src="bar5u.jpg" width=81 height=22 alt="vrml 2.0" border=0></a>
+<a href="ombuds.htm"><img src="bar6u.jpg" width=58 height=22 alt="ombuds" border=0></a>
+<a href="tutors.htm"><img src="bar7u.jpg" width=42 height=22 alt="tutors" border=0></a>
+<a href="trravsta.htm"><img src="bar8u.jpg" width=42 height=22 alt="zones" border=0></a>
+<h3>
+<hr width="100%" >Notes to reviewers of this draft:</h3>
+
+<p>Since this is the first technical draft, the review instructions are
+a bit extensive. They will eventually move to a separate document, but
+for now, here they are. BTW: feel free to comment on anything, including
+the instructions to reviewers.</p>
+
+<p>This draft is the first, rough version of a HowTo for tvWorld
+construction.
+I am soliciting comments in general and in specific:</p>
+
+<h4>Format:</h4>
+
+<ul>
+<li>The strategy is to provide enabling knowledge (prereq's, tools list,
+objectives, etc.) then break down procedures following. This is somewhat
+less rigorous than what I'd do in an industrial training environment, but
+the tasks are different. The procedures are also less rigorous than my
+custom, but I've tried to focus the steps on actions and to keep the whys
+and wherefores in the enabling knowledge section.</li>
+
+<li>I've pitched low and slow--for newbies. For experts, there is a
+requirements
+summary, all they really need. That said, I've tried to keep the focus
+on tvWorld construction, not general VRML stuff. Answer: go buy a book.
+Support our author friends. They've done it better than I can and they
+deserve some support.</li>
+</ul>
+
+<h4>Technical Veracity:</h4>
+
+<ul>
+<li>This is a first blush, based on early experience. It <b>may</b> be
+(I'm such an optimist!) out of date or inaccurate. I'm expecting two types
+of errors to occur, and if you can correct me within these guidelines,
+it will help:</li>
+
+<ul>
+<li>First, the VRML or the instructions may be incorrect. Good intent,
+bad execution. Please provide proper execution and code examples in your
+remarks. Note: the code example is based on a file template George P
+posted
+weeks back. Any changes made were either to edit his comments or to add
+stuff. I used the VRML Sourcebook, but I'm no expert. If you want to refer
+me to info in that book please do. I haven't finished reading it yet, but
+I find it to be an excellent resource.</li>
+
+<li>Second, the tvWorld file structure may be incorrect. Example: I
+noticed
+a midrange LOD in some worlds, if this is being used, good, but if not,
+we can strip it out. This is where I expect most debate to occur as we
+wrestle with what is required, what is optional.</li>
+</ul>
+
+<li>I recommend that remarks on bad VRML be posted directly to me to keep
+list traffic down. However, as the tvWorld structure debate should be
+public.
+Post to a thread there (&quot;tvWorld Structure&quot; or some such).</li>
+</ul>
+
+<h4>Writing Style:</h4>
+
+<ul>
+<li>I'm a writer and editor--I live by the red pen, so it may be wielded
+against me in return. You can't hurt my feelings by editing my words
+unless
+you do so in a ham-handed and abusive way. (&quot;Stupid&quot; is a word
+you should leave out of any editing remarks). If I've been unclear,
+verbose,
+etc. point it out. This is a first draft, and this is the time to make
+such remarks. If you have alternative wording or feel that critical
+details
+or emphasis has been left out, please add it in.</li>
+
+<li>Likewise, as I receive remarks from people, I'll probably edit them
+as I incorporate them. If the emphasis or intent is lost, redirect me.
+If I failed to write it exactly as you told me verbatim, well, that's
+life.
+The intent is to transmit information to users, as quickly and painlessly
+as possible. If that occurs, then this document is a success. Beautiful
+prose is for creative writers--not the mission here.</li>
+</ul>
+
+<p>Without further ado, the draft follows:</p>
+
+<h3>
+<hr width="100%" >Table of Contents </h3>
+
+<ul>
+<li><a href="#Prereq">Prerequisites</a> </li>
+
+<li><a href="#Tools">Tools and Resources</a> </li>
+
+<li><a href="#Objectives">Objectives</a> </li>
+
+<li><a href="#Structure">Basic Terra Vista Home File
+Structure</a> </li>
+
+<li><a href="#Steps">Home World Construction Steps</a>
+</li>
+
+<li><a href="#ReqSumm">Requirements Summary</a></li>
+
+<li><a href="#Comments">Comments?</a></li>
+</ul>
+
+<h3><a name="Prereq"></a>Prerequisites: What You Should Already Know </h3>
+
+<p>
+<hr width="100%"></p>
+
+<p>This file is written to help new users construct a home file that can
+be added to a Terra Vista zone. If you are already expert in VRML
+construction,
+you may want to skip to the <a
+href="#ReqSumm">Requirements
+Summary</a>. You may also want to look over the <a
+href="#Structure">Basic
+Terra Vista Home File Structure</a>.</p>
+
+<p>If you are a newbie, unfortunately this <b><i>How To</i></b> will not
+teach you everything that you need to know to build VRML files. It <i>will
+</i>explain the required elements of a Terra Vista home world and sketch
+out a suggested file structure, but you should already be able to build
+basic VRML files. If you need help in learning to build VRML, there are
+many good books and other resources available. The <a
+href="http://www.sdsc.edu/vrml">VRML
+Repository</a> at SDSC maintains a list you may refer to. </p>
+
+<h3><a name="Tools"></a>Tools and Reources: </h3>
+
+<p>
+<hr width="100%"></p>
+
+<p>In order to build and provide your home world to the Terra Vista
+Community,
+you will need the following: </p>
+
+<ul>
+<li>A computer is required.--if you're reading this, we'll assume you have
+one or have access to one. </li>
+
+<p>What kind of computer do you need? Most VRML browsing and building
+software
+works best on faster machines--Pentium or comparable CPUs are recommended,
+and 486DX2 or comparable CPUs are considered minimally capable. You should
+consider a math co-processor mandatory. 16 Megabytes of RAM will also
+help,
+but it is possible to get by with 8. </p>
+
+<p>Which operating system should you have? Most of the software is
+available
+in versions compatible with Windows 95, Windows NT, or Windows 3.1. Some
+software is also available in Unix compatible versions, including Linux
+versions. Recently, more VRML software is also available in Mac OS
+versions.
+If you need help finding software, visit the <a
+href="http://www.sdsc.edu/vrml">VRML
+Repository</a>, which maintains a link list for VRML software. </p>
+
+<li>Some software is required. </li>
+
+<p>The minimum software required is some type of text editor capable of
+saving files in ASCII text format. This will at least allow you to
+construct
+your VRML code file, which is an ASCII text file. </p>
+
+<p>Although it is possible to construct your home with only a text editor,
+a VRML 1.0 (or 2.0) browser will enable you to view the world you create. Many are
+available, and several can be obtained over the WWW at no cost on a trial
+basis. If you need help finding a browser, check the <a
+href="http://www.sdsc.edu/vrml">VRML
+Repository</a>, which maintains a nice link list of browsers. </p>
+
+<p>Several VRML authoring packages are available. Due to the size
+limitations
+and other requirements of Terra Vista home worlds, we recommend that you
+use a package that builds VRML 1.x or VRML 2.0 compliant files and which also uses
+primitives. Some authoring packages use indexed face sets rather than
+primitives.
+The resulting files are usually too large to meet the Terra Vista size
+requirements. </p>
+
+<li>Space on a web server is required. </li>
+
+<p>Your world will be inlined into a Terra Vista zone. This means that
+the zone file will have a node that looks for the URL of your home file
+and fetches the file whenever the zone is loaded by a visitor. You must
+find some type of web server to serve your file to the zone and provide
+the URL for your world. </p>
+</ul>
+
+<h3><a name="Objectives"></a>Objectives: </h3>
+
+<p>
+<hr width="100%"></p>
+
+<p>The objective of this <b><i>How To</i></b> is to help you build a VRML
+file that represents your tastes and personality and which meets the Terra
+Vista home requirements. There are also a few options you may wish to add.
+We leave the expression of your personality to you. The requirements and
+options are described below. </p>
+
+<h4>Requirements </h4>
+
+<ul>
+<li>Limited file size. Your file must not be larger than 3 kilobytes in
+size, including inlined components. </li>
+
+<p>You may link the inlined home world to a different VRML file located
+at your site and outside the community. Your files may be any size you
+like. The upper limit applies only to the inlined world you place in a
+Terra Vista zone. Why must the files be so small? Each segment (the space
+in a zone your home shares with other homes) must be able to load on a
+visitor's browser in a reasonable amount of time. It should also display
+reasonably well. One of the ways to assure this is limiting the file size.
+The segment file itself is already small. The homes must also be small.
+</p>
+
+<li>Your file must strictly conform to either the VRML 1.x or VRML 2.0 standards. No
+non-standard
+fields or extensions are permitted. </li>
+
+<p><b><i>NOTE:</i></b> There are special extensions that do comply with
+the VRML standards. See the OnLive! and Black Sun <b><i>How
+To's</i></b>
+on adding their extensions to a zone. You don't need to worry about these
+extensions in your home files. </p>
+
+<li>Your inlined home world must have at least two levels of detail (LOD).
+</li>
+
+<p>From a distance of 60 meters or more, only a cube is visible.
+Optionally,
+you may add a mid-range level of detail that is visible when the viewer
+is between 60 and 40 meters from your home. Your home should become
+completely
+visible within a range of 40. </p>
+
+<li>Your world volume is limited. The zone you build in will define volume
+limits for your home. </li>
+
+<p>Like the file size limits, the volume limits apply only within the
+Terra
+Vista zones. Files linked to from your home that are outside the zone may
+be any volume you like. </p>
+
+<li>The zone you build in may also define aesthetic design guidelines or
+requirements for your home. </li>
+
+<p>There are a variety of zones available to different tastes, from the
+realistic to the bizarre. If you can't find a zone that meets your
+exacting
+standards, you can always start a zone of your own. </p>
+</ul>
+
+<h4>Options</h4>
+
+<p>Here are a couple of options you may wish to include in your homeworld.
+</p>
+
+<ul>
+<li>Provide a link to your home page or another place. </li>
+
+<p>Most Terra Vista homeworlds include at least one link that usually goes
+to the home owners HTML homepage. It could also link to a more detailed
+version of your home. The link is executed by adding a WWWAnchor node to
+the highest level of detail in your home. No links should be available
+at the lower levels of detail. You may add as many links as you like, just
+as long as your home world file is within the size limits. </p>
+
+<li>Add a Mailbox. </li>
+
+<p>Most Terra Vista homeowners also include a mailbox. A mailbox is simply
+a WWWAnchor node with a <tt>mailto</tt> link in it. It works just like
+the <tt>mailto</tt> links in HTML. If someone clicks on your mailbox, your
+email package will automatically launch. An example of the mailbox code
+is included in the Basic File Structure section. </p>
+</ul>
+
+<h3><a name="Structure"></a>Basic Terra Vista Home File Structure </h3>
+
+<p>
+<hr width="100%"></p>
+
+<p>The basic file structure for a home world file is shown between the
+horizontal rules below. You may want to paste this file into a text file
+as the template for your homeworld.</p>
+
+<p>
+<hr width="100%" ></p>
+
+<pre><tt>#VRML V1.0 ascii
+#Terra Vista Homeworld File Template v0.9 b2
+#Insert your name and other comments here</tt></pre>
+
+<pre><tt>DEF MyHome Separator {
+#This is the root separator which all files must have</tt></pre>
+
+<ul>
+<pre><tt>DEF Details LOD { range [ 40, 60 ]
+#This node contains the different levels of detail for your home
+</tt></pre>
+
+<ul>
+<pre><tt>DEF CloseUp Separator {
+#Code in this separator defines what your home looks like within 40
+meters</tt></pre>
+
+<ul>
+<pre><tt>#Insert your detailed home code here</tt></pre>
+
+<pre><tt>#This code makes a link to your homepage or another world 
+WWWAnchor {</tt></pre>
+
+<ul>
+<pre><tt>name &quot;http://your.URL.goes.here&quot;
+description &quot;Visit Yourname's WWW Home page&quot;</tt></pre>
+</ul>
+
+<pre>#Insert code for the link object here</pre>
+
+<pre>#End of link code
+}</pre>
+
+<pre><tt>#This code makes your mailbox
+WWWAnchor {</tt></pre>
+
+<ul>
+<pre><tt>name &quot;mailto:you@yourmail.address&quot;
+description &quot;Yourname's Mailbox&quot;</tt></pre>
+</ul>
+
+<pre><tt>#Insert code for the mailbox object here</tt></pre>
+
+<pre><tt>#End of mailbox code
+}</tt></pre>
+</ul>
+
+<pre><tt>#End of close up details
+}</tt></pre>
+
+<pre><tt>DEF MidRange Separator {
+#Code here defines what the building will look from 40 to 60 meters
+away</tt></pre>
+
+<ul>
+<pre><tt>#Insert your mid range home code here</tt></pre>
+</ul>
+</ul>
+</ul>
+
+<ul>
+<ul>
+<pre><tt>#End of mid range details
+}</tt></pre>
+
+<pre><tt>DEF FarAway Separator {
+#Code here describes your cube visible from more than 60 meters
+away</tt></pre>
+
+<ul>
+<pre>#Color of your cube
+<tt>Material</tt></pre>
+
+<pre>#Size of your cube
+<tt>Cube</tt></pre>
+</ul>
+
+<pre><tt>#End of FarAway details
+}</tt></pre>
+</ul>
+
+<pre><tt>#End of your levels of detail
+}</tt></pre>
+</ul>
+
+<pre><tt>#End of the Root separator
+}</tt>
+
+
+
+<hr width="100%" ></pre>
+
+<h3><a name="Steps"></a>Home World Construction Steps </h3>
+
+<p>
+<hr width="100%"></p>
+
+<p>NOTE: It may help if you copy the basic file structure (section above)
+into a text file first. You can use it as a starting template for your
+Terra Vista home world. Don't forget to name the file with the .wrl
+extension.</p>
+
+<h4>Adding Your Home Details </h4>
+
+<ol>
+<li>Insert the code for the detailed version of your home world inside
+the <tt>DEF CloseUp Separator</tt> node, beginning below the line:</li>
+
+<pre><tt>#Insert your detailed home code here</tt></pre>
+
+<li>Note: don't add your link and mailbox objects in this space. They must
+be included in the WWWAnchor nodes, as noted below. Alternately, you may
+build the objects of your world (inlcuding links and mailboxes) until all
+looks the way you want it and then move the WWWAnchor code to this section
+to make the objects into active links.</li>
+
+<ul>
+<li><b>DO NOT</b> place WWWAnchor nodes outside of the <tt>DEF CloseUp
+Separator</tt> node, please.</li>
+</ul>
+</ol>
+
+<h4>Adding Your Link(s) </h4>
+
+<ol>
+<li>If you are including a link, insert the URL for your link in the
+<tt>name</tt>
+field of the WWWAnchor node. </li>
+
+<ul>
+<li>If you are not including a link, you can either comment the link code
+out (by putting a # at the start of each line) or delete it. Deletion is
+preferable, since this will reduce your file size. </li>
+</ul>
+
+<li>Enter the text you want to appear when the pointer is over the link
+in the <tt>description</tt> field. </li>
+
+<li>Enter the code for the linking object below it. </li>
+
+<ul>
+<li>Simple example: if your link will be a welcome mat on the doorstep
+of your home, add the necessary code to position and create the welcome
+mat within the WWWAnchor node. In this respect, it functions just like
+a separator, grouping the objects together. All objects inside the
+WWWAnchor
+node will behave like links. </li>
+</ul>
+
+<li>Test your link. Open your homeworld as a local file in your browser
+and see if the link object appears and behaves like a link. </li>
+
+<ul>
+<li>Does the object appear? </li>
+
+<li>Does it behave like a link? Different browsers work with links in
+different
+ways. Commonly, the cursor or pointer will change when it is over a link,
+and the description will appear somewhere (like in the status bar or in
+the field of view). </li>
+
+<li>Does it link to the URL you designated? Click on it and see. </li>
+</ul>
+
+<li>If you want to add another link, copy the next WWWAnchor node below
+the first one and repeat the steps above. You may want to use different
+DEF names for each link. </li>
+</ol>
+
+<h4>Adding Your Mailbox </h4>
+
+<ol>
+<li>If you are including a mailbox, insert your email address in the
+mailbox
+WWWAnchor node. Insert your email in place of the text:</li>
+
+<pre><tt>you@yourmail.address</tt></pre>
+
+<ul>
+<li>If you are not including a mailbox, you can either comment the code
+out (with a # sign at the start of each line) or delete it. Deletion is
+preferred, since every character in your file increases its size. </li>
+</ul>
+
+<li>Enter the VRML code that defines what your mailbox will look like
+inside
+the WWWAnchor node for the mailbox. Insert this code below the line:</li>
+
+<pre><tt>#Insert code for the mailbox object here</tt></pre>
+
+<li>Test your mailbox. Load your home file as a local file in your browser
+and see if the mailbox appears and works. </li>
+
+<ul>
+<li>Does your browser respond to the mailbox as if it is a link? Does the
+description appear? Does the cursor change? Different browsers respond
+to WWWAnchors differently. If yours does not respond correctly, check your
+code to be sure you have written the WWWAnchor correctly. </li>
+
+<li>Does your browser open your mail package when you click on the
+mailbox?
+If the browser treats the mailbox as a link but does not automatically
+launch your email program, check your code to be sure the mailto code is
+correct. Check your browser by clicking on other mailboxes in a Terra
+Vista
+zone. If your browser won't launch the mail program for other mailboxes,
+check to see that it is configured correctly. </li>
+
+<li>Also, be sure that the email address that appears in the <tt>To:</tt>
+field in the email program is your correct address. </li>
+</ul>
+</ol>
+
+<h4>Adding Lower Levels of Detail </h4>
+
+<ol>
+<li>If you are including a medium level of detail, insert the code for
+your medium detail home world below the MidRange Separator node. Insert
+the code below the line:</li>
+
+<pre><tt>#Insert your mid range home code here</tt></pre>
+
+<ul>
+<li>NOTE: You should not include any WWWAnchors in this node.</li>
+
+<li>ALSO: If you are not specifying a mid-range level of detail, either
+comment the code out with a # at the start of each line or delete the
+code.
+Deletion is preferred.</li>
+</ul>
+
+<li>Define the color for the lowest level of detail</li>
+
+<li>Size the cube for the lowest level of detail</li>
+
+<li>Test your levels of detail. Load your home file as a local file and
+walk towards or away from it. Do the levels of detail change as you move
+nearer or farther?</li>
+</ol>
+
+<h4>Check the File Size</h4>
+
+<p>Okay, so you've built this fabulous world, it looks stunning and it's
+only 30 K. Ooops! That's about 10 times the size you are allowed. The best
+time to check your file size is as you build the world, but you should
+certainly make a last check before you try to add the world.</p>
+
+<ol>
+<li>Check the size of your .wrl file and all files (like texture bitmaps)
+that are included. The total size must be 3K or under.</li>
+
+<li>Try gzipping your world to see if that gets it into the size
+requirements.
+Using gzip is explained elsewhere.</li>
+
+<li>Save your source under a different filename and then go into your
+world
+and strip out comments and commented-out code that is not used. These
+notes
+are helpful when you are building, so keeping them in a source file will
+retain them.</li>
+
+<li>It is highly recommended that you use primitives wherever possible
+and avoid large indexed face sets. Some VRML authoring software (like
+Caligari
+Fountain/Pioneer/Crusader) does not use primitives--if you put a sphere
+in your world, it puts in a large indexed face set, not a sphere
+node.</li>
+
+<li>If all else fails, something has got to go. You may wish to do away
+with the entire mid-range separator node. In this case, be sure to modify
+the LOD to include only one distance, not two.</li>
+
+<ul>
+<li>Change the LOD node distances from:</li>
+
+<p><tt>DEF Details LOD { range [ 40, 60 ]</tt></p>
+
+<li>To:</li>
+
+<p><tt>DEF Details LOD { range [ 60 ]</tt></p>
+
+<li>Cut the midrange separator by deleting (inclusively) from :</li>
+
+<p><tt>DEF MidRange Separator {</tt></p>
+
+<li>To:</li>
+
+<p><tt>#End of mid range details 
+<br>}</tt></p>
+
+<li>If the file is still too large, you will have to start taking out
+details.
+Remember that extra lines and blank space don't really add to the file
+size--it's all those pesky characters. Refer to a good VRML building
+resource
+for pointers on how to make your code smaller.</li>
+</ul>
+
+<li>Think of your inlined world as a doorway, not a complete world. It
+places you in the community. You can always place the beautiful and highly
+detailed version of your home on your server--indeed, you are requested
+to do so! We all want to see your work. In the glorious future of ATM or
+ADSL or Cable Modems or (insert fast connection name here), bandwidth will
+not be a problem. This is not the case today, though, so we must limit
+ourselves to 3K worlds so that the entire segment loads before
+dinner.</li>
+</ol>
+
+<h4>Ready to Add Your World?</h4>
+
+<ol>
+<li>If you've tested your world and it meets the requirements for a Terra
+Vista homeworld, then you should upload it to the web server you will be
+serving it from.</li>
+
+<li>Once you've uploaded the file, you should try downloading it via the
+web, just to be sure that the server is correctly configured to serve
+VRML.</li>
+
+<ul>
+<li>If the file downloads as text rather than a virtual world, you may
+have a problem. First, be sure it is the web server and not your browser
+that is the problem. Talk to your service provider and/or consult the
+<b><i>HowTo</i></b>
+on configuring web servers to serve VRML.</li>
+</ul>
+
+<li>If your home zone has any design requirements, you must work out
+acceptance
+of your home with the owner of the zone.</li>
+
+<li>Provide the URL for your home to the zone owner. (Each zone has its
+own way of performing this function.) That's it. Once the zone owner
+modifies
+the zone to inline your world, it should appear whenever the world is
+loaded.
+Once you know it is inlined, go to the segment and see how it looks in
+place.</li>
+
+<li>You may want to modify your world once you have it in place. Make sure
+that when you make changes that your new world works at least as well as
+the old one before you replace the old one. Then, upload the modified
+file.
+Be sure the new version has the EXACT SAME URL as the original.</li>
+
+<li>That's it. Welcome to Terra Vista!</li>
+</ol>
+
+<h3><a name="ReqSumm"></a>Terra Vista Home World Requirements Summary
+</h3>
+
+<p>
+<hr width="100%"></p>
+
+<ol>
+<li>Your file will be inlined into the hosting Terra Vista zone. You must
+arrange for web server space to serve your world from. </li>
+
+<li>You are limited to a file size of no more than 3 KB, including all
+textures and inlines. You may meet this requirement by gzipping. </li>
+
+<li>VRML 1.x or VRML 2.0 compliant files only. No non-standard fields or extensions
+are permitted. </li>
+
+<li>LOD is required. </li>
+
+<ul>
+<li>Highest level of detail is visible within 40 meters. </li>
+
+<li>Optional medium level of detail is visible between 40 and 60 meters.
+</li>
+
+<li>Lowest level of detail is a cube. </li>
+</ul>
+
+<li>The volume of your world may be limited by the zone in which you
+locate.
+</li>
+
+<li>The design aesthetics of your world may be defined by the zone in
+which
+you locate. </li>
+
+<li>Popular options: </li>
+
+<ul>
+<li>WWWAnchor nodes to your home page or other worlds </li>
+
+<li>Mailboxes: WWWAnchor with a <tt>mailto</tt> link </li>
+</ul>
+</ol>
+
+<h3><a name="Comments"></a>Comments?</h3>
+
+<p>
+<hr width="100%" ></p>
+
+<p>Comments are welcome. Mail them to David George, <a href="mailto:
+daveage@ix.netcom.com">daveage@ix.netcom.com</a>.
+</p>
+
+</body>
+</html>
+

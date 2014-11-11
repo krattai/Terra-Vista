@@ -1,0 +1,49 @@
+#VRML V2.0 utf8
+#This is the 360 topic Post for Electric Minds
+
+# post
+Transform {
+ translation 4.5 1 10
+ children [
+  Shape {
+   appearance Appearance {
+    material Material { diffuseColor 0.6 0.6 0.0 }
+   }
+   geometry Cylinder { radius 0.2 height 3 }
+  }
+  Transform {
+   translation 2.0 2.0 0.0
+   children [
+    Shape {
+     appearance Appearance {
+      material Material { diffuseColor 0.9 0.9 0.0 ambientIntensity 0.4 }
+     }
+     geometry Text {
+      string [ "360 Conference" ]
+     }
+    }
+   ]
+  }
+
+  
+  # bell
+  Transform {
+   translation 0.0 2.0 0.0
+   children [
+    Anchor {
+     children [
+      Shape {
+       appearance Appearance {
+        material Material { diffuseColor 0.9 0.0 0.0 }
+       }
+       geometry Sphere { radius 2.0 }
+      }
+     ]
+     description "eMinds 360"
+     url "http://www.minds.com/cgi-bin/EMPane.cgi?c=87&i=1"
+     parameter [ "target=Wander" ]
+    }
+   ]
+  }
+ ]
+}

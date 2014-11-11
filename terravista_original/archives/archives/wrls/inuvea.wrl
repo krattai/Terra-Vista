@@ -1,0 +1,42 @@
+#VRML V1.0 ascii
+#
+# Entrance
+
+DEF Entrance Separator {
+	DEF InfoSeparator Group {
+	# scene info
+		DEF BackgroundColor Info { string "0.5 0.6 0.8" }
+		DEF BackgroundImage Info{
+			string "stars.bmp"
+		}
+		DEF Viewer Info { string "walk" }
+		DEF Title Info { string "So...  this is Uvea!?" }
+		DEF SceneInfo Info { string "Terra Vista is a community project" }
+		DEF ViewerSpeed Info { string "20" }
+
+		PointLight {
+			on TRUE
+			intensity 1
+			color 0.8 0.8 0.8
+			location 0 100 0
+		}
+		DEF Cameras Switch {
+		# Camera views
+		# There must be an Entrance View and a Map View and also views of any other buildings or homes
+
+			whichChild 0
+
+			DEF Entrance PerspectiveCamera { position 0 1.6 99 }
+
+			DEF Home PerspectiveCamera { position -20 1.6 0 orientation 0 1 0 -0.7854 }
+		# end of cameras
+		}
+	}
+	# end of scene info
+
+	DEF Segment Separator {
+		WWWInline { name "content.wrl" bboxSize 100 0.02 100 }
+	}
+	# segment
+# entrance
+}

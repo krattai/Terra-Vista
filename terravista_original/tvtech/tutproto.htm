@@ -1,0 +1,126 @@
+<html>
+<head>
+   <title></title>
+   <meta name="Author" content="">
+   <meta name="GENERATOR" content="Mozilla/2.01Gold (Win32)">
+</head>
+<body>
+
+<h2>VRML Tutorials Prototype</h2>
+
+<p>
+<hr width="100%" >This is a prototype format for VRML tutorials. It uses
+three frames, but is also available in a non-frame format. People would
+access the tutorials from a menu list (similar to this one) or from who-knows-where
+else--anywhere it makes sense to place such a link. <b>Humongous and Many
+Thanks</b> are due to Jeff Sonstein for showing so many of us how to do
+this and for providing useful examples and inspiration.</p>
+
+<h3>Tutorials Menu</h3>
+
+<p>I recommend that the tutorials be accessed (although not exclusively)
+through a simple menu. This menu should be further organized in outline
+form, although this will only become necessary if many tutorials come to
+exist. A second option would be to create multiple levels of menus that
+serve different types of tutorials. I recommend avoiding this option until
+the volume or complexity of the tutorials requires it, as it adds navigational
+complexity to the system where none is needed. We should try to avoid building
+fences between the user and what they need to know. At first, the menu
+would be a simple bulleted list, like . . .</p>
+
+<p>Menu:</p>
+
+<ul>
+<li><a href="tutframe.htm">Example Tutorial</a></li>
+</ul>
+
+<ul>
+<li><a href="tutorexn.htm">Non-frame Example Tutorial</a>
+<br></li>
+
+<li>List would continue here. More to come. . . .</li>
+</ul>
+
+<p>Click on the example link above to see the frame based example of the
+tutorial design.</p>
+
+<h3>How The Tutorial Works:</h3>
+
+<p>Prerequisites for Construction:</p>
+
+<ul>
+<li>You should already know HTML well enough to create a frameset page
+and write targeted links (or be willing to examine the example source and
+learn.)</li>
+
+<li>You should also be able to create a simple menu with links to bookmarks
+in the tutorial file.</li>
+</ul>
+
+<p>Check the document source of the examples to see how I did these things.</p>
+
+<p>Each tutorial requires a minimum of 4 files:</p>
+
+<ol>
+<li>The framesetting file which breaks the screen up into three frames
+and loads three other files.</li>
+
+<li>The VRML world file, which loads into the upper left frame. There could
+be more than one world file, as each step in the tutorial could be shown
+in VRML form.</li>
+
+<li>The tutorial HTML file, which loads into the upper right frame. For
+now, let's limit this to a single file.</li>
+
+<li>The plain text versions of the example VRML code round out the set
+and appear in the bottom frame of the screen. A plain text file could (and
+perhaps should) exist for each VRML world example.</li>
+</ol>
+
+<p>A link to the tutorial loads the framesetting file. This file, in turn,
+loads the other files. Using targeted links in the tutorial, the student
+can load worlds and code text for each step.</p>
+
+<p>For example, say I've got a tutorial that has three important steps
+and I want to show the student what they should see at each step. Here's
+what I'd recommend.</p>
+
+<ul>
+<li>On entry to the tutorial, load the finished object and finished object
+code into the respective windows. If the student does not want or need
+to see intermediate progress examples, they can see the completed versions
+throughout the tutorial.</li>
+
+<li>Provide targeted links to intermediate examples in the appropriate
+place in the tutorial. To the best of my knowledge, two links are required,
+one to load the sample world in the world window, one for the sample code
+in the code window.</li>
+
+<li>Provide a menu at the top of the tutorial somewhere that organizes
+the lesson into basic steps. This serves as an advanced organizer that
+lays out lesson structure for the student and gives them the big picture
+framework for the upcoming activities. It also makes a handy menu for quickly
+finding any single point.</li>
+
+<li>Include links to the finished world and code in the advanced organizer
+at the top.</li>
+
+<li>Non Frame Versions are basically the same files as the frame versions,
+accessed through a different menu which avoids the framesetting file. You
+should use the NOFRAMES section of the framesetting document to serve the
+same function, as the example does. One important exception: if you are
+using targeted anchors in your tutorial, you should produce a non-frames
+version with non-targeted anchors.</li>
+</ul>
+
+<h3>Comments?</h3>
+
+<p>Send public comments to the <a href="mailto:village@lindgren.res-hall.nwu.edu">Terra
+Vista mailing list</a> (village@lindgren.res-hall.nwu.edu) with the subject
+&quot;tutorial prototype&quot; (or something like that).</p>
+
+<p>Send private comments directly to <a href="mailto:daveage@ix.netcom.com">David
+George</a> (daveage@ix.netcom.com).</p>
+
+</body>
+</html>

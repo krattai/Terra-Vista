@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+  <TITLE>www.vrml.org: Error</TITLE>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+  <BASE TARGET="_top">
+</HEAD>
+<body BACKGROUND="/im/bg1.gif" BGCOLOR="#FFFFFF" TEXT="#330033" LINK="#2F4AD1" VLINK="#000000"
+		ALINK="#D14AD1">
+<table><tr><td>
+<img src="/im/vrmlpic2.gif" usemap="#vrmlpic2" border=0 hspace=0 vspace=0><BR>
+<img src="/im/vrmlpic.gif" usemap="#vrmlpic" border=0 hspace=0 vspace=0><BR>
+
+<MAP NAME="vrmlpic">
+
+<!-- PHOTO-PAINT 7.0 IMAGE MAP -->
+<AREA SHAPE=RECT COORDS="156,350,215,380" HREF=/home.html></AREA>
+<AREA SHAPE=RECT COORDS="34,32,140,54" HREF=/WorkingGroups/></AREA>
+<AREA SHAPE=RECT COORDS="114,1,214,26" HREF=/Specifications/></AREA>
+<AREA SHAPE=RECT COORDS="132,316,194,333" HREF=/about/members.html></AREA>
+<AREA SHAPE=RECT COORDS="40,337,96,360" HREF=/about/history.html></AREA>
+<AREA SHAPE=RECT COORDS="72,300,100,322" HREF=/about/join.html></AREA>
+</MAP>
+<MAP NAME="vrmlpic2">
+<AREA SHAPE=RECT COORDS="2,3,54,49" HREF=/news/></AREA>
+<AREA SHAPE=RECT COORDS="60,3,113,48" HREF=/faq/></AREA>
+<AREA SHAPE=RECT COORDS="116,3,169,49" HREF=/tech/></AREA>
+<AREA SHAPE=RECT COORDS="172,3,225,48" HREF=/about/></AREA>
+</MAP>
+</td>
+<td VALIGN=TOP>
+<IMG SRC="/splash/route.gif" ALIGN=LEFT VALIGN=TOP HSPACE=20>
+
+<B>Check Your ROUTE!</B>
+Either there was an error in fulfilling your request or the URL that
+you have requested has moved.  If it's our fault, please <a href="mailto:webmaster@vrml.org">tell us!</A>
+<BR CLEAR="ALL">
+<br>
+<br>
+<P><B>DON'T PANIC!</B> You may want to try:</P>
+
+<UL>
+  <UL>
+    <LI><A HREF="http://www.vrml.org/home.html"><FONT SIZE=+1>VRML Consortium
+    home page</FONT></A> to find the new location;
+    <LI><A HREF="http://www.vrml.org/Specifications"><FONT SIZE=+1>VRML Standards
+    and Specifications</FONT></A> to find a VRML document;
+    <LI>clicking the <B><I>BACK</I></B> button to return to the referring page.
+    <LI>If you are looking for an old or obsolete version of the VRML specification
+   (e.g. VRML 2.0, VRML97 DIS, etc.), try putting ".old" at the end of the directory
+   name. For example: http://www.vrml.org/Specifications/VRML2.0.old .
+  </UL>
+</UL>
+</td>
+</tr>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,8 @@
+#VRML V1.0 ascii
+Separator {
+	Material {diffuseColor 0.5 0.5 0.5}
+	WWWAnchor {name "mailto:jcunning@softronics.com"
+		description "Send mail to Jeremy for this Plot!"
+		Cube {width 20 height 1 depth 20}
+	}
+}

@@ -1,0 +1,13 @@
+#VRML V1.0 ascii
+
+Separator {
+	Separator { # Molecule
+		WWWInline {name "CH3OCH3.wrl"}
+	}
+	Separator {
+		Transform {translation 40 2 0
+			rotation 0 1 0 -1.57}
+		WWWInline {name "http://www.escape.ca/~krattai/house.wrl"}
+	}
+
+}

@@ -1,0 +1,99 @@
+#VRML V1.0 ascii
+# Flux
+# (c) Matthew Muntean 1996
+
+DEF Flux Separator {
+
+DEF BackgroundColor Info { string  "0 0 0 "}
+DEF BackgroundImage Info { string  "stars.jpg"}
+
+	DEF Sun Separator {
+		PointLight {
+	          on         TRUE
+	          intensity  1
+	          color      1 1 1
+        	  location   20 20 20
+	     	}
+	}
+	WWWAnchor {
+		name "http://www.co.umist.ac.uk/~georgep/vc/entrance.wrl"
+		description "Old George Towne"
+		Texture2 { filename "george.jpg" }
+		DEF George Separator {
+			Transform{translation 20 -20 10 }
+			Material{diffuseColor 0 1 0}
+			Sphere{radius  5 }
+		}
+	}
+	WWWAnchor {
+		name "http://www.co.umist.ac.uk/~georgep/tv/wb1.wrl"
+		description "New George Towne"
+		Texture2 { filename "george2.jpg" }
+		DEF George Separator {
+			Transform{translation 20 -30 10 }
+			Material{diffuseColor 0 1 1}
+			Sphere{radius  3 }
+		}
+	}
+	WWWAnchor {
+		name "http://webking.com/cgibin/outland/matrix.cgi SG=T,BB_W=30,PN=Origin,BB_D=30"
+		description "Besjon's Outland"
+		Texture2 { filename "besjon.jpg" }
+		DEF Besjon Separator {
+			Transform{translation 4 10 -5 }
+			Material{diffuseColor 0 0 1}
+			Sphere{radius  4 }
+		}
+	}
+	WWWAnchor {
+
+		name "http://www.softronics.com/users/jeremy/world.wrl" 
+		description "Air Link World"
+		Texture2 { filename "jeremy.jpg" }
+		DEF Jeremy Separator {
+			Transform{translation -10 0 5 }
+			Material{diffuseColor 1 0 0}
+			Sphere{radius  3 }
+		}
+	}
+	WWWAnchor {
+
+		name "http://www.users.interport.net/~mash/7islands.wrl" 
+		description "7 Islands"
+		Texture2 { filename "michael.jpg" }
+		DEF Michael Separator {
+			Transform{translation -25 10 -10 }
+			Material{diffuseColor 1 0 1}
+			Sphere{radius  3 }
+		}
+	}
+	WWWAnchor {
+		name "http://www.hway.net/jcvrosen/vc/downtown/downtown.wrl"
+		description "Downtown"
+		Transform{translation 10 25 -20 }
+		Texture2 { filename "jayvr.jpg" }
+		DEF JayVR Separator {
+			
+			Material{diffuseColor 0.5 1 0}
+			Sphere{radius  3 }
+		}
+	}
+	
+	## Additional non-links
+
+	DEF SpaceShip Separator {
+		Transform { translation 45 0 0 }
+		Material { diffuseColor 0.5 0.5 0.8 }
+		Cylinder { height 0.35 radius 1 }
+		Material { diffuseColor 1 1 1 transparency 0.8}
+		Sphere { radius 0.5 }
+	}
+		
+	Spin {
+            objectname  "SpaceShip"
+            yangle      -0.5
+	    xangle       0.1
+            axes        GLOBAL  }
+
+
+}

@@ -1,0 +1,213 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>Untitled</TITLE>
+
+<META NAME="GENERATOR" CONTENT="Internet Assistant for Microsoft Word 2.0z">
+</HEAD>
+
+<BODY>
+
+<H2>Mud Hut Tutorial </H2>
+
+<H3>Contents </H3>
+
+<UL>
+<LI><A HREF="#Intro">Introduction</A>
+<LI><A HREF="#Mud" >The Mud Walls</A>
+<LI><A HREF="#Thatch" >The Thatch Roof</A>
+<LI><A HREF="#Ground" >The Ground</A>
+<LI><A HREF="#Paint" >Painting the Scene</A>
+<LI><A HREF="#More" >More?</A>
+<LI><A HREF="tutorex.txt">Show me the complete code</A>
+<LI><A HREF="tutorex.wrl">Show me the complete world</A>
+</UL>
+
+<HR>
+
+<H3><A NAME="Intro">Introduction</A></H3>
+
+<P>
+This tutorial will teach you how to build a simple mud hut in
+VRML. You should already know how to build a VRML container file,
+including a header and a root node. This tutorial will also teach
+you how to use the cylinder, cone, cube, translation, and material
+nodes. Start off your file by typing the header and creating a
+root separator node.
+<UL>
+<LI><A HREF="ex0.txt">Show me the code for the container.</A>
+</UL>
+
+<HR>
+
+<H3><A NAME="Mud">The Mud Walls</A></H3>
+
+<P>
+The first step is to build the walls of the hut. We'll use a simple
+cylinder for the walls and DEF (name) it &quot;walls.&quot; We'll give it a height of 1.5 and
+a diameter of 2.0. Since the default diameter is 2.0 anyway, we
+won't bother to enter the diameter field in the code.
+<UL>
+<LI><A HREF="ex1.wrl">Show me the world for this step.</A>
+<LI><A HREF="ex1.txt">Show me the code for this step.</A>
+</UL>
+
+<HR>
+
+<H3><A NAME="Thatch">The Thatch Roof</A></H3>
+
+<P>
+The next step is to add a roof to the hut. We'll put in a thatched
+roof and use a cone to represent it.  Name it Roof.
+<P>
+If we just add a cone node within the roof separator, the cone
+will appear centered at the same place as the walls: the roof
+will be inside the walls. We want it on top, so we will add a
+translate node before the cone. We want to put the roof exactly
+above the walls, so we'll translate up (in the y direction). How
+much we translate depends in part on how tall the cone is. Changing
+the height of the cone moves the center of the cone (which is
+what moves when we translate). We'll make the cone fairly flat
+by defining the height as .  We'll also give the roof a little
+overhang by defining the bottom diameter as .
+<UL>
+<LI><A HREF="ex2.wrl">Show me the world for this step.</A>
+<LI><A HREF="ex2.txt">Show me the code for this step.</A>
+</UL>
+
+<HR>
+
+<H3><A NAME="Ground">Add the Ground</A></H3>
+
+<P>
+Right now our hut is sort of floating out there in space.  If
+we were inlining this world into a Terra Vista zone, that would
+be exactly what we'd want, since Terra Vista will provide the
+ground for us.  For this example, however, it's a little disorienting
+to have our hut floating in space, so let's add some ground. 
+The simplest way to add the terra firma is by adding a large,
+flat cube.  Insert it in your file above the Walls, and give it
+a height of 0.05, and a width and depth of 10.  Call it Ground.
+Voila: a ten meter square ground appears.  If you look at the
+world as it is right now, the ground is in the center of your
+walls, bisecting your hut.
+<UL>
+<LI><A HREF="ex25.wrl">Show me the world for this step.</A>
+<LI><A HREF="ex25.txt">Show me the code for this step.</A>
+</UL>
+
+<P>
+We forgot something!  We need to translate
+the hut up (in the y direction) so that it sits on top of the
+ground and not embedded in it.  Between the Ground and the Walls,
+add a translation in the Y direction of meters.  This will raise
+the hut.
+<P>
+Notice that it raises both the Walls and the Roof: the roof translation
+begins where the walls translation ended, not from the origin.
+ This is handy because it preserves the spatial relationships
+we defined for these objects earlier.
+<UL>
+<LI><A HREF="ex3.wrl">Show me the world for this step.</A>
+<LI><A HREF="ex3.txt">Show me the code for this step.</A>
+</UL>
+
+<HR>
+
+<H3><A NAME="Paint">Painting the Scene</A></H3>
+
+<P>
+Right now the scene is pretty drab, as if we made the ground and
+hut out of ashes or cement or something pretty gray.  We need
+to add color to the scene using the material node.
+<P>
+The material node lets us define color in several different ways.
+ We'll save the detailed exploration of the node for another tutorial.
+ For now, we'll simply add a very basic material node before each
+object we want to color.
+<P>
+First, add a material node called Grass above the Ground.  Give
+it a specular color that is green with three numbers for the red,
+green, and blue values that will combine to make green.
+<P>
+How did we know those colors would make green?  There are two
+ways to figure this out.  The easiest is to obtain a VRML authoring
+package that allows you to graphically define your colors with
+some kind of tool.  That could be expensive too.  The second easiest
+is to fiddle with the values until you get the color you want.
+<P>
+If you load the world now with the Grass material, you will find
+that everything is green.  (&quot;I am the grass.  I cover all&quot;).
+ This is because we have only one &quot;bucket&quot; of paint.
+<UL>
+<LI><A HREF="ex35.wrl">Show me the world for this step.</A>
+<LI><A HREF="ex35.txt">Show me the code for this step.</A>
+</UL>
+
+<P>
+Add a second material node (called Mud) above the Walls.  Give
+it a brown specular color.  Then add a third material node above
+the Roof and call it Straw.  Give it a yellow specular color.
+<P>
+TaDa!  This simple mud hut world is complete!
+<UL>
+<LI><A HREF="tutorex.wrl">Show me the world for this step.</A>
+<LI><A HREF="tutorex.txt">Show me the code for this step.</A>
+</UL>
+
+<HR>
+
+<H3><A NAME="More">You Want More?</A></H3>
+
+<P>
+Hokay, it's a complete mud hut, but it lacks a certain je ne sais
+quoi.  You might perhaps add a Shrubbery!  Or, you might have
+a pre-made object that you want to insert.  Try adding more to
+the scene using the nodes and methods shown in this tutorial.
+ Have fun and play around.
+<H4>Summary</H4>
+
+<UL>
+<LI>Geometry nodes (like the cube, cylinder, and cone we used)
+add objects to the scene whose dimensions (like height, width,
+and diameter) you can change.
+<LI>Translation nodes move objects to different places in the
+scene according to the x, y, and z directions we select, but they
+must be added before the object they move.  They also move every
+subsequent object.
+<LI>Material nodes allow us to &quot;paint&quot; the scene.  They
+use three values for red, green, and blue to define colors.
+</UL>
+
+<H4>More Help?</H4>
+
+<UL>
+<LI>If this tutorial has you tearing out your hair and you want
+more basic help understanding these nodes and how they work, there
+are books that describe them in more detail.  If you are going
+to code a lot of VRML, some type of reference book is a must.
+<LI>Visit <A HREF="http://vrml.asu.edu/">Pioneer Joel's tutorials</A> on the World Wide Web.  He
+explains each node, one at a time, and uses examples to show each
+node.
+<LI>More Links
+<UL>
+<LI><A HREF="http://www3d.com/build2.html">http://www3d.com/build2.html</A>
+<LI><A HREF="http://www.dform.com/inquiry/tutorials/vrmlaudio/">http://www.dform.com/inquiry/tutorials/vrmlaudio/</A>
+<LI><A HREF="http://vrml.sgi.com">http://vrml.sgi.com</A>
+<LI><A HREF="http://www-venus.cern.ch/vrml/">http://www-venus.cern.ch/vrml/</A>
+<LI><A HREF="http://sonypic.com/vs/tutorials/index.html">http://sonypic.com/vs/tutorials/index.html</A>
+</UL>
+</UL>
+
+<HR>
+
+<H4>Comments? </H4>
+
+<P>
+Send mail with comments to: <A HREF="mailto:daveage@ix.netcom.com">David George</A>.
+Or post comments to the <A HREF="mailto:village@lindgren.res.nwu.edu">Terra Vista </A>mailing
+list. 
+</BODY>
+
+</HTML>

@@ -1,0 +1,16 @@
+#VRML V1.0 ascii
+
+Separator {
+    
+    DEF Walls Cylinder {
+	height	1.5
+    }
+    
+    Translation {
+	translation	0 1 0
+    }
+    DEF Roof Cone {
+	bottomRadius	1.7
+	height	0.6
+    }
+}

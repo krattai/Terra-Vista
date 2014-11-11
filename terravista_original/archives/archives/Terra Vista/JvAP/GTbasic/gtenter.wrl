@@ -1,0 +1,28 @@
+#VRML V2.0 utf8
+#
+# GT style Zone
+# Entrance - describes any predispositions of the wrl
+
+Background { 
+  groundColor  0.1 1.0 0.1         # [0,1]
+  skyColor     0.1 0.0 0.7      # [0,1]
+}
+
+PointLight {
+ on TRUE
+ intensity 1
+# color 0.8 0.8 0.8
+ color 0.0 0.0 1.0
+ location 0 100 0
+}
+
+Viewpoint {
+ position 0 1.6 99
+}
+
+Inline { 
+ url "gt04.wrl"
+ bboxCenter 0 0 0
+ bboxSize 100 0.02 100
+}
+# end entrance

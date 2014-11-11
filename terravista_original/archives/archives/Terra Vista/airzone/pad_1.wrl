@@ -1,0 +1,18 @@
+#VRML V1.0 ascii
+
+Separator {
+	Separator { # House 1
+		Transform {translation 50 0 0
+			rotation 0 1 0 1.57}
+		WWWInline {name "http://www.hway.net/jcvrosen/logcabin.wrl"}
+	}
+	Separator { # Center Object
+		Material {diffuseColor 0 0 1}
+		Cylinder {radius 15 height 1}
+		Transform {translation 20 38 15
+			scaleFactor 0.15 0.15 0.15}
+		WWWInline {name "waterfall.wrl"
+			bboxSize 20 20 20
+			bboxCenter 0 10 0}
+	}
+}

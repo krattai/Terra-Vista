@@ -1,0 +1,9 @@
+#VRML V1.0 ascii
+
+Separator {
+    
+    DEF Walls Cylinder {
+	height	1.5
+    }
+
+}

@@ -1,0 +1,87 @@
+<HTML>
+<HEAD>
+<TITLE>Terra Vista Development Guidelines</TITLE>
+</HEAD>
+<BODY BGCOLOR="#000000" TEXT="#00FFFF" LINK="#FF0000" VLINK="#FF00FF" ALINK="#FF00FF"><BODY>
+<CENTER><H2>How do I...?</H2></CENTER>
+<CENTER>
+<IMG SRC="../images/line.gif" ALT="line" border=0>
+</CENTER>
+<BR><BR>
+NB: This is a draft.  Any revisions can be posted to both me and the village.  These guidelines have been drafted from methods we have agreed to as a community.  If I have missed any, please let me know.
+<P>
+<DL>
+<H2>generalDevelopment</H2>
+<DL>
+<LI>Terra Vista development is currently being done via strict VRML 1.0c.
+<LI>Extension nodes that are VRML 1.0c compliant are acceptable for use.
+<LI>Nodes that are browser specific and not part of VRML 1.0c (aside from VRML 1.0c extension nodes) are not encouraged.
+<LI>Dynamic CGI wrls are acceptable to the extent that they should not limit the user or restrict surrounding environments/wrls.  The use of CGI is still under discussion within the Terra Vista project.<BR>
+<LI>Pre-test all development as best you can before releasing them within Terra Vista to help ensure that any user will be able to function within the environment.<BR>
+<LI>Navigation within the community is part of the function that is being developed.  The method is entirely up to the developer.  The only recommendation is that when developing, try to include some device to allow for navigation.<BR>
+<LI>It is requested that major reference to the Terra Vista project be ponted to the HTML and VRML home pages for the project.  This does not disallow alternate "back-door" links.<BR>
+</DL>
+<P>
+<H2>zoneDevelopment</H2>
+<DL>
+<LI>Navigation between zones is important to help establish a sense of connectedness within these virtual environments.<BR>
+<LI>When connecting zones together, be sure to contact the perspective link zone builder to help establish recipricol links.  If I can get to you, I should be able to return back from where I came via some device/method.<BR>
+<LI>It is requested that all zones have a method to return the user to either the VRML or the HTML Terra Vista home pages.<BR>
+<LI>If you choose to remove a link, for whatever reason, please inform the respective zoneBuilder of your intentions prior to the removal, so they may have an opportunity to update their link.  Alternately, if you change the URL name that has a link attached to it, be sure to contact the link provider of the change.<BR>
+<LI>Somewhere within the zone, possibly at the entrance to the zone, please include a mail device so a user may contact you with opinions and/or suggestions.<BR>
+</DL>
+<P>
+<H2>segmentDevelopment</H2>
+<DL>
+<LI>Navigation between segments within a zone is important to maintain a sense of connectedness within the zone.<BR>
+<LI>Try to maintain a connectedness that relieves a user from encountering "404 errors" or the equivalent.<BR>
+<LI>Maintain a segment size and design that does not over-extend the load and parse time for that segment.  Remember, the user has a stop button and may not give a kind review if this happens.  A general rule of thumb is if it takes longer than you like to wait, then it's too big.<BR>
+</DL>
+<P>
+<H2>homeDevelopment</H2>
+<DL>
+<LI>As a homeBuilder, one is limited only to the extent of the zoneBuilder's regulations.  Please be sure to know the rules laid out by your prospective zoneBuilder.<BR>
+<LI>Homes can be located anywhere on the internet and will be inlined into the zones.<BR>
+<LI>In order to maintain a quick load and parse, it is recommended that the home only be an external shell file of the home.  Also, it is recommended that you make extensive use of primitives wherever possible.  A high usage of indexFaceSets and/or a large number of plygons is not recommended for the sake of speed.<BR>
+<LI>The use of appropiate LOD nodes is recommended.<BR>
+<LI>Any home "innards" should be WWWAnchored from some portal or transport device defined within the external shell.<BR>
+<LI>What you have on the inside is entirely up to you.  If the inside is browser specific or a large file, it is recommended that some indication is included in the external shell home suggesting that.<BR>
+<LI>A home should include a mail box of some sort.<BR>
+<LI>If you have an inside to your home, please be sure to establish a link back to the original segment from where the user came.<BR>
+</DL>
+<P>
+<H2>buildersKit</H2>
+<DL>
+<LI>The VRML 1.0c specifications may be found at:
+<A HREF="http://vrml.wired.com/vrml.tech/vrml10-3.html">VRML 1.0c spec.</A>
+<BR>
+<LI>Helper notes for developing can be found at:
+<insert URLs...><BR>
+<LI>Terra Vista proper is maintaining an unbiased perspective of browsers and developer's tools.  Aside from ten fingers and a text editor for scripting, it would be up to the developer to decide which tools work best for them.  Some product reviews can be found at:
+<insert URLS...><BR>
+<LI>Some methods for linking zones and segments may be found at:
+<insert URLS...><BR>
+<LI>Some glyphs have been reviewed by Terra Vista, which indicate transport and/or transport devices.  They can be found at:
+<A HREF="http://www.interport.net/~mash/glyphs.html">Glyphs</A><BR>
+<LI>The following test segments may be downloaded for testing your home wrls:
+<insert URLS...><BR>
+<LI>The following objects can be drawn upon for use within your developing wrls:
+<insert URLS...><BR>
+</DL>
+<P>
+</DL>
+Back to 
+<A HREF="http://www.messiah.edu/hpages/student/sr930922/commune.htm">
+[TV Home Page]</A> 
+<A HREF="vcproj.htm">[TV on Uvea]</A> 
+<P>
+<IMG SRC="../images/line.gif" ALT="line">
+<BR><BR>
+Comments or suggestions?
+<a href="mailto:krattai@escape.ca">
+<IMG SRC="../images/mailbox.gif" ALT="mail me" align=bottom border=0></a>
+<BR>
+<HR>
+<ADDRESS>Warning:<IMG SRC="../images/working.gif" ALT="Construction" ALIGN=MIDDLE border=0></ADDRESS>
+</BODY>
+</HTML>

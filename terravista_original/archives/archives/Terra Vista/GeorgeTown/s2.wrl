@@ -1,0 +1,95 @@
+#VRML V1.0 ascii
+#Segment2 of George Town
+#(c) George Philippakos 1996
+
+DEF Segment2 Separator {
+	DEF floor Separator {
+		DEF floorArea Separator {
+			Material { diffuseColor 0.3 0.3 0.3 }
+			Coordinate3 { point [ -100 0 -100, 100 0 -100, 100 0 100, -100 0 100. ] }
+			IndexedFaceSet { coordIndex [ 2, 1, 0, -1, 3, 2, 0, -1, ] }
+		}
+		DEF Grass Separator {
+			Material { diffuseColor 0 0.6 0 ambientColor 0 0.1 0 }
+			Transform { translation -52.5 0.02 17.5 }
+			Cube { width 95 height 0.04 depth 165 }
+			Transform { translation 0 0 -105 }
+			Cube { width 95 height 0.04 depth 25 }
+			Transform { translation 105 0 0 }
+			Cube { width 95 height 0.04 depth 25 }
+			Transform { translation 0 0 105 }
+			Cube { width 95 height 0.04 depth 165 } }
+	}
+	DEF exits Separator {
+		# the north exit
+		WWWAnchor { name "s_s3.wrl" description "Continue North of Creators Avenue"
+			Transform { translation 0 0 -99.5 }
+			WWWInline { name "rsign.wrl" bboxSize 4 1.5 0.05 bboxCenter 0 0.75 0 }
+			FontStyle { size 0.3 style BOLD }
+			Transform { translation 0 0.9 0.01 }
+			Material { diffuseColor 0 0 0 }
+			AsciiText { string "Creators Avenue" justification CENTER } }
+		# the south exit
+		WWWAnchor { name "n_s1.wrl" description "Go South of Creators Avenue"
+			Transform { translation 0 0 99.5 }
+			WWWInline { name "rsign.wrl" bboxSize 4 1.5 0.05 bboxCenter 0 0.75 0 }
+			FontStyle { size 0.3 style BOLD }
+			Transform { translation 0 0.9 -0.01 rotation 0 1 0 3.142 }
+			Material { diffuseColor 0 0 0 }
+			AsciiText { string "Creators Avenue" justification CENTER } }
+	# end of exits
+	}
+	DEF scenary Separator {
+		DEF LeftTrees Separator {
+			Transform { translation -16 0 80 }
+			DEF tree Separator { WWWInline { name "tree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 } }
+			Transform { translation -12 0 -8 } USE tree
+			Transform { translation 0 0 -110 } USE tree
+			Transform { translation 14 0 -10 } USE tree }
+		DEF RightTrees Separator {
+			Transform { translation 60 0 50 } USE tree
+			Transform { translation 0 0 -60 } USE tree }
+		DEF TopTrees Separator {
+			Transform { translation -10 0 -80 } USE tree
+			Transform { translation 20 0 0 } USE tree }			
+	}
+	DEF landPlots Separator {
+	# All plots of land defined here can be allocated for a user to build upon
+		DEF plot1 Separator {
+			# Owned by 
+			Transform { translation -78 0.05 20 }
+			# WWWInline { name "" bboxSize 40 5 40 bboxCenter 0 2.5 0 }
+			WWWAnchor { name "request.htm" description "HTML: Click here to request this plot" Cube { width 40 height 0.1 depth 40 } }
+		}
+		DEF plot2 Separator {
+			# Owned by George Morrison
+			Transform { translation -48 0.05 68 rotation 0 1 0 -0.7854 }
+			Transform { rotation 0 1 0 3.1416 }
+			WWWInline { name "home.wrl" bboxSize 20 5 20 bboxCenter 0 2.5 0 }
+		}
+		DEF plot3 Separator {
+			# Owned by Jeremy Cunningham
+			Transform { translation -48 0.05 -28 rotation 0 1 0 0.7854 }
+			WWWInline { name "casthome.wrl" bboxSize 20 5 20 bboxCenter 0 2.5 0 }
+		}
+		DEF plot4 Separator {
+			# Owned by 
+			Transform { translation 78 0.05 20 }
+			# WWWInline { name "" bboxSize 40 5 40 bboxCenter 0 2.5 0 }
+			WWWAnchor { name "request.htm" description "HTML: Click here to request this plot" Cube { width 40 height 0.1 depth 40 } }
+		}
+		DEF plot5 Separator {
+			# Owned by 
+			Transform { translation 48 0.05 68 rotation 0 1 0 -0.7854 }
+			# WWWInline { name "" bboxSize 20 5 20 bboxCenter 0 2.5 0 }
+			WWWAnchor { name "request.htm" description "HTML: Click here to request this plot" Cube { width 20 height 0.1 depth 20 } }
+		}
+		DEF plot6 Separator {
+			# Owned by Kevin Rattai
+			Transform { translation 48 0.05 -28 rotation 0 1 0 -0.7854 }
+			WWWInline { name "ratsext.wrl" bboxSize 20 5 20 bboxCenter 0 2.5 0 }
+		}
+	# end of land plots
+	}
+#end of segment 1
+}

@@ -1,0 +1,48 @@
+#VRML V1.0 ascii
+#
+# This file defines the entrance point view to your town/village when teleporting
+
+DEF Entrance Separator {
+	DEF InfoSeparator Group {
+	# here you define all your scene information, such as the background colour and the position of each camera
+		DEF BackgroundColor Info { string "0.5 0.6 0.8" }
+		DEF Viewer Info { string "walk" }
+		DEF Title Info { string "Welcome to New George Town" }
+		DEF SceneInfo Info { string "New George Town is the first offical Zone created by the founder of the Virtual Community Project" }
+		DEF ViewerSpeed Info { string "20" }
+
+		PointLight {
+		# The sun is shining
+			on TRUE
+			intensity 1
+			color 0.8 0.8 0.8
+			location 0 100 0
+		}
+		DEF Cameras Switch {
+		# Here you must define a list of cameras with various views
+		# There must be an Entrance View and a Map View and also views of any other buildings or homes
+
+			whichChild 0
+			# the default view must be the entrance view
+
+			DEF Entrance PerspectiveCamera { position 0 1.6 99 }
+			DEF View_Map PerspectiveCamera { position 0 250 0 orientation 1 0 0 -1.57 }
+
+			DEF Plot_1 PerspectiveCamera { position -40 1.6 20 orientation 0 1 0 1.57 }
+			DEF George_Morrison PerspectiveCamera { position -20 1.6 40 orientation 0 1 0 2.357 }
+			DEF Jeremy_Cunningham PerspectiveCamera { position -20 1.6 0 orientation 0 1 0 0.7854 }
+			DEF Plot_4 PerspectiveCamera { position 40 1.6 20 orientation 0 1 0 -1.57 }
+			DEF Plot_5 PerspectiveCamera { position 20 1.6 40 orientation 0 1 0 -2.357 }
+			DEF Kevin_Rattai PerspectiveCamera { position 20 1.6 0 orientation 0 1 0 -0.7854 }
+		# end of cameras
+		}
+	}
+	# end of scene info
+
+	DEF Segment Separator {
+	# Here we call the first segment to our world with a WWWInline
+		WWWInline { name "s2.wrl" bboxSize 100 0.02 100 }
+	}
+	# segment
+# entrance
+}

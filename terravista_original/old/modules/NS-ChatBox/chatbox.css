@@ -1,0 +1,45 @@
+INPUT {
+	BACKGROUND-COLOR: white; BORDER-BOTTOM: black 1px outset; BORDER-LEFT: black 1px outset; BORDER-RIGHT: black 1px outset; BORDER-TOP: black 1px outset; COLOR: black; FONT-FAMILY: Verdana; FONT-SIZE: 9px
+}
+TEXTAREA {
+	BACKGROUND-COLOR: white; BORDER-BOTTOM: black 1px outset; BORDER-LEFT: black 1px outset; BORDER-RIGHT: black 1px outset; BORDER-TOP: black 1px outset; COLOR: black; ; font: normal 11px Verdana
+}
+TEXTBOX {
+	BACKGROUND-COLOR: white; BORDER-BOTTOM: black 1px outset; BORDER-LEFT: black 1px outset; BORDER-RIGHT: black 1px outset; BORDER-TOP: black 1px outset; COLOR: black; ; font: normal 10px Verdana
+}
+submit {
+	BACKGROUND-COLOR: white; BORDER-BOTTOM-STYLE: outset; BORDER-LEFT-STYLE: outset; BORDER-RIGHT-STYLE: outset; BORDER-TOP-STYLE: outset; COLOR: black; FONT-FAMILY: Verdana; FONT-SIZE: 9px
+}
+
+body { border: 1px #EEEEE; color: #000000; 
+scrollbar-face-color: #CCCCCC; 
+scrollbar-shadow-color: #FFFFFF; scrollbar-highlight-color: #FFFFFF; scrollbar-3dlight-color: #FFFFFF; 
+scrollbar-darkshadow-color: #FFFFFF; scrollbar-track-color: #FFFFFF; scrollbar-arrow-color: #000000 }
+}
+A.addon {
+FONT-SIZE: 11px
+; COLOR: 333333
+; LINE-HEIGHT: 12px
+; FONT-FAMILY: Arial
+; font-weight: normal
+; TEXT-DECORATION: underline
+}
+A.addon:hover {
+COLOR: #BCBC7A
+; CURSOR: hand
+; FONT-SIZE: 11px
+; LINE-HEIGHT: 12px
+; font-weight: normal
+; FONT-FAMILY: Arial
+; TEXT-DECORATION: none
+}
+.catdesc {
+COLOR: #333333; TEXT-DECORATION: none
+; font: normal 11px/12px Verdana
+; LINE-HEIGHT: 15px
+}
+.catdescb {
+COLOR: blue; TEXT-DECORATION: none
+; font: normal 11px/12px Verdana
+; LINE-HEIGHT: 15px
+}

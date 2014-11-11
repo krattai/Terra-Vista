@@ -1,0 +1,69 @@
+#VRML V1.0 ascii
+#Segment3 of George Town
+#(c) George Philippakos 1996
+
+DEF Segment3 Separator {
+	DEF floor Separator {
+		DEF floorArea Separator {
+			Material { diffuseColor 0.3 0.3 0.3 }
+			Coordinate3 { point [ -100 0 -100, 100 0 -100, 100 0 100, -100 0 100. ] }
+			IndexedFaceSet { coordIndex [ 2, 1, 0, -1, 3, 2, 0, -1, ] }
+		}
+		DEF Grass Separator {
+			Material { diffuseColor 0 0.6 0 ambientColor 0 0.1 0 }
+			Transform { translation 0 0.02 -52.5 }
+			Cube { width 200 height 0.04 depth 95 }
+			Transform { translation -52.5 0 105 }
+			Cube { width 95 height 0.04 depth 95 }
+			Transform { translation 105 0 0 }
+			Cube { width 95 height 0.04 depth 95 }
+		}
+	}
+	DEF exits Separator {
+		# the south exit
+		WWWAnchor { name "s_s2.wrl" description "Go South of Creators Avenue"
+			Transform { translation 0 0 99.5 }
+			WWWInline { name "rsign.wrl" bboxSize 4 1.5 0.05 bboxCenter 0 0.75 0 }
+			FontStyle { size 0.3 style BOLD }
+			Transform { translation 0 0.9 -0.01 rotation 0 1 0 3.142 }
+			Material { diffuseColor 0 0 0 }
+			AsciiText { string "Creators Avenue" justification CENTER } }
+	# end of exits
+	}
+
+	DEF scenary Separator {
+		Transform { translation -30 0 30 }
+		DEF tree Separator { WWWInline { name "tree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 } }
+		Transform { translation 20 0 6 } USE tree
+		Transform { translation -23 0 -26 } USE tree
+	}
+
+	DEF landPlots Separator {
+	# All plots of land defined here can be allocated for a user to build upon
+		DEF plot1 Separator {
+			# Owned by Matthew Muntean
+			Transform { translation -32 0.05 71 }
+			WWWInline { name "villa.wrl" bboxSize 50 5 54 bboxCenter 0 2.5 0 }
+		}
+		DEF plot2 Separator {
+			# Owned by 
+			Transform { translation -69 0.05 24 }
+			# WWWInline { name "" bboxSize 58 5 32 bboxCenter 0 2.5 0 }
+			WWWAnchor { name "request.htm" description "HTML: Click here to request this plot" Cube { width 58 height 0.1 depth 32 } }
+		}
+		DEF plot3 Separator {
+			# Owned by 
+			Transform { translation 53 0.05 53 }
+			# WWWInline { name "" bboxSize 90 5 90 bboxCenter 0 2.5 0 }
+			WWWAnchor { name "request.htm" description "HTML: Click here to request this plot" Cube { width 90 height 0.1 depth 90 } }
+		}
+		DEF plot4 Separator {
+			# Owned by 
+			Transform { translation 0 0.05 -53 }
+			# WWWInline { name "" bboxSize 192 5 90 bboxCenter 0 2.5 0 }
+			WWWAnchor { name "request.htm" description "HTML: Click here to request this plot" Cube { width 192 height 0.1 depth 90 } }
+		}
+	# end of land plots
+	}
+#end of segment 1
+}

@@ -1,0 +1,13 @@
+#VRML V1.0 ascii
+
+Separator {
+   Material {diffuseColor 0.0 1.0 0.0}
+   Cylinder {radius 10.0 height 0.1}
+   Translation {translation 0 0.1 0}
+   Material {diffuseColor 0.5 0.5 0.5}
+   Cube {width 10 height 0.1 depth 0.1}
+   Cube {width 0.1 height 0.1 depth 10}
+   Rotation {rotation 0.0 1.0 0.0 0.785}
+   Cube {width 10 height 0.1 depth 0.1}
+   Cube {width 0.1 height 0.1 depth 10}
+}

@@ -1,0 +1,80 @@
+#VRML V1.0 ascii
+#Dimethyl Ether  CH3OCH3
+
+Separator {
+	LOD { range [ 200 ] center 0 10 0
+	Separator { # Level 1
+		Separator { # Plaque
+			Transform {translation 0 2 0
+				rotation 1 0 0 -0.8}
+			Cube {height 3 width 7 depth 1}
+			Transform {translation -3 0 1}
+			Material {diffuseColor 1 0 0}
+			FontStyle {size 0.9}
+			AsciiText {string "Dimethyl Ether"}
+		}
+		Transform {translation 0 15 0}
+		Material {diffuseColor 1 0 0}
+		Sphere {radius 7}
+		Material {diffuseColor 0 0 0}
+		Separator {
+			Transform {translation 9 8 0
+				rotation 0 0 1 0.2}
+			DEF CH3Model Separator {
+				Sphere {radius 10}
+				Material {diffuseColor 0 0 1}
+				Separator {	# Hydrogen 1
+					Transform {translation 4 -10 0}
+					DEF Hydrogen Sphere {radius 5}
+				}
+				Separator {	# Hydrogen 2
+					Transform {translation 0 7 7}
+					USE Hydrogen
+				}
+				Separator {
+					Transform {translation 0 7 -7}
+					USE Hydrogen
+				}
+			}
+		}
+		Separator {
+			Transform {rotation 0 1 0 3.14}
+			Transform {translation 9 8 0
+				rotation 0 0 1 0.2}
+			USE CH3Model
+		}
+	}
+	Separator { #Level 2
+		Transform {translation 0 15 0}
+		Material {diffuseColor 1 0 0}
+		Cube {height 14 depth 14 width 14}
+		Material {diffuseColor 0 0 0}
+		Separator {
+			Transform {translation 9 8 0
+				rotation 0 0 1 0.2}
+			DEF CH3BlockModel Separator {
+				Cube {height 20 depth 20 width 20}
+				Material {diffuseColor 0 0 1}
+				Separator {	# Hydrogen 1
+					Transform {translation 4 -10 0}
+					DEF Hydrogen Cube {height 10 depth 10 width 10}
+				}
+				Separator {	# Hydrogen 2
+					Transform {translation 0 7 7}
+					USE Hydrogen
+				}
+				Separator {
+					Transform {translation 0 7 -7}
+					USE Hydrogen
+				}
+			}
+		}
+		Separator {
+			Transform {rotation 0 1 0 3.14}
+			Transform {translation 9 8 0
+				rotation 0 0 1 0.2}
+			USE CH3BlockModel
+		}
+	}
+	}
+}

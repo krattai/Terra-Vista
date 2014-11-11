@@ -1,0 +1,600 @@
+<html>
+<head>
+<title>VRML Browser Reviews</title>
+</head>
+<body bgcolor="#000000" text="#FFFFFF" link="#00FF00" vlink="#00AF00" background="vrmlbg.gif">
+<h1 align=center><a name="Top"></a>Terra Vista Browser Compatibility Reports
+</h1>
+<a href="index.htm"><img src="bar1u.jpg" width=73 height=22 alt="tech page" border=0></a>
+<a href="def.htm"><img src="bar2u.jpg" width=157 height=22 alt="definitions of terms" border=0></a>
+<a href="howto.htm"><img src="bar3u.jpg" width=50 height=22 alt="how to" border=0></a>
+<img src="bar4s.jpg" width=60 height=22 alt="reviews" border=0>
+<a href="b20.htm"><img src="bar5u.jpg" width=81 height=22 alt="vrml 2.0" border=0></a>
+<a href="ombuds.htm"><img src="bar6u.jpg" width=58 height=22 alt="ombuds" border=0></a>
+<a href="tutors.htm"><img src="bar7u.jpg" width=42 height=22 alt="tutors" border=0></a>
+<a href="trravsta.htm"><img src="bar8u.jpg" width=42 height=22 alt="zones" border=0></a>
+<hr>
+<center><p>Almost as soon as the first Terra Vista prototype zone was created,
+members of the community discovered that different browsers handled the
+VRML standard differently, and not always correctly. To assist citizens
+and visitors, we try to periodically test various browsers in Terra Vista
+to report on how to use the browser to enter the community and to pass
+on any information on browser behavior. </p></center>
+
+<h2>Table of Contents <img src="32x32_an.gif" border=0 ></h2>
+
+<ul>
+<li><a href="#Intro">Introduction</a> </li>
+
+<ul>
+<li><a href="#System">Test Machines</a></li>
+
+<li><a href="browsers.htm#Params">Test Parameters</a></li>
+</ul>
+
+<li>Reports </li>
+
+<ul>
+<li><a href="#WorldView">WorldView v1.0 Beta 1</a> by Intervista </li>
+
+<li><a href="#Cybergate">Cybergate</a> by Black Sun </li>
+
+<li><a href="#Live3D">Live3D Beta 2</a> by Netscape Communications </li>
+
+<li><a href="#MSIE">Internet Explorer 2.0 with VRML Add-In 2.0</a> by Microsoft
+<li><a href="#VRScout">VRScout Beta 1.22</a> by Chaco
+<li><a href="#VRealm">VRealm</a> by IDS
+</li>
+</ul>
+
+<li><a href="#Contribute">Please Contribute!</a> </li>
+</ul>
+
+<p>
+<hr></p>
+
+<h2><a name="Intro"></a>Introduction </h2>
+
+<p>Since Terra Vista has elected to strictly adhere to the VRML 1.0 standard,
+we have noticed that a working, complete, bug free VRML 1.0 browser is
+a hard beast to find. Very few browsers are out of the beta testing stage
+of development for VRML 1.0, and already the race is on to develop VRML
+2.0 browsers. That's life.</p>
+
+<p>That said, we try to periodically test browsers in Terra Vista zones.
+This helps us find out which browsers are supporting the standards, what
+bugs exist, and how to use the browser effectively. It also helps us find
+out when our own code is buggy. Then we post reports to this page. We should
+emphasise here that these reports should not be the sole source of information
+you use to evaluate a browser--our tests are not exhaustive or rigorous
+enough.</p>
+
+<p>We'd also like to thank the browser builders of the world, who make
+our passion for virtual reality possible, generally at little or no cost
+to us. We truly appreciate the effort you are putting into making cyberspace
+possible.</p>
+
+<p><a href="#Top">Return to the Top</a> 
+<hr></p>
+
+<h3><a name="System"></a>The Test Machines</h3>
+
+<p>One test machine is a Dell XPS Pentium 133 Mhz with 16 MB of RAM and
+a 28.8K connection running Windows 95. A survey of Terra Vista list members
+places this machine somewhere in the lower middle of the pack. If you are
+operating with a slower connection, slower CPU, or less RAM, you may experience
+problems or slow performance building and browsing VRML. Computer prices,
+fortunately, are still dropping. </p>
+
+<p>Some additional tests have been performed with a Compaq 486 DX2 66 Mhz
+machine with 8 MB of RAM. In general, we find that this machine does not
+run some browsers as well, and we generally attribute this to the low RAM
+of the system.</p>
+
+<p><a href="#Top">Return to the Top</a> </p>
+
+<h3>
+<hr width="100%" ><a name="Params"></a>Test Parameters</h3>
+
+<p>DISCLAIMER: Terra Vista testing is NOT rigorous. This testing started
+(and ends) as an attempt to find out if a given browser will view Terra
+Vista zones and segments. When we test, we zip around, consider certain
+browser features, and make rough assessments of browser capabilities.</p>
+
+<p>You <b>SHOULD NOT</b> rely solely on these reports when selecting a
+browser. Many factors affect the performance of a browser and everyone's
+machine is a little different. What bombs for us might scream on your machine,
+and vice-versa. The browser makers are providing a lot of free evaulation
+time. Take advantage of it and test drive until you find a piece of software
+you like. Then pay for it like a nice user should.</p>
+
+<p>That said, there are a few things we do try to evaluate as consistently
+as we can.</p>
+
+<h4>Rendering Speed</h4>
+
+<p>Sadly, this test is something of a SWAG (super wild-ass guess) that
+we take at how a browser runs. We wish that we could report with a high
+degree of accuracy. We can't. We will simply report whether the browser
+was brisk, moderate, crawling, etc. We will try to be as objective as possible.
+We strongly encourage people to try a number of browsers out ON THEIR OWN
+machines, since it is likely that a number of factors (processor, ram,
+setup, video card, bus, drivers, accelerators, and so on.) could have an
+impact on the speed of a browser's renderer.</p>
+
+<h4>Rendering Accuracy</h4>
+
+<p>This test is also a little more haphazard than we'd like. Rendering
+accuracy evaluates whether the browser rendered the scene accurately. As
+an example, some browsers have displayed ascii text nodes in unpredictable
+ways.</p>
+
+<h4>Response to Level Of Detail nodes</h4>
+
+<p>This is the mother of all test parameters, and historically the reason
+that these reports began to exist at all. Background: Terra Vista zones
+include inlined worlds from various contributors, some or all of which
+incorporate the Level of Detail (LOD) node. The idea behind this requirement
+was to reduce browser loads for people viewing the world. We found out
+two things:</p>
+
+<ol>
+<li>Many browsers did not implement the LOD of inlined worlds correctly.
+When the code was correct, the browsers would show the lowest level of
+detail when the visitor was closest to the inlined scene. The highest level
+of detail became visible as you backed away from the inlined world. It
+was our feeble attempt to find a browser without this problem that led
+to these reports. 
+<br></li>
+
+<li>After spending all this time, whizzing off browser builders by badmouthing
+their software and in general causing quite a fuss, Terra Vista decided
+not to require LOD after all. It does not seem (at the current load) to
+provide the desired benefit of faster rendering.</li>
+</ol>
+
+<p>Sorry to all. Nonetheless, we'll continue to try to test this parameter.
+Some worlds are still using it, and it may actually provide a benefit in
+the future. We shall see.</p>
+
+<h4>Viewpoints</h4>
+
+<p>Terra Vista zones usually incorporate a list of cameras in the segment
+file, usually accessed in a browsers as &quot;views&quot; or &quot;viewpoints.&quot;
+The viewpoints list provides a method for navigating directly to a given
+point (like a person's inlined home or a navigation device, or even a map
+view of the entire segment.</p>
+
+<p>This list is often available as a popup, and some browsers provide a
+button for toggling your way through the list. Some browsers don't provide
+the list at all. Our tests report whether the viewpoints are accessible,
+how they are accessed, and whether the feature worked.</p>
+
+<h4>Conclusion</h4>
+
+<p>Often what is revealed in these tests is not so much inaccuracy in browsers
+as variability between browsers. Or, inaccuracies in the testbed worlds.
+At times the reports may seem tentative as if (and this <i>is</i> the case)
+the reporter is unsure of where to place the &quot;blame&quot; for an anomaly.
+Well, it is dangerous to leap to conclusions. The reporters are not experts
+in VRML. All of the experts have better things to do right now, like crafting
+the next standard and writing browsers.</p>
+
+<p>One warning to authors: test your creations in more than one browser.
+Doing so will help you and perhaps us to discern differences in implementation
+from outright improper implementation of the VRML 1.0 specs. You will also
+get a better idea of what visitors to your site may see. If you have a
+particular effect in mind, you ought to find out what that effect looks
+like through different viewers. Remember that everytime you specify that
+your site is &quot;best viewed with . . .&quot; you tell a certain number
+of visitors not to bother to come to your site. Is that the effect you
+want to have?</p>
+
+<p><a href="#Top">Return to the Top</a> 
+<hr></p>
+
+<h3><a name="WorldView"></a>WorldView 1.0 Beta 1, Intervista </h3>
+
+<p>WorldView works as a standalone browser or as a plug-in with an HTML
+browser. If you use it as a standalone, it will automatically launch your
+default web browser when you link to an HTML file. It uses the Reality
+Labs rendering engine, now owned by Microsoft, so scenes will look similar
+to those rendered with the MSIE 2.0 VRML Add-In and other browsers using
+Reality Labs.</p>
+
+<h4>Notable Features</h4>
+
+<p>WorldView has a command in the file menu called Edit Source. When you
+select this command, the program launches Notepad and opens the source
+code in it.</p>
+
+<p>It also allows you to change the timeout duration for the browser. One
+drawback of some browsers is that when a timeout period ends, the browser
+simply says &quot;I'm done.&quot; It doesn't tell you that it timed out.
+As a result, you have no idea if the world has rendered correctly. WorldView
+lets you set the timeout durations. I set mine for 600 seconds, since internet
+traffic can be hairy these days. The default of 60 seconds is a bit short
+and it was frustrating as I tried over and over to load a world only to
+have the browser say &quot;done&quot; without actually doing anything.</p>
+
+<h4>Speed</h4>
+
+<p>The rendering speed was satisfactory. This was true for all the browsers
+we tested.</p>
+
+<h4>Accuracy</h4>
+
+<p>The browser seems to accurately depict the scenes with a couple of minor
+exceptions to report.</p>
+
+<p>The ascii text on some objects &quot;leaked&quot; off the edges. This
+can't be really called an inaccuracy, since it did render the text centered
+on the object, just as it was coded to do. The default spacing of the text
+was simply too wide to fit on to the objects. </p>
+
+<p>One other problem I noticed (and I don't know if it was the code or
+this browser) was that a cube that I believe should have been rendered
+transparent came out cement gray instead. It is in the first segment of
+New George Town. The VRML in question is an inline with LOD. At entry,
+the object appears to be a green cube floating above the ground. As you
+approach, it should become three hovering inverted cones over a blue pool.
+WorldView rendered a big gray cube at the highest level of detail, but
+I believe the cube is supposed to be transparent and serves as the anchor
+object for a link to the Air Link Zone. When viewed in Live3D, the cube
+<i>does</i> appear transparent. Note: this is a good example of why it
+is desirable for authors to test worlds in more than one browser.</p>
+
+<h4>LOD</h4>
+
+<p>The browser seems to render LOD correctly. WorldView allows you to set
+the LOD to always be at the highest level, so that LOD never changes. If
+the use of LOD is intended to reduce the rendering load for the browser,
+this will defeat the purpose, but at least the scene will be rendered properly.</p>
+
+<p>You can also select lower levels of detail, either overall or when moving.
+This is a nice feature, especially in big worlds or on slow machines.</p>
+
+<h4>Viewpoints</h4>
+
+<p>WorldView provides a very short list of viewpoints, apparently just
+the first defined camera and a default camera that is located some distance
+from the scene. The viewpoint is accessed in a popup menu or from the pulldowns.
+WorldView will allow you to define a camera within a scene you have loaded.
+It does not insert this camera into the scene code that is available from
+the file menu, so you can't use it as a quick way to write camera code.</p>
+
+<p><a href="#Top">Return to the Top</a> 
+<hr></p>
+
+<h3><a name="Cybergate"></a>CyberGate Beta 3, Black Sun</h3>
+
+<p>Cybergate is unusual among VRML 1.0 browsers because it permits multi-user
+experiences, with moving avatars to represent other people in the world.
+It is capable of browsing in both standard VRML 1.0 worlds and multi-user
+worlds. The extensions which permit Black Sun's multi-user feature fit
+within the VRML 1.0 standard and may eventually be added to Terra Vista
+worlds.</p>
+
+<p>Testing using Beta 3 of CyberGate worked just fine. Previous tests were
+problematic for undiscovered reasons. I simply typed the test world URL
+into the browser, hit return, and entered. Note that the prototype world
+in the test is not a multi-user world. Multi-user worlds require an additional
+server which manages the multi-user aspects of the experience. </p>
+
+<h4>Notable Features</h4>
+
+<p>CyberGate's interface includes many options. One is a message list that
+reports problems during the loading of a world. There were several that
+occurred during the test, and the zone owner of the prototype is investigating
+them. This list may prove helpful for developers who want to test their
+code before posting it to the web.</p>
+
+<h4>Speed</h4>
+
+<p>The speed of the CyberGate browser is good. If you use it in the Point
+World or other multi-user space, this may not be immediately apparent as
+the browser (in my experience) sometimes bogs down in dealing with updates--accounting
+for the positions and activities of other users. This is the problem we
+generally refer to as &quot;latency.&quot; Latency also shows up when trying
+to chat with other users: it can take an uncomfortable amount of time for
+messages to get to the recipient. Try the browser in a world without multiple
+users and you will find it renders just fine.</p>
+
+<h4>Accuracy</h4>
+
+<p>For the most part, CyberGate renders scenes accurately. I noticed the
+following two anomalies:</p>
+
+<p>Curiously, the blue sky background of the test world was rendered a
+sort of steely gray, as if the world was overcast and gloomy. Other browsers
+tested rendered the same scene with a blue sky, and a bit brighter as well.</p>
+
+<p>Also, ascii text did not seem to be centered on signs. Instead, it seemed
+to start at the center of the sign.</p>
+
+<h4>LOD</h4>
+
+<p>To the best of our knowledge, this beta version of CyberGate has not
+yet implemented LOD. Objects with LOD appear at one level of detail, regardless
+of distance. In one case, this turned out to be the highest detail, in
+another case, the lowest.</p>
+
+<h4>Viewpoints</h4>
+
+<p>As near as we can tell, this beta of CyberGate also does not include
+a viewpoints list. The scene opens at the entry view camera point, but
+other viewpoints (or a way to access them) could not be found. CyberGate
+<i>does</i> provide multiple views of the same scene (including a top view).
+By placing the pointer in the top view scene, you can drive around in the
+second view.</p>
+
+<h4>Oddities</h4>
+
+<p>During the test, I did experience some navigation irregularities, in
+which I essentially was teleported to a distant point. This happened when
+I single clicked on a WWWAnchor (a sign in New George Town). Double clicking
+on the anchor caused it to work correctly.</p>
+
+<p><a href="#Top">Return to the Top</a> 
+<hr></p>
+
+<h3><a name="Live3D"></a>Live3D Beta 2, Netscape Communications </h3>
+
+<p>Netscape's newest version of Navigator (also called Atlas) includes
+several plug-ins, including Live3D's latest beta. Live3D is also now available
+for the Mac OS (although we haven't tested it on that platform yet).</p>
+
+<h4>Notable Features</h4>
+
+<p>Live 3D has added some new features and made moderate changes to the
+interface. Rendering shading has also been improved; some users complained
+that when WebFX became Live3D, the rendering actually became poorer. Earlier,
+we reported that the rendering for Live3D was not as nice as the browsers
+using Reality Labs, but Beta 2's rendering was good and fast in the test.</p>
+
+<ul>
+<li>New: adjustable headlight intensity, available in the control bar or
+the popup menu. 
+<br></li>
+
+<li>Viewpoints control in the display: click on the up and down arrows
+of the view control to advance to the next viewpoint in the camera list.
+The viewpoint list remains accessible by right click popup menu too. 
+<br></li>
+
+<li>Navigation commands include a straighten command. In the test, it functioned
+the same as selecting the current viewpoint-returning your POV to the currently
+selected camera. 
+<br></li>
+
+<li>The browser animates between view points and clicks. As I recall, this
+feature was in Beta 1, too. 
+<br></li>
+
+<li>There is also a stay on ground option for walking navigation. Unfortunately,
+this is not yet a true terrain following feature. If you turn the collision
+detection, you will stop when you reach an obstacle (even an inclined plane)
+rather than &quot;walking over it.&quot; Likewise, if you turn collision
+detection off, you will stay on the same level and &quot;wade&quot; through
+any objects you encounter. VRealm's browser DOES have a terrain following
+&quot;stay on ground&quot; option, though. 
+<br></li>
+
+<li>And finally: Netscape did not bomb Win95 on exit after the test session.
+Say goodbye to the illegal operation message. Thanks, Paper! That was getting
+old.</li>
+</ul>
+
+<h4>Speed</h4>
+
+<p>Live3D's speed is adequate, like all the browsers tested in this batch.
+I could have taken the time to find out which was fastest, but I just don't
+care enough to do so. What am I going to find? Browser x was 2 seconds
+faster than browser y? If you can't spare those two seconds, you're too
+busy to be bopping around on the web, especially with todays crawling download
+speeds.</p>
+
+<h4>Accuracy</h4>
+
+<p>It's actually a little unfair to remark on the accuracy of Live3D because
+it is the browser that most authors &quot;write to&quot;, at least to the
+extent that writing to browsers is done. What I mean is that it is the
+most popular browser, so authors test their worlds in Live3D first. If
+things look off at that point, they correct them. Do they proceed to test
+with other browsers to find variations? Some probably do, others likely
+do not. And after rambling on for a minute, the reporter was finally heard
+to remark: Live3D rendered everything we saw accurately.</p>
+
+<h4>LOD</h4>
+
+<p>Based on the tests, Live3D now renders the LOD of inlined worlds correctly.</p>
+
+<h4>Viewpoints</h4>
+
+<p>Live3D includes all of the cameras for the world in a viewpoints list.
+The list is available via popup menu (right click) or with the new views
+control on the control bar. You can toggle forward or backward in the viewpoint
+list. This is actually a nifty feature because if the author constructs
+the list correctly, you can take a little &quot;guided tour&quot; of a
+world by clicking on viewpoints and animating between them.</p>
+
+<p><a href="#Top">Return to the Top</a> 
+<hr></p>
+
+<h3><a name="MSIE"></a>Microsoft Internet Explorer 2.0 with VRML Add In
+2.0 </h3>
+
+<p>Finished my world test with MSIE with VRML Add-In 2.0. Note, this only
+works with Win 95 at this time. MSIE 2.0 is available for mac, but to my
+knowledge, VRML add-in is not. This is not a viable option for folks with
+low end machines running Win 3.x or people not running Windows. </p>
+
+<h4>Notable Features</h4>
+
+<p>It was noted in a previous version of these reports that VRML Add In
+and WorldView look very similar, except that VRML Add In seems to have
+fewer features (with one exception, see below). Well, check the about box
+for this software (from the pop up) and you will see why: it IS a version
+of WorldView with fewer features. Intervista wrote this package and licensed
+it to Microsoft.</p>
+
+<h4>Speed</h4>
+
+<p>VRML Add In 2.0 is about as fast as the other browsers were in the tests
+we ran. Having written this sentence or one like it four times now, I wonder
+if it even makes sense to evaluate the speed of browsers without sophisticated
+measurement tests.</p>
+
+<h4>Accuracy</h4>
+
+<p>VRML Add In is mostly accurate. Like WorldView, it renders worlds a
+little brighter. Some items which appear with light pastel colors in Live3D
+appear gray. Some boxes which appear transparent in Live3D appear gray.</p>
+
+<p>One of the inlines disappeared during viewing. It was one that included
+LOD, I think. I was bopping around and it was there a second ago, then
+bam! it wasn't.</p>
+
+<p>Some of the worlds I loaded came through very strangely: sort of like
+only a thin slice of the world was visible. Hard to explain what this looked
+like. You should try it yourself. Get VRML Add In 2.0 and point it at </p>
+
+<center><p><tt>http://www.co.umist.ac.uk/~georgep/tv/na0.wrl</tt></p></center>
+
+<p>The first world loads oddly, but seems to resolve itself if you select
+the entrance view from the viewpoints list. Link to one of the other worlds
+for the unusual effects.</p>
+
+<h4>LOD</h4>
+
+<p>I'm not certain, but I believe that this browser renders the LOD of
+inlines incorrectly. It behaved itself for one of the tests and then exhibited
+the bug for one of the others (New George Town segments 1 and 2 respectively).
+In earlier tests it exhibited the incorrect behavior and I don't believe
+this version has changed.</p>
+
+<h4>Viewpoints</h4>
+
+<p>This is the one feature that VRML Add-In has that WorldView does not:
+it DOES provide you with a complete list of the viewpoints for the VRML
+file. They are available in the pop up (right click on the screen area).</p>
+
+<p><a href="#Top">Return to the Top</a> 
+<hr></p>
+<h3><a name="VRScout"></a>VRScout Beta 1.22, Chaco</h3>
+
+<p align=center>This review is done by John C. von Rosen, not David George.</p>
+
+<p>This is another browser that doesn't seem to have many bugs, and it sticks
+to the spec pretty well. Navigation was intuitive, and the minor additions
+to navigation were helpful.</p>
+
+<h4>Notable Features</h4>
+<p>Note - I did not experiment with any non VRML 1.0 extensions.</p>
+<ul><li>It kept the descriptions for the WWWAnchors out of the view screen.
+<li>While walking, it draws a line on the screen to show the direction you're
+walking. If you'd rather not see the line, you can turn it off.
+<li>Not a feature, more a lack thereof: no status bar or window while loading. 
+I like to see a little bar graph
+that will at least approximate how much longer I have to wait.
+</ul>
+
+<h4>Speed</h4>
+
+<p>VRScout seemed to render everything at
+a speed similar to other browsers until I loaded a semi-complex world. This
+world (GeorgeTown) was dispayed by most browsers within 30 seconds, but under
+VRScout, I gave up after almost ten minutes of waiting. I tried this over the
+internet and locally, with the same result. This problem with loading 
+complex worlds was also evident on the Pentium/133 with 16 Meg.</p>
+
+<h4>Accuracy</h4>
+
+<p>VRScout followed the VRML 1.0 spec to a 'T' as far as I could tell. The
+only thing that I'd consider to be inaccurate is shading... the cylinders in
+my log cabin seemed to bleed together. However, this isn't really an issue
+with specification compliance, rather personal taste.</p>
+
+<h4>LOD</h4>
+
+<p>VRScout is another browser that implements LOD correctly.</p>
+
+<h4>Viewpoints</h4>
+
+<p>I couldn't figure out how to switch between pre-defined camera views, so I
+assume this is not yet supported by VRScout. However, there is always an option
+to reset the camera view to the entrance view. From what I understand, Chaco
+will include viewpoints in their next release of VRScout.
+
+<p><a href="#Top">Return to the Top</a> 
+<hr></p>
+
+<h3><a name="VRealm"></a>VRealm, IDS </h3>
+
+<p align=center>This review is done by John C. von Rosen, not David George.</p>
+<p>Word got around that VRealm from IDS did not have the same LOD problem
+that was found in other browsers, so I had to try it out. Overall, I was very
+impressed with VRealm, however, it is not a low-end browser.  I tested it on
+a Compaq Deskpro 486/66 with 8 Meg, and it was slower than most browsers. It
+did run, and speed was acceptable, however I'd recommend a minimum of 12 Meg for
+comfortable viewing. 
+
+<h4>Notable Features</h4>
+
+<p>Note - I did not experiment with any non VRML 1.0 extensions.</p>
+<ul><li>I really liked the Navigational Pads.  It helped me keep my bearings straight 
+while viewing. I'd like to see these developed even further, perhaps a
+representation of objects in the movement pad to make a sort of overhead view.
+<li>VRealm keeps a list of predefined and user-defined camera views... if
+you're walking around and you catch a good view, you can save it for later.
+<li>Colors are outstanding. Absolutely perfect. If your system can support
+16 bit color, VRealm will take advantage of it.  The shading is much more
+realistic than other browsers I have used.
+</ul>
+
+<h4>Speed</h4>
+
+<p>VRealm is a little slower than most other browsers, which I suspect has
+something to do with supporting 64K colors and the navigational pads.  Since
+this was tested on a 486/66 with 8 Meg, I'm sure the speed issue would be
+less evident on faster machines.</p>
+
+<h4>Accuracy</h4>
+
+<p>Everything appeared to be completely compliant with VRML 1.0, with one
+minor exception: VRealm seems to miss the description field in the WWWAnchor node. 
+When my cursor passed over an anchor, the name showed up instead of the
+description. One thing that should be noted in VRealm's favor is that the
+shading and colors appear to be much more realistic.</p>
+
+<h4>LOD</h4>
+
+<p>As far as I could tell, VRealm was 100% compliant with the VRML spec in 
+this regard.
+
+<h4>Viewpoints</h4>
+
+<p>VRealm has a feature that some other browsers have: in addition to being
+able to switch between predefined camera views, the user can define their own
+views if they find an interesting one.</p>
+
+<p><a href="#Top">Return to the Top</a> 
+<hr></p>
+
+<h2><a name="Contribute"></a>Please Contribute! </h2>
+
+<p>We want to test as many different platforms and as many different browsers
+as possible to make sure as many people as possible can access Terra Vista.</p>
+
+<p>If you have used other browsers, or if you have a different system than
+those mentioned, please send in a review for everyone. Send a review to
+me at <a href="mailto:jcvonrosen@voyager.net">jcvonrosen@voyager.net</a>
+with BROWSER REVIEW as the subject, and make sure to include the version
+of the browser and basic information about your system (ie 486/66, 8Meg
+RAM, 28.8K Modem, Windows 95).</p>
+
+<p><a href="#Top">Return to the Top</a> </p>
+
+</body>
+</html>
+

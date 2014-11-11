@@ -1,0 +1,102 @@
+#VRML V1.0 ascii
+		DEF portal Separator {
+			WWWAnchor {
+					name "http://www.alaska.net/~pfennig/home.html" 
+					description "HTML: Matthew's Homepage"
+			Material {diffuseColor 1 0 0}
+			MatrixTransform { matrix
+						.7 2 0 0
+						0 .6 0 0
+						0 2 .7 0
+						0 4 0 .5}
+			Cube {}
+			}
+		}
+			DEF ground Separator {
+			Transform {translation 0 -1 0 }
+			Material {diffuseColor 0 1 0}
+			Cube {height 1 width 40 depth 40}
+		}
+		DEF steps Separator {
+			Material {diffuseColor .8 .8 .8 }
+			Transform {translation 0 .75 0 }
+			Cube {height .5 width 18 depth 15}
+			Transform {translation 0 -.5 0 }
+			Cube {height .5 width 20 depth 18}
+		}
+		DEF wall Separator {
+			Material {diffuseColor .7 .7 .7 }
+			Transform {translation 0 4.5 -6.25 }
+			Cube {height 7 width 18  depth 1}
+		}
+		DEF roof Separator {
+			Material {diffuseColor .7 .7 .7}
+			Transform {translation 0 8.5 -.75}
+			Cube {height 2 width 18 depth 13}
+		}
+		DEF columns Separator {
+			Material {diffuseColor 1 1 1 }
+			Transform {translation 7 4 4.25 }
+			DEF column Cylinder {radius 1 height 7 }
+			Transform {translation -3 0 0 }
+			USE column
+			Transform {translation -8 0 0 }
+			USE column
+			Transform {translation -3 0 0 }
+			USE column
+	
+		}
+#		DEF oak Separator {
+#			Material {diffuseColor 1 1 0}
+#			Transform { translation 8 3.5 17 }
+#			Cone { height 7 bottomRadius 1}
+#			Material {diffuseColor 0 1 0}
+#			Transform { translation 0 4.2 0 }
+#			Sphere { radius 4 }
+#		}
+	
+		DEF pines Separator {
+			DEF pine Separator {
+				Transform {translation 15 2 -15}
+				Material {diffuseColor 1 .75 0}
+				Cone {height 4 bottomRadius .75}
+				Material {diffuseColor 0 1 0}
+				Transform {translation 0 1 0
+						rotation 1 0 1 .2}
+				DEF branch Cone {height 3 bottomRadius 2}
+						Transform {translation 0 1.2 0
+						rotation 1 0 1 .2}
+				USE branch
+						Transform {translation 0 1 0
+						rotation 1 0 1 .2}
+				USE branch		
+
+			}
+
+			Transform {	translation -0 0 0
+				rotation 0 1 0 3.14				}
+			USE pine
+			Transform {	translation 0 0 0
+				rotation 0 1 0 -1.57				}
+			USE pine
+			Transform {	translation -0 0 0
+				rotation 0 1 0 3.14				}
+			USE pine
+		}
+		DEF mailbox Separator {
+		 WWWAnchor {name "mailto:pfennig@alaska.net" 
+					      description "Mail: Matthew's Inbox"
+						Material { diffuseColor 0 0 0 }
+						Transform {translation -5 1 15
+								rotation 1 0 0 3.14}
+						Cone { height 2 bottomRadius 2}
+				   }
+		}
+		DEF text Separator {
+		Transform {translation 0 8 6}
+		Material {diffuseColor 1 .1 0 }
+		FontStyle { size 1.5}
+		AsciiText { string "Under Construction!" justification CENTER}
+		}
+	
+	

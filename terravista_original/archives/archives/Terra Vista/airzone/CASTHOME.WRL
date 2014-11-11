@@ -1,0 +1,101 @@
+#VRML V1.0 ascii
+#
+#Jeremy's Test world...
+
+Separator {
+	Separator { 
+		Separator {#castle
+			Material {diffuseColor 1 1 1}
+			Transform {translation 0 4.6 0}
+			Cube {width 5 height 3 depth 3.5}
+		}
+	}
+
+LOD { range [ 120,200 ] center 0 2 0
+	Separator {#L1
+		DEF moathill Separator {
+			Separator {#Moat
+				Material {diffuseColor 0 0 1
+					  shininess 1}
+				Cylinder {radius 9 height .1}
+			}
+		}
+		Separator {#Hill
+			Material {diffuseColor 0 1 0}
+			Transform {translation 0 2.1 0}
+			Cone {parts SIDES height 4 bottomRadius 7}
+		}
+		Separator {#SpinTop
+			Transform {translation 2.75 7.4 1}
+			DEF spintop Separator {Material {diffuseColor 1 0 0}
+				     Cone {height 1 bottomRadius .75}
+			}
+		}
+		Separator {#SpinTop2
+			Transform {translation -2.75 7.4 1}
+			USE spintop
+		}
+		Separator {#Door
+			Material {diffuseColor .75 .5 0}
+			Transform {translation 0 3.9 1.75}
+			WWWAnchor { name "http://www.softronics.com/users/jeremy/homeworl.wrl"
+				    description "Jeremy's HomeWorld!"
+				Cube {width 2 height 2 depth .1}
+			}
+		}
+		DEF flat Separator { 
+				Transform {translation 0 2.6 0}
+				Material {diffuseColor 0 1 0}
+				Cylinder {radius 3.5 height 1}
+			 }
+		DEF spin1 Separator {#Spinarat
+				Transform {translation 2.75 5 1}
+				DEF spinarat Separator {Material {diffuseColor 3 3 3}
+							Cylinder {parts SIDES radius .5 height 4}
+				}
+		}
+		DEF spin2 Separator {Transform {translation -2.75 5 1}
+				     USE spinarat
+		}
+		Separator {#Mailbox
+			Separator {Material {diffuseColor .85 .5 0}
+				   Transform {translation 4.5 1.25 4.5}
+				   Cylinder {parts SIDES radius .25 height 2}
+			}
+			Separator {Material {diffuseColor 0.1 0.1 0.1}
+				   Transform {rotation 1 0 0 1.57
+				   	      translation 4.5 2.65 4.5}
+				   WWWAnchor {name "mailto:jcunning@softronics.com" 
+					      description "Jeremy's Mail Box!"
+					      Cylinder {parts ALL radius .5 height 2}
+				   }
+			}
+			Separator {Material {diffuseColor 1 0 0}
+				   Transform {translation 5.05 3 5}
+				   Cube {width .1 height 1 depth .25}
+			}
+		}
+		Separator {#The'Sun'
+			Material {diffuseColor 1 1 0}
+			Transform {translation -5 10 -5}
+			Sphere {}
+		}
+		Separator {
+			Material {diffuseColor 1 0 1
+				  shininess .4}
+			Transform {translation 0 5.3 1.8}
+			FontStyle {size .6}
+			AsciiText {string "Jeremy's Castle" justification CENTER}
+		}
+	}
+
+	Separator {#L2
+		USE flat
+		USE spin1
+		USE spin2
+		USE moathill
+	}
+	Separator {
+	}
+}
+}

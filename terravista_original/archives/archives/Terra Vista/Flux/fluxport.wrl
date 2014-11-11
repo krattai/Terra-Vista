@@ -1,0 +1,48 @@
+#VRML V1.0 ascii
+# Flux Portal
+# (c) Matthew Muntean 1996
+Separator {
+DEF BackgroundColor Info { string " 0 0 0 " }
+DEF FluxPortal Separator {
+WWWAnchor {
+	name "http://www.hway.net/jcvrosen/vc/flux/flux.wrl"
+	description "Into the Flux!"
+	DEF Sun Separator {
+		Material { diffuseColor 1 1 0}
+		Sphere { radius 5 }
+	}
+	DEF Space Separator {
+		Separator {
+			Transform {rotation 0.1 0 1  0.5}
+			Material { diffuseColor 1 0 1 transparency 0.3}
+			Cylinder { height 0.2 radius 10 }
+		}
+	}
+	DEF Planets Separator {
+
+
+		Separator {
+			Material { diffuseColor 0 1 0 }
+			DEF Diminish Group {
+				Transform { translation 8 0 0 }
+				Separator {
+					Transform { rotation 0 0 1 1 center -8 0 0 }
+					Sphere { radius 2 }
+					Transform { rotation 0 0 1 0.5 center -8 0 0 }
+					Sphere { radius 1.5 }
+					Transform { rotation 0 0 1 0.5 center -8 0 0 }
+					Sphere { radius 1 }
+					Transform { rotation 0 0 1 0.5 center -8 0 0 }
+					Sphere { radius 0.5 }
+				}
+			}
+		}
+		Separator {
+			Material { diffuseColor 0.8 0.2 0 }
+			Transform { rotation 0.5 0 1 3.14 }
+			USE Diminish
+		}
+	}
+}
+}
+}

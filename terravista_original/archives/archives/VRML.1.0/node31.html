@@ -1,0 +1,185 @@
+<!-- header start -->
+<HTML>
+        <HEAD>
+        <LINK REV="made" HREF="mailto:webmaster@www.sgi.com">
+        <TITLE> </TITLE>
+        </HEAD>
+        <BODY ALINK="#00a000" VLINK="#9a6524" LINK="#004060" BGCOLOR="#ffffff"
+ TEXT="#000000">
+<IMG SRC="/Images/CorpID.gif" ALT="SGI Logo" WIDTH="151"
+HEIGHT="43"><BR>
+<!-- header end -->
+<!DOCTYPE HTML PUBLIC "-//W3O//DTD W3 HTML 2.0//EN">
+<!Converted with LaTeX2HTML 95.1 (Fri Jan 20 1995) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds >
+<HEAD>
+<TITLE> Lighting Operation</TITLE>
+</HEAD>
+<BODY ALINK="#00a000" VLINK="#9a6524" LINK="#004060" BGCOLOR="#ffffff"
+ TEXT="#000000">
+<meta name="description" value=" Lighting Operation">
+<meta name="keywords" value="glspec">
+<meta name="resource-type" value="document">
+<meta name="distribution" value="global">
+<P>
+ <BR> <HR><A NAME=tex2html1344 HREF="node32.html"><IMG ALIGN=BOTTOM ALT="next" SRC="icons/next_motif.gif"></A>   <A NAME=tex2html1342 HREF="node30.html"><IMG ALIGN=BOTTOM ALT="up" SRC="icons/up_motif.gif"></A>   <A NAME=tex2html1338 HREF="node30.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="icons/previous_motif.gif"></A>   <A NAME=tex2html1346 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="icons/contents_motif.gif"></A>      <BR>
+<B> Next:</B> <A NAME=tex2html1345 HREF="node32.html">2.12.2 Lighting Parameter Specification</A>
+<B>Up:</B> <A NAME=tex2html1343 HREF="node30.html">2.12.1 Lighting</A>
+<B> Previous:</B> <A NAME=tex2html1339 HREF="node30.html">2.12.1 Lighting</A>
+<BR> <HR> <P>
+<H3><A NAME=SECTION005121100000000000000> Lighting Operation</A></H3>
+<P>
+<A NAME=lightop>&#160;</A>
+A lighting parameter is of one of five types:
+color,
+position,
+direction,
+real,
+or boolean.
+A color parameter consists of four
+floating-point elements,
+one for each of R, G, B, and A, in that order.
+There are no restrictions on the allowable values for these parameters.
+A position parameter
+consists of four floating-point coordinates
+(<b>x</b>, <b>y</b>, <b>z</b>, and <b>w</b>) that specify a position in object coordinates
+(<b>w</b> may, in some cases, be zero,
+indicating a point at infinity in the direction given by <b>x</b>, <b>y</b>, and <b>z</b>).
+A direction parameter
+consists of three floating-point coordinates
+(<b>x</b>, <b>y</b>, and <b>z</b>) that specify a direction in object coordinates.
+A real parameter is one floating-point value.
+The various values and their types are summarized in Table <A HREF="node31.html#ltab1">2.5</A>.
+The result of a lighting computation is undefined if a value for a parameter
+is specified that is outside the range given for that parameter in the
+table.
+<P><A NAME=1510>&#160;</A><A NAME=ltab1>&#160;</A><IMG  ALIGN=BOTTOM ALT="" SRC="img163.gif">
+<BR><STRONG>Table 2.5:</STRONG> Summary of lighting parameters.
+The range of individual color components is <IMG  ALIGN=MIDDLE ALT="" SRC="img162.gif">.<BR>
+<P>
+<P>
+There are <b>n</b> light sources,
+indexed by <IMG  ALIGN=MIDDLE ALT="" SRC="img164.gif">.
+(<b>n</b> is an implementation dependent maximum that must be at least 8.)
+Note that the default values for <IMG  ALIGN=MIDDLE ALT="" SRC="img165.gif"> and <IMG  ALIGN=MIDDLE ALT="" SRC="img166.gif">
+differ for <b>i=0</b> and <b>i&gt;0</b>.
+<P>
+Before specifying the way that lighting computes colors,
+we introduce operators and notation
+that simplify the expressions involved.
+If <IMG  ALIGN=MIDDLE ALT="" SRC="img167.gif"> and <IMG  ALIGN=MIDDLE ALT="" SRC="img168.gif"> are colors without alpha where
+<IMG  ALIGN=MIDDLE ALT="" SRC="img169.gif"> and <IMG  ALIGN=MIDDLE ALT="" SRC="img170.gif">, then define
+<IMG  ALIGN=MIDDLE ALT="" SRC="img171.gif">.
+Addition of colors is accomplished by addition of the components.
+Multiplication of colors by a scalar means multiplying each component by that
+scalar.
+If <IMG  ALIGN=MIDDLE ALT="" SRC="img172.gif"> and <IMG  ALIGN=MIDDLE ALT="" SRC="img173.gif"> are directions,
+then define
+<P><IMG  ALIGN=BOTTOM ALT="" SRC="img174.gif"><P>
+(Directions are taken to have three coordinates.)
+If <IMG  ALIGN=MIDDLE ALT="" SRC="img175.gif"> and <IMG  ALIGN=MIDDLE ALT="" SRC="img176.gif"> are (homogeneous, with four coordinates)
+points then let
+<IMG  ALIGN=MIDDLE ALT="" SRC="img177.gif"> be the unit vector that points from
+<IMG  ALIGN=MIDDLE ALT="" SRC="img178.gif"> to <IMG  ALIGN=MIDDLE ALT="" SRC="img179.gif">.
+Note that if <IMG  ALIGN=MIDDLE ALT="" SRC="img180.gif"> has a zero <b>w</b> coordinate and <IMG  ALIGN=MIDDLE ALT="" SRC="img181.gif"> has
+non-zero <b>w</b> coordinate,
+then <IMG  ALIGN=MIDDLE ALT="" SRC="img182.gif"> is the unit vector
+corresponding to the direction specified by the
+<b>x</b>, <b>y</b>, and <b>z</b> coordinates of <IMG  ALIGN=MIDDLE ALT="" SRC="img183.gif">;
+if <IMG  ALIGN=MIDDLE ALT="" SRC="img184.gif"> has a zero <b>w</b> coordinate and <IMG  ALIGN=MIDDLE ALT="" SRC="img185.gif"> has
+a non-zero <b>w</b> coordinate then <IMG  ALIGN=MIDDLE ALT="" SRC="img186.gif"> is
+the unit vector that is the negative of that corresponding to the
+direction specified by <IMG  ALIGN=MIDDLE ALT="" SRC="img187.gif">.
+If both <IMG  ALIGN=MIDDLE ALT="" SRC="img188.gif"> and <IMG  ALIGN=MIDDLE ALT="" SRC="img189.gif"> have zero <b>w</b> coordinates,
+then <IMG  ALIGN=MIDDLE ALT="" SRC="img190.gif"> is the unit vector obtained
+by normalizing the direction corresponding to
+<IMG  ALIGN=MIDDLE ALT="" SRC="img191.gif">.
+<P>
+If <IMG  ALIGN=BOTTOM ALT="" SRC="img192.gif"> is an arbitrary direction,
+then let <IMG  ALIGN=BOTTOM ALT="" SRC="img193.gif"> be the unit vector in <IMG  ALIGN=BOTTOM ALT="" SRC="img194.gif">'s direction.
+Let <IMG  ALIGN=MIDDLE ALT="" SRC="img195.gif"> be the distance between <IMG  ALIGN=MIDDLE ALT="" SRC="img196.gif">
+and <IMG  ALIGN=MIDDLE ALT="" SRC="img197.gif">.
+Finally,
+let <IMG  ALIGN=BOTTOM ALT="" SRC="img198.gif"> be the point corresponding to the vertex being lit,
+and <IMG  ALIGN=BOTTOM ALT="" SRC="img199.gif"> be the corresponding normal.
+Let <IMG  ALIGN=MIDDLE ALT="" SRC="img200.gif"> be the eyepoint (<IMG  ALIGN=MIDDLE ALT="" SRC="img201.gif"> in eye coordinates).
+<P>
+The color <IMG  ALIGN=BOTTOM ALT="" SRC="img202.gif"> produced by lighting a vertex is given by
+<P>
+<P><IMG  ALIGN=BOTTOM ALT="" SRC="img203.gif"><P>
+where
+<P><A NAME=lteqn4>&#160;</A><A NAME=lteqn3>&#160;</A><A NAME=lteqn2>&#160;</A><A NAME=lteqn1>&#160;</A><IMG  ALIGN=BOTTOM ALT="" SRC="img204.gif"><P>
+All computations are carried out in eye coordinates.
+<P>
+The value of A produced by lighting is the alpha value associated with
+<IMG  ALIGN=MIDDLE ALT="" SRC="img205.gif">.
+Results of lighting are undefined if the <IMG  ALIGN=MIDDLE ALT="" SRC="img206.gif"> coordinate
+(<b>w</b> in eye coordinates) of <IMG  ALIGN=BOTTOM ALT="" SRC="img207.gif"> is zero.
+<P>
+Lighting may operate in <em> two-sided</em> mode (<IMG  ALIGN=MIDDLE ALT="" SRC="img208.gif">),
+in which a <em> front</em>
+color is computed with one set of material parameters
+(the <em> front material</em>)
+and a <em> back</em> color
+is computed with a second set of material parameters (the <em> back material</em>).
+This second computation replaces <IMG  ALIGN=BOTTOM ALT="" SRC="img209.gif"> with <IMG  ALIGN=MIDDLE ALT="" SRC="img210.gif">.
+If <IMG  ALIGN=MIDDLE ALT="" SRC="img211.gif">,
+then the back color and front color are both assigned the
+color computed using the front material with <IMG  ALIGN=BOTTOM ALT="" SRC="img212.gif">.
+<P>
+The selection between back color and front color depends on the primitive
+of which the vertex being lit is a part.
+If the primitive is a point or a line segment,
+the front color is always selected.
+If it is a polygon,
+then the selection is based on the sign of the (clipped or unclipped)
+polygon's signed
+area computed in window coordinates.
+One way to compute this area is
+<P><A NAME=orienteq>&#160;</A><IMG  ALIGN=BOTTOM ALT="" SRC="img213.gif"><P>
+where <IMG  ALIGN=MIDDLE ALT="" SRC="img214.gif"> and <IMG  ALIGN=MIDDLE ALT="" SRC="img215.gif"> are the <b>x</b> and <b>y</b> window coordinates of the <b>i</b>th
+vertex of the <b>n</b>-vertex polygon (vertices are numbered starting at zero for
+purposes of this computation)
+and <IMG  ALIGN=MIDDLE ALT="" SRC="img216.gif"> is <IMG  ALIGN=MIDDLE ALT="" SRC="img217.gif">.
+The interpretation
+of the sign of this value is controlled with
+<P> 
+<tt> void</tt> <b> FrontFace</b><A NAME=1688>&#160;</A>( <tt> enum</tt> <em> dir</em> ) <tt> ;</tt> <BR> 
+  <P>
+Setting <em> dir</em> to
+<tt> CCW</tt> (corresponding to counter-clockwise orientation of
+the projected polygon in window coordinates) indicates that
+if <IMG  ALIGN=MIDDLE ALT="" SRC="img218.gif">,
+then the color of each vertex of the polygon becomes the back color computed
+for that vertex
+while if <b>a &gt; 0</b>,
+then the front color is selected.
+If <em> dir</em> is <tt> CW</tt>,
+then <b>a</b> is replaced by <b>-a</b> in the above
+inequalities.
+This requires one bit of state;
+initially,
+it indicates <tt> CCW</tt>.
+<P>
+<BR> <HR><A NAME=tex2html1344 HREF="node32.html"><IMG ALIGN=BOTTOM ALT="next" SRC="icons/next_motif.gif"></A>   <A NAME=tex2html1342 HREF="node30.html"><IMG ALIGN=BOTTOM ALT="up" SRC="icons/up_motif.gif"></A>   <A NAME=tex2html1338 HREF="node30.html"><IMG ALIGN=BOTTOM ALT="previous" SRC="icons/previous_motif.gif"></A>   <A NAME=tex2html1346 HREF="node1.html"><IMG ALIGN=BOTTOM ALT="contents" SRC="icons/contents_motif.gif"></A>      <BR>
+<B> Next:</B> <A NAME=tex2html1345 HREF="node32.html">2.12.2 Lighting Parameter Specification</A>
+<B>Up:</B> <A NAME=tex2html1343 HREF="node30.html">2.12.1 Lighting</A>
+<B> Previous:</B> <A NAME=tex2html1339 HREF="node30.html">2.12.1 Lighting</A>
+<BR> <HR> <P>
+<BR> <HR>
+<P><ADDRESS>
+<I>Mark Segal <BR>
+Thu Feb  9 02:24:04 PST 1995</I>
+</ADDRESS>
+</BODY>
+<!-- footer start -->
+<HR SIZE="6"><A HREF="/">
+<IMG SRC="/Images/Icon/surf.gif" ALT="[SGI Surf home]"></A>
+<A HREF="/Technology/extreme_tech.html">
+<IMG SRC="/Images/Icon/extreme_icon.gif" ALT="[Dev. Program]"></A><br>
+<FONT SIZE="-1">We welcome feedback and comments at <A HREF="/cgi-bin/form_feedback/webmaster@www.sgi.com">webmaster@www.sgi.com</A>.</FONT><P>
+<FONT SIZE="-2">
+<A HREF="/Misc/sgi_info.html">COPYRIGHT &#169; 1994, 1995 Silicon Graphics, Inc.</A>
+All Rights Reserved.
+<A HREF="/Misc/external.list.html">Trademark Information</A></FONT>
+</BODY>
+</HTML>

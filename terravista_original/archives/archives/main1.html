@@ -1,0 +1,235 @@
+<html><title>Cosmo Software: Galleries Main Page</title><body bgcolor="#140b44" text="#ffffff" link="#ffcc33" alink="#ffe9be" vlink="#ffcc33">
+<table border="0" width="100%" cellspacing="5" cellpadding="5">
+  <tr valign="top"> 
+    <td width="18%" rowspan="3" valign="TOP"><script language=JavaScript><!-- cosmosoftware.com (c)1998 - pioneer@sgi.com
+
+vrl = '<EMBED SRC=vrml/squarepattern23.wrl width=130 height=500></EMBED>';
+mig = '<IMG SRC=/images/clear.gif  width=130 height=500 border=0>';
+n = navigator;
+r = n.appVersion;
+
+function popmess(v){
+ window.open(v,'_smallwin','menubar=0,scrollbars=0,resizable=0,status=0,width=325,height=250');
+}
+
+if(r.indexOf('Mac') != -1){
+ if(n.appName == 'Netscape'){
+  if(n.plugins['Cosmoplayer Plugin'] || n.plugins['Cosmo Player 2.1']){
+   document.write(vrl);
+  }else{
+   document.write(mig);
+   //popmess('/misc/cp2_detect/popup_mac.html');
+  }
+ }else{
+  document.write(mig);
+ }
+}
+else if(r.indexOf('IRIX') != -1){
+ if(n.plugins['libcosmoplayer.so']){
+  document.write(vrl);
+ }else{
+  document.write(mig);
+ }
+}
+else if(r.indexOf('MSIE 3.') != -1){
+ document.write(mig);
+}
+else if((r.indexOf('NT') != -1) || (r.indexOf('95') != -1)){
+ if(n.appName == 'Netscape'){
+  if(n.plugins['Cosmo Player 2.0'] || n.plugins['Cosmo Player 2.1']){
+   document.write(vrl);
+  }else if( n.plugins['WorldView 2.0 for Netscape Navigator']){
+   document.write(vrl);
+   popmess('/misc/cp2_detect/popup_wv.html');
+  }else{
+   document.write(mig);
+   popmess('/misc/cp2_detect/popup_player.html');
+  }
+ }
+ else{
+  document.write('<script language=VBScript>\n'+
+  'On Error Resume Next\n'+
+  'Dim cosmo\n'+
+  'count = 0\n'+
+  'Dim cidName(4)\n'+
+  'cidName(0) = "SGI.CosmoPlayer.1"\n'+
+  'cidName(1) = "SGI.CosmoPlayer.2"\n'+
+  'cidName(2) = "WorldView.WorldView VrmlViewer.1"\n'+
+  'cidName(3) = "WorldView.WorldView VrmlViewer.2"\n'+
+  'Dim cid(4)\n'+
+  'cid(0) = "clsid:06646724-bcf3-11d0-9518-00c04fc2dd79"\n'+//cosmoplayer2.0
+  'cid(1) = cid(0)\n'+//cosmoplayer2.1
+  'cid(2) = "clsid:B0D7D800-4EBF-11D0-9490-00A02494D8A5"\n'+//worldview2.0
+  'cid(3) = cid(2)\n'+//worldview2.1
+  'Do\n'+
+  ' Err.clear\n'+
+  ' Set cosmo = CreateObject(cidName(count))\n'+
+  ' count = count + 1\n'+
+  'Loop While Err > 0 And count < 4\n'+
+  'If Err > 0 Then\n'+
+  ' document.write "'+mig+'"\n'+
+  ' msgbox "This site is enhanced with VRML." & vbCrLF & "'+
+  ' Download Cosmo Player to view 3D content."\n'+
+  'Else\n'+
+  ' document.write "<object id=pix classid=" & cid(count-1) & " height=500'+
+  ' width=130><param name=src value=vrml/squarepattern23.wrl></object>"\n'+
+  ' If count >= 3 Then\n'+
+  '  msgbox "Content on this site is tested in Cosmo Player." & vbCrLF & "'+
+  '  Download Cosmo Player to best view 3D content."\n'+
+  ' End If\n'+
+  'End If\n'+
+  '<\/script>');
+ }
+}
+else{
+ document.write(mig);
+}
+//-->
+</script>
+<noscript>
+<img src="/images/clear.gif" width=130 height=500 border=0><br>
+<center><font size="1">You must enable JavaScript!</font></center>
+</noscript>		 
+	
+	
+	
+	
+
+    </td>
+    <td valign="TOP" height="65"><img src="images/mainhead_galleries.gif" width="255" height="62"></td>
+    <td width="38%" rowspan="3" valign="TOP"> 
+      <table border="0" bgcolor="#424063" cellspacing="0" cellpadding="0" width="75%">
+        <tr> 
+          <td valign="top" align="left"><nobr><img src="/images/gc1.gif" width="8" height="8" alt=""></nobr></td>
+          <td><img src="/images/clear.gif" width="104" height="8" alt=""></td>
+          <td valign="top" align="right"><nobr><img src="/images/gc2.gif" alt="" width="8" height="8"></nobr></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <!--blank cell left of call out image--> 
+          <td> 
+            <p><font face="Arial, Helvetica" size="2" color="#ffcc33"><b>VRML 
+              Shark Game</b></font><a href="chomp/" target="_top"><img src="images/icon_chomp.gif" vspace="4" alt="Let's Eat" align="MIDDLE" width="120" height="44" border="0"></a><br>
+              <font face="Times New Roman, Times, serif" color="#FFCC33" size="2">Devour 
+              your way</font><font face="Times New Roman, Times, serif" color="White" size="2"> 
+              to mastery of the Cosmo Player nav interface.</font><br>                                                                                                                                                                                                                                                              
+            </p>
+            </td>
+          <td>&nbsp;</td>
+          <!--blank cell right of call out image--> </tr>
+        <tr> 
+          <td valign="bottom" align="left"><img src="/images/gc3.gif" width="8" height="8" alt=""></td>
+          <td><img src="/images/clear.gif" width="104" height="8" alt=""></td>
+          <td valign="bottom" align="right"><img src="/images/gc4.gif" width="8" height="8" alt=""></td>
+        </tr>
+      </table><br>
+      <table border="0" bgcolor="#424063" cellspacing="0" cellpadding="0" width="75%">
+        <tr> 
+          <td valign="top" align="left"><nobr><img src="/images/gc1.gif" width="8" height="8" alt=""></nobr></td>
+          <td><img src="/images/clear.gif" width="104" height="8" alt=""></td>
+          <td valign="top" align="right"><nobr><img src="/images/gc2.gif" alt="" width="8" height="8"></nobr></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <!--blank cell left of call out image--> 
+          <td> 
+            <p><font face="Arial, Helvetica" size="2" color="#ffcc33"><b> </b></font><a href="/developer/ad_tech/start_here.html"><img src="images/icon_adbanners.gif" vspace="4" width=120 height=66 border=0 align="MIDDLE" alt="VRML Ad Banners"></a><br>
+              <font face="Times New Roman, Times, serif" color="#FFCC33" size="2">Incredible 
+              animated ad banners,</font><font face="Times New Roman, Times, serif" color="White" size="2"> 
+              all with file sizes under 20K.</font><br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+            </p>
+          </td>
+          <td>&nbsp;</td>
+          <!--blank cell right of call out image--> </tr>
+        <tr> 
+          <td valign="bottom" align="left"><img src="/images/gc3.gif" width="8" height="8" alt=""></td>
+          <td><img src="/images/clear.gif" width="104" height="8" alt=""></td>
+          <td valign="bottom" align="right"><img src="/images/gc4.gif" width="8" height="8" alt=""></td>
+        </tr>
+      </table>
+      <br>
+      <table border="0" bgcolor="#424063" cellspacing="0" cellpadding="0" width="75%">
+        <tr> 
+          <td valign="top" align="left"><nobr><img src="/images/gc1.gif" width="8" height="8" alt=""></nobr></td>
+          <td><img src="/images/clear.gif" width="104" height="8" alt=""></td>
+          <td valign="top" align="right"><nobr><img src="/images/gc2.gif" alt="" width="8" height="8"></nobr></td>
+        </tr>
+        <tr> 
+          <td>&nbsp;</td>
+          <!--blank cell left of call out image--> 
+          <td> 
+            <p><font face="Arial, Helvetica" size="2" color="#ffcc33"><b> 3D Cartoon, 
+              Floops! </b></font><br>
+              <a href="./floops/" target="_top"><img src="images/icon_floops.gif" width="122" height="100" vspace="5" border="0" alt="See Floops"></a><br>
+              <font face="Times New Roman, Times, serif" color="#FFCC33" size="2">All 
+              65 episodes</font><font face="Times New Roman, Times, serif" color="White" size="2"> 
+              are here in their full antic and declamatory glory.</font><br>                                                    
+            </p>
+          </td>
+          <td>&nbsp;</td>
+          <!--blank cell right of call out image--> </tr>
+        <tr> 
+          <td valign="bottom" align="left"><img src="/images/gc3.gif" width="8" height="8" alt=""></td>
+          <td><img src="/images/clear.gif" width="104" height="8" alt=""></td>
+          <td valign="bottom" align="right"><img src="/images/gc4.gif" width="8" height="8" alt=""></td>
+        </tr>
+      </table>
+      <br>    
+    </td>
+  </tr>
+  <tr valign="TOP"> 
+
+    <td valign="TOP" width="41%"> 
+      <table border="0" width="100%" cellspacing="2" cellpadding="2" align="left">
+        <tr> 
+          <td width="14%">&nbsp;</td>
+          <td width="86%"><img src="images/newtransmap.gif" width="218" height="308" border="0" usemap="#newtransmap" align="LEFT"><font size="5" face="Arial, Helvetica, sans-serif" color="#FFCC33"><br>
+            </font></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <!--third row--> 
+</table>
+<!-- #BeginLibraryItem "/Library/3lev-bot.lbi" -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="22%" align="left" valign="top">&nbsp; </td><td valign="top" width="56%"> 
+      <p><font size="1">Copyright 1998, <a href="http://www.platinum.com/" target="_top">PLATINUM 
+        <i>technology, inc</i></a>. All rights reserved. </font><font size="1"><a href="http://www.platinum.com/copyrght.htm">Legal</a>. 
+        </font> </p>
+    </td><td valign="top" width="22%">&nbsp;</td></tr>
+</table><p>&nbsp;</p>
+<!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/liability.lbi" -->
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="22%" align="left" valign="top">&nbsp; </td>
+    <td valign="top" width="56%"> 
+      <p align="LEFT"><font face="Times New Roman, Times, serif" size="-1" color="black">Please 
+        note that information contained in the above referenced sites is likely 
+        to contain copyrighted matter. PLATINUM technolgy, inc. assumes no liability 
+        for infringement of copyright and other proprietary rights on such sites.</font><font size="-1"> 
+        </font><font size="1"> </font> </p>
+    </td>
+    <td valign="top" width="22%">&nbsp;</td>
+  </tr>
+</table>
+<!-- #EndLibraryItem --> 
+<p>&nbsp;</p>
+<map name="byProduct">
+  <area shape="rect" coords="192,0,252,23" href="../products/pagefx/brief.html" alt="pagefx resources">
+  <area shape="rect" coords="131,2,191,24" href="../products/worlds/resources.html" alt="worlds resources">
+  <area shape="rect" coords="56,1,130,24" href="../products/designer/resources.html" alt="designer resources">
+  <area shape="rect" coords="0,0,55,24" alt="code resources" href="/products/code/win_resources.html">    
+</map> <map name="newtransmap">
+  <area shape="rect" coords="1,275,140,306" href="2dgallery_sci.html" target="_self" alt="Science">
+  <area shape="rect" coords="3,235,177,267" href="2dgallery_ref.html" target="_self" alt="Reference">
+  <area shape="rect" coords="2,196,187,228" href="2dgallery_rec.html" target="_self" alt="Recreation">
+  <area shape="rect" coords="3,156,205,190" href="2dgallery_obj.html" target="_self" alt="Object Libraries">
+  <area shape="rect" coords="1,118,199,148" href="2dgallery_ent.html" target="_self" alt="Entertainment">
+  <area shape="rect" coords="0,78,181,110" href="2dgallery_eng.html" target="_self" alt="Engineering">
+  <area shape="rect" coords="0,39,140,71" href="2dgallery_biz.html" target="_self" alt="Business">
+  <area shape="rect" coords="0,0,96,31" href="2dgallery_art.html" target="_self" alt="Art">  
+</map>
+</body>
+</html>

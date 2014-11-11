@@ -1,0 +1,25 @@
+#VRML V1.0 ascii
+
+Separator {
+    DEF Grass Material {
+	diffuseColor	0.21 0.85 0.28
+    }
+    DEF Ground Cube {
+	width	10
+	height	0.05
+	depth	10
+    }
+    Translation {
+	translation	0 0.8 0
+    }
+    DEF Walls Cylinder {
+	height	1.5
+    }
+    Translation {
+	translation	0 1 0
+    }
+    DEF Roof Cone {
+	bottomRadius	1.7
+	height	0.6
+    }
+}

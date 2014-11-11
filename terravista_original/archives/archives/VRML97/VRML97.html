@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+  <META NAME="GENERATOR" CONTENT="Adobe PageMill 2.0 Win">
+  <TITLE>VRML97 Specification, ISO/IEC 14772-1:1997</TITLE>
+</HEAD>
+<BODY>
+
+<H1><CENTER><IMG SRC="Images/vrml97.gif" ALIGN="TOP" SGI_SRC="/usr/people/rikk/VRML/pix/vrml97.gif"
+WIDTH="470" HEIGHT="85" NATURALSIZEFLAG="0" ALT="VRML97 logo"></CENTER></H1>
+
+<H1><CENTER>The Virtual Reality Modeling Language</CENTER></H1>
+
+<P><CENTER><B><FONT SIZE=+1>International Standard ISO/IEC 14772-1:1997</FONT></B></CENTER></P>
+
+<P><CENTER><A HREF="copyright.html"><FONT SIZE=-1>Copyright</FONT></A><FONT
+ SIZE=-1> &COPY; 1997 The VRML Consortium Incorporated.</FONT></CENTER></P>
+
+<P>This document is part 1 of ISO/IEC 14772-1:1997, the<B> </B>Virtual Reality
+Modeling Language (VRML), also referred to as &quot;VRML97&quot;. The full
+title of this part of the International Standard is: <I>Information technology
+-- Computer graphics and image processing -- The Virtual Reality Modeling
+Language (VRML) -- Part 1: Functional specification and UTF-8 encoding</I>.</P>
+
+<P><CENTER><TABLE BORDER="2" CELLPADDING="4" WIDTH="85%" CELLSPACING="2"
+HEIGHT="346">
+<TR ALIGN="CENTER">
+<TH WIDTH="32%" HEIGHT="33"><B><FONT SIZE=+1>Background</FONT></B></TH>
+<TH WIDTH="38%"><B><FONT SIZE=+1>Clauses</FONT></B></TH>
+<TH WIDTH="30%"><B><FONT SIZE=+1>Annexes</FONT></B></TH></TR>
+<TR>
+<TD HEIGHT="39"><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;<A HREF="part1/foreword.html">Foreword</A></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;1&nbsp;<A HREF="part1/scope.html">Scope</A></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;A&nbsp;<A HREF="part1/grammar.html">Grammar</A></TD></TR>
+<TR>
+<TD HEIGHT="39"><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;<A HREF="part1/introduction.html">Introduction</A></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;2&nbsp;<A HREF="part1/references.html">Normative&nbsp;references</A></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;B&nbsp;<A HREF="part1/java.html">Java&nbsp;platform</A></TD></TR>
+<TR>
+<TD HEIGHT="39"></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0"> 3&nbsp;<A HREF="part1/glossary.html">Definitions</A></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;C&nbsp;<A HREF="part1/javascript.html">ECMAScript</A></TD></TR>
+<TR>
+<TD HEIGHT="39"></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;4&nbsp;<A HREF="part1/concepts.html">Concepts</A></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;D&nbsp;<A HREF="part1/examples.html">Examples</A></TD></TR>
+<TR>
+<TD HEIGHT="39"></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;5&nbsp;<A HREF="part1/fieldsRef.html">Field&nbsp;and&nbsp;event&nbsp;reference</A></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;E&nbsp;<A HREF="part1/bibliography.html">Bibliography</A></TD></TR>
+<TR>
+<TD HEIGHT="39"></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;6&nbsp;<A HREF="part1/nodesRef.html">Node reference</A></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;F&nbsp;<A HREF="part1/extensions.html">Extensions</A></TD></TR>
+<TR>
+<TD HEIGHT="39"></TD>
+<TD><IMG SRC="Images/cube.gif" ALIGN="TEXTTOP" WIDTH="20" HEIGHT="19" SGI_SRC="/usr/people/rikk/VRML/pix/cube.gif"
+NATURALSIZEFLAG="0">&nbsp;7&nbsp;<A HREF="part1/conformance.html">Conformance</A></TD>
+<TD></TD></TR>
+</TABLE>
+</CENTER></P>
+
+<P>The <B><I>Foreword</I></B> provides background on the standards process
+for VRML. The <B><I>Introduction</I></B> describes the purpose, design criteria,
+and characteristics of VRML. The following clauses define part 1 of ISO/IEC
+14772:</P>
+
+<P><!--NOEDIT--><OL START="1">
+  <LI><B><I>Scope</I></B> defines the problem area that VRML addresses.
+  <LI><B><I>Normative references</I></B> lists the normative standards referenced in
+  this part of ISO/IEC 14772.
+  <LI><B><I>Definitions</I></B> contains the glossary of terminology used
+  in this part of ISO/IEC 14772.
+  <LI><B><I>Concepts</I></B> describes various fundamentals of VRML.
+  <LI><B><I>Field and event reference</I></B> specifies the datatypes
+  used by nodes.
+  <LI><B><I>Node reference</I></B> defines the syntax and semantics of VRML nodes.
+  <LI><B><I>Conformance and minimum support requirements</I></B> describes the
+  conformance requirements for VRML implementations.
+</OL><!--/NOEDIT--></P>
+
+<P>There are several annexes included in the specification:</P>
+
+<P><!--NOEDIT--><OL TYPE="A">
+  <LI><B><I>Grammar definition</I></B> presents the grammar for the VRML file format.
+  <LI><B><I>Java platform scripting reference</I></B> describes how VRML scripting integrates with
+  the Java platform.
+  <LI><B><I>ECMAScript scripting reference</I></B> describes how VRML scripting integrates
+  with ECMAScript.
+  <LI><B><I>Examples</I></B> includes a variety of VRML example files.
+  <LI><B><I>Bibliography</I></B> lists the informative, non-standard topics
+  referenced in this part of ISO/IEC 14772.
+  <LI><B><I>Recommendations for non-normative extensions</I></B> lists
+  informative recommendations for extensions to VRML.
+</OL><!--/NOEDIT--></P>
+
+<P><IMG SRC="Images/vrmlbar.gif" WIDTH="470" HEIGHT="25" SGI_SRC="/usr/people/rikk/VRML/pix/vrmlbar.gif"
+SGI_WIDTH_UNFIXED SGI_HEIGHT_UNFIXED NATURALSIZEFLAG="0" ALIGN="BOTTOM"
+ALT="--- VRML separator bar ---"><BR>
+<FONT SIZE=-1><A HREF="mailto:rikk@wasabisoft.com%2Cgavin@wasabisoft.com%2Cchris@marrin.com">Questions
+or comments.</A></FONT><BR>
+<FONT SIZE=-1><A HREF="copyright.html">Copyright</A> &COPY; 1997 The VRML
+Consortium Incorporated.<BR>
+<TT>http://www.vrml.org/Specifications/VRML97/index.html</TT></FONT>
+</BODY>
+</HTML>

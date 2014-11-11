@@ -1,0 +1,34 @@
+#VRML V1.0 ascii
+Separator { #Waterfall
+	Separator { #islands...
+		DEF waterisland Separator {
+			Material {diffuseColor 0.8 0.6 0}
+			Transform {rotation 1 0 0 3.14}
+			Cone {bottomRadius 50 height 30}
+			Material {diffuseColor 0.2 0.2 1}
+			Transform {translation 0 -15 0}
+			Cylinder {parts BOTTOM radius 50 height 0.1}
+		}
+		Transform {translation -25 -75 -50}
+		USE waterisland		
+		Transform {translation -50 -75 -25}
+		USE waterisland
+	}
+	LOD {range [ 850 ] center 0 -75 0
+		Separator { #Water
+			Material {diffuseColor 0 0 1
+				transparency .5}
+			Transform {translation -25 -25 -41
+				rotation 0 1 0 0.45}
+			DEF water Cube {height 80 width 22 depth 1}
+			Transform {translation -28 -75 -43
+				rotation 0 1 0 0.65}
+			USE water
+			Transform {translation -25 -95 -46
+				rotation 0 1 0 0.65}
+			Cube {width 22 depth 1 height 120}
+		}
+		Separator {
+		}
+	}
+}

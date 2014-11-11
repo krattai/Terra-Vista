@@ -1,0 +1,15 @@
+#VRML V1.0 ascii
+#H2O Molecule and Plaque...
+
+Separator {
+	Separator { #Molecule Spheres...
+		Transform {translation 0 20 0}
+		Material {diffuseColor 1 0 0}
+		Sphere {radius 10}
+		Material {diffuseColor 0 0 1}
+		Transform {translation 10 10 0}
+		Sphere {radius 5}
+		Transform {translation -20 0 0}
+		Sphere {radius 5}
+	}
+}

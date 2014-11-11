@@ -1,0 +1,68 @@
+#VRML V1.0 ascii
+#The very Center point for the very first segment in George Town
+#(c) George Philippakos 1996
+
+DEF centerPoint Separator {
+	DEF details LOD { range [ 50 ]
+		DEF CloseUp Separator {
+			Transform { translation 0 0.025 0 }
+			Separator {
+				Transform { translation 0 6 0 }
+				Material { diffuseColor 2 2 2 }
+				Cylinder { parts ALL radius 0.02 height 1 } }
+			Separator {
+				Transform { translation 0 4.1 0 }
+				Material { diffuseColor 1 1 1 }
+				Sphere { radius 1.4 } }
+			Separator {
+				Transform { translation 0 3.7 0 }
+				Material { diffuseColor 1 0.9 0.55 }
+				Cube { width 3 height 0.8 depth 3 } }
+			Separator {
+				Transform { translation 0 3 0 }
+				Material { diffuseColor 1 0.9 0.55 }
+				Cylinder { parts ALL radius 4 height 0.8 } }
+			Separator {
+				Material { diffuseColor 1 0.9 0.55 }
+				DEF myPosts Separator {
+					Transform { rotation 0 1 0 0.785 }
+					Transform { translation 3.7 1.25 0 }
+					Cylinder { parts SIDES radius 0.2 height 2.7 }
+					Transform { translation -7.4 0 0 }
+					Cylinder { parts SIDES radius 0.2 height 2.7 }
+					Transform { translation 3.7 0 3.7 }
+					Cylinder { parts SIDES radius 0.2 height 2.7 }
+					Transform { translation 0 0 -7.4 }
+					Cylinder { parts SIDES radius 0.2 height 2.7 } }
+				}
+			DEF moredetail LOD { range [ 30 ]
+				# close up details
+				Separator {
+					Material { diffuseColor 0 0 0 }
+					Transform { translation 0 2.8 4.01 }
+					DEF myName Separator {
+						FontStyle { size 0.4 style BOLD }
+						AsciiText { string "New George Town" justification CENTER }
+					}
+					Transform { translation 0 0 -8.02 rotation 0 1 0 3.142 }
+					USE myName
+				}
+				
+				#here are the faraway detials
+				Separator { }
+			# end of more details
+			}
+		# end of close up details
+		} 
+
+		DEF FarAway Separator {
+		# lowest level must be a simple Cube
+			Transform { translation 0 1.675 0 }
+			Material { diffuseColor 1 0.9 0.55 }
+			Cube { width 6 height 3.3 depth 6 }
+		}
+
+	# details
+	}
+# end
+}

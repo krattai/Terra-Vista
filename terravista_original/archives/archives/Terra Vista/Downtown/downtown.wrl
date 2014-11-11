@@ -1,0 +1,116 @@
+#VRML V1.0 ascii
+
+DEF BackgroundColor Info { string " 0 0 1 " }
+
+Separator {
+   PointLight {
+      on TRUE
+      intensity 1
+      color 1 1 1
+      location 40 60 -30
+   }
+   #Cameras
+   DEF Cameras Switch {
+      whichChild 0
+      DEF Entrance PerspectiveCamera {position 0 1 -10 orientation 0 1 0 3.14}
+      DEF Library PerspectiveCamera {position 30 1 0 orientation 0 1 0 3.14}
+      DEF PostOffice PerspectiveCamera {position -0.25 1 30 orientation 0 1 0 -1.57}
+      DEF GovtBldg PerspectiveCamera {position 0.25 1 30 orientation 0 1 0 1.57}
+      DEF MeetingPlace PerspectiveCamera {position -20 1 5 orientation 0 1 0 -1.57}
+   }
+
+   Translation {translation 40 60 300}
+   WWWInline {name "http://www.hway.net/jcvrosen/vc/flux/fluxport.wrl"}
+   Translation {translation -40 -60 -300}
+   Material {diffuseColor 0 1 0}
+   Cylinder {radius 50 height 1}
+   Translation {translation 0 0.5 0}
+   Material {diffuseColor 0.5 0.5 0.5}
+   Cylinder {radius 3 height 0.125}
+   Cube {width 100 height 0.125 depth 1}
+   Cube {width 1 height 0.125 depth 100}
+   Rotation {rotation 0.0 1.0 0.0 0.785}
+   Cube {width 100 height 0.125 depth 1}
+   Cube {width 1 height 0.125 depth 100}
+   Rotation {rotation 0.0 1.0 0.0 -0.785}
+   DEF Lib_Bldg Separator {
+      Translation {translation 30 1.5 12}
+      WWWInline {name "librbldg.wrl"}
+   }
+   DEF POffice_Bldg Separator {
+      Translation {translation 12 1.5 30}
+      WWWInline {name "postbldg.wrl"}
+   }
+   DEF Govt_Bldg Separator {
+      Translation {translation -12 5.0 30}
+      WWWInline {name "govtbldg.wrl"}
+   }
+   DEF Meeting Separator {
+      Translation {translation -10 1.5 4.5}
+      WWWInline {name "gazebo.wrl"}
+   }
+   DEF GeorgeLink Separator {
+      Translation {translation 0 1 50}
+      WWWAnchor {
+         name "http://www.escape.ca/~krattai/GeorgeTown/entrance.wrl"
+         description "George Towne"
+         Texture2 {filename "nexzonec.gif"}
+         Cube{}
+      }
+   }
+   DEF MashLink Separator {
+      Translation {translation -35 1 35}
+      WWWAnchor {
+         name "http://www.interport.net/~mash/7islands.wrl"
+         description "Seven Islands"
+         Texture2 {filename "nexzonec.gif"}
+         Cube{}
+      }
+   }
+   DEF JeremyLink Separator {
+      Translation {translation -50 1 0}
+      WWWAnchor {
+         name "http://www.softronics.com/jeremy/Zone/main.wrl"
+         description "Jeremy's New World"
+         Texture2 {filename "nexzonec.gif"}
+         Cube{}
+      }
+   }
+   DEF LenLink Separator {
+      Translation {translation 35 1 35}
+      WWWAnchor {
+         name "http://fly.hiwaay.net/~cbullard/talosf01.htm"
+         description "Talosian Spacestation"
+         Texture2 {filename "nexzonec.gif"}
+         Cube{}
+      }
+   }
+   DEF BesjonLink Separator {
+      Translation {translation 50 1 0}
+      WWWAnchor {
+   		name "http://webking.com/cgibin/outland/matrix.cgi SG=T,BB_W=30,PN=Origin,BB_D=30"
+   		description "Outland"
+         Texture2 {filename "nexzonec.gif"}
+         Cube{}
+      }
+   }
+   DEF AlexLink Separator {
+      Translation {translation -35 1 -35}
+      WWWAnchor {
+   		name "http://www.wessex.co.uk/vrml/"
+   		description "The Wessex Internet Zone"
+         Texture2 {filename "nexzonec.gif"}
+         Cube{}
+      }
+   }
+   DEF KevinLink Separator {
+      Translation {translation 35 1 35}
+      WWWAnchor {
+   		name "http://www.escape.ca/~krattai/inuvea.wrl"
+   		description "Uvea"
+         Texture2 {filename "nexzonec.gif"}
+         Cube{}
+      }
+   }
+}
+

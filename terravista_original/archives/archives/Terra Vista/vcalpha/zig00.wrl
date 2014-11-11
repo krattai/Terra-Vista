@@ -1,0 +1,33 @@
+#VRML V1.0 ascii
+#Ziggurat outside
+
+DEF Ziggurat Separator {
+	#DEF Details LOD { range [ 80 ] center 0 5 0
+		DEF CloseUp Separator {
+		# Here you put what the building will look like if the user is <40 within the range of the building
+		# Simple abode
+			Separator {
+			# Base
+				Material { diffuseColor 0.5 0.2 0.4 shininess 0.9 }
+				Transform {translation 0 42.5 0}
+				Cube {width 400 height 85 depth 400}
+			}
+			#DEF moreDetail LOD { range [ 40 ]
+			# ok, now we add more detail as the user get closer
+				DEF CloseUp Separator {
+				}
+				Separator {#Door
+					Material {diffuseColor 0.4 0.4 0.75}
+					Transform {translation 0 3.9 3.0}
+					WWWAnchor { name "vrmlwork.htm"
+						    description "Virtual Employmnet Office"
+					Cube {width 2 height 2 depth .1}
+				}
+			}
+		}
+
+		#End of close up details
+	#End LOD
+	#}
+#End Root separator
+}

@@ -1,0 +1,37 @@
+#VRML V1.0 ascii
+#
+# Entrance
+
+DEF Sun Separator {
+    Material { emissiveColor 1 1 0 }
+    DEF SUNLIGHT PointLight { intensity 1 color 1 1 0.9 }
+    Sphere { radius 10 }
+}
+
+DEF Earth Separator {
+    Transform {
+        translation 0 20 20
+    }
+    Material {
+        diffuseColor 0 0 1
+        specularColor 0.9 0.9 0.9
+        shininess 0.9
+    }
+    Sphere {
+        radius 2
+    }
+
+
+    DEF Moon Separator {
+        Transform {
+            translation 4 4 0
+        }
+        Material {
+            diffuseColor 0.7 0.7 0.7
+            shininess 0.3
+        }
+        Sphere {
+            radius 1
+        }
+    }
+}

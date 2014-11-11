@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>Terra Vista Mail test</TITLE>
+</HEAD>
+<BODY BGCOLOR="#000fff" TEXT="#ffff00" LINK="#00ffff" VLINK="#000000" ALINK="#000000">
+Test the mail button for subscribing to list serve:
+<p>
+<FORM NAME=hey_you method=POST ENCTYPE='multipart/form-data' ACTION='mailto:majordomo@ianpc.ils.nwu.edu?Subject=subscribe'>
+<INPUT type=hidden name=sub0 value='subscribe village'><p>
+<INPUT TYPE=submit value='Subscribe to village'><P>
+</FORM>
+<FORM NAME=hey_you method=POST ENCTYPE='multipart/form-data' ACTION='mailto:majordomo@ianpc.ils.nwu.edu?Subject=subscribe'>
+<INPUT type=hidden name=sub1 value='subscribe village-digest'><p>
+<INPUT TYPE=submit value='Subscribe to village-digest'><P>
+</FORM>
+<FORM NAME=hey_you method=POST ENCTYPE='multipart/form-data' ACTION='mailto:majordomo@ianpc.ils.nwu.edu?Subject=unsubscribe'>
+<INPUT type=hidden name=sub2 value='usubscribe village'><p>
+<INPUT TYPE=submit value='UnSubscribe from village'><P>
+</FORM>
+<FORM NAME=hey_you method=POST ENCTYPE='multipart/form-data' ACTION='mailto:majordomo@ianpc.ils.nwu.edu?Subject=unsubscribe'>
+<INPUT type=hidden name=sub3 value='usubscribe village-digest'><p>
+<INPUT TYPE=submit value='UnSubscribe from village-digest'><P>
+</FORM>
+<FORM NAME=hey_you method=POST ENCTYPE='multipart/form-data' ACTION='mailto:majordomo@ianpc.ils.nwu.edu?Subject=help'>
+<INPUT type=hidden name=sub4 value='help'><p>
+<INPUT TYPE=submit value='Get village help'><P>
+</FORM>
+<p>
+<xmp>
+For list requests, send mail to:
+majordomo@ianpc.ils.nwu.edu
+
+and in the body, put (stuff in brackets optional):
+[un]unsubscribe village[-digest]
+</xmp>
+<p>
+</BODY>
+</HTML>

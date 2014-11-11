@@ -1,0 +1,29 @@
+#VRML V1.0 ascii
+#A bench
+
+DEF bench Separator {
+  Separator {
+	#slats
+	Material { diffuseColor 0.5 0.25 0 }
+	Transform { rotation 1 0 0 -0.35 }
+	Cube { width 2 height 0.06 depth 0.03 }
+	Transform { translation 0 -0.09 0 }
+	Cube { width 2 height 0.06 depth 0.03 }
+	Transform { translation 0 -0.09 0 }
+	Cube { width 2 height 0.06 depth 0.03 }
+	Transform { translation 0 -0.2 0.12 rotation 1 0 0 1.76 }
+	Cube { width 2 height 0.06 depth 0.03 }
+	Transform { translation 0 0.1 0 }
+	Cube { width 2 height 0.06 depth 0.03 }
+	Transform { translation 0 0.1 0 }
+	Cube { width 2 height 0.06 depth 0.03 }
+ }
+ Separator {
+	#posts
+	Material { diffuseColor 0.5 0.5 0.25 }
+	Transform { translation 0.8 -0.35 0.07 rotation 1 0 0 -0.35 }
+	Cube { width 0.05 height 0.7 depth 0.1 }
+	Transform { translation -1.6 0 0 }
+	Cube { width 0.05 height 0.7 depth 0.1 }
+ }
+}

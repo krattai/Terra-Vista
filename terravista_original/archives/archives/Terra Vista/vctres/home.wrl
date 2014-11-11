@@ -1,0 +1,84 @@
+#VRML V1.0 ascii
+# George Morrison
+# u05gdm@abdn.ac.uk
+# http://www.abdn.ac.uk/~u05gdm
+Separator {
+ShapeHints { vertexOrdering COUNTERCLOCKWISE shapeType SOLID creaseAngle 5 }
+Transform { rotation 0 1 0 3.14 }
+PointLight { intensity 0.5 location 10 1 10 }
+PointLight { intensity 0.5 location 10 1 -10 }
+PointLight { intensity 0.5 location -10 1 10 }
+PointLight { intensity 0.5 location -10 1 -10 }
+Separator {
+# floor
+Material { diffuseColor 0.1 1.0 0.1 }
+Cube { height 0.1 width 20.0 depth 20.0 }
+}
+WWWAnchor {
+# brain
+name "http://www.abdn.ac.uk/~u05gdm" description "HTML: George's Brain"
+Material { diffuseColor 0.6 0.125 0.94 }
+Separator {
+Coordinate3 { point [
+-0.82 2.415 4.176, -0.82 3.149 -3.172, -0.82 5.363 -4.318,
+-0.82 5.363 4.227, -1.257 1.474 2.353, -1.257 2.944 -1.259,
+-1.257 6.425 -2.478, -1.257 6.425 2.551, -1.385 1.553 -0.2133,
+-1.385 6.893 0.2133, -2.074 3.912 -4.302, -2.074 3.912 4.35,
+-2.993 3.995 -2.351, -2.993 3.995 2.73, -3.2 4.22 0.64,
+0 3.9 -5, 0 3.9 5, 0.82 2.415 4.176, 0.82 3.149 -3.172,
+0.82 5.363 -4.318, 0.82 5.363 4.227, 1.257 1.474 2.353,
+1.257 2.944 -1.259, 1.257 6.425 -2.478, 1.257 6.425 2.551,
+1.385 1.553 -0.2133, 1.385 6.893 0.2133, 2.074 3.912 -4.302,
+2.074 3.912 4.35, 2.993 3.995 -2.351, 2.993 3.995 2.73,
+3.2 4.22 0.64
+] }
+IndexedFaceSet { coordIndex [
+16, 17, 28, -1, 30, 28, 17, -1, 30, 17, 21, -1, 31, 30, 21, -1,
+31, 21, 25, -1, 16, 0, 17, -1, 17, 4, 21, -1, 17, 0, 4, -1,
+21, 8, 25, -1, 21, 4, 8, -1, 16, 11, 0, -1, 0, 13, 4, -1,
+0, 11, 13, -1, 4, 14, 8, -1, 4, 13, 14, -1, 16, 28, 20, -1,
+30, 20, 28, -1, 30, 24, 20, -1, 31, 24, 30, -1, 31, 26, 24, -1,
+16, 20, 3, -1, 20, 24, 7, -1, 20, 7, 3, -1, 24, 26, 9, -1,
+24, 9, 7, -1, 16, 3, 11, -1, 3, 7, 13, -1, 3, 13, 11, -1,
+7, 9, 14, -1, 7, 14, 13, -1, 15, 27, 18, -1, 29, 18, 27, -1,
+29, 22, 18, -1, 31, 22, 29, -1, 31, 25, 22, -1, 15, 18, 1, -1,
+18, 22, 5, -1, 18, 5, 1, -1, 22, 25, 8, -1, 22, 8, 5, -1,
+15, 1, 10, -1, 1, 5, 12, -1, 1, 12, 10, -1, 5, 8, 14, -1,
+5, 14, 12, -1, 15, 19, 27, -1, 29, 27, 19, -1, 29, 19, 23, -1,
+31, 29, 23, -1, 31, 23, 26, -1, 15, 2, 19, -1, 19, 6, 23, -1,
+19, 2, 6, -1, 23, 9, 26, -1, 23, 6, 9, -1, 15, 10, 2, -1,
+2, 12, 6, -1, 2, 10, 12, -1, 6, 14, 9, -1, 6, 12, 14, -1
+] } } }
+WWWAnchor {
+# pillar box
+name "mailto:u05gdm@abdn.ac.uk" description "MAIL: Click here to mail me"
+Separator {
+Material { diffuseColor 1 0 0 }
+Separator {
+# main cylinder
+Transform { translation 7 0.75 -7 }
+Cylinder { radius 0.5 height 1.5 }
+}
+Separator {
+# top cylinder
+Transform { translation 7 1.6 -7 }
+Cylinder { radius 0.55 height 0.1 }
+}
+Separator {
+# curved top
+Transform { translation 7 1.6 -7 scaleFactor 1 0.2 1 }
+Sphere { radius 0.55 }
+}
+Separator {
+# base cylinder
+Material { diffuseColor 0 0 0 }
+Transform { translation 7 0.175 -7 }
+Cylinder { radius 0.55 height 0.35 }
+}
+Separator {
+# hole
+Material { diffuseColor 0 0 0 }
+Transform { translation 7 1.2 -7.4 }
+Cube { width 0.3 height 0.1 depth 0.25 }
+} } } }
+

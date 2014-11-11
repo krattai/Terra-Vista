@@ -1,0 +1,113 @@
+#VRML V2.0 utf8
+#
+# Innards
+
+# land
+Shape {
+ appearance Appearance {
+  material Material { diffuseColor 0 0.6 0 ambientIntensity 0.1 }
+ }
+ geometry IndexedFaceSet {
+  coord Coordinate { point [ -100 0 -100, 100 0 -100, 100 0 100, -100 0 100. ] }
+  coordIndex [ 2, 1, 0, -1, 3, 2, 0, -1, ]
+ }
+}
+
+# To Segment 00
+Transform {
+ translation -20 1.5 70
+ children [
+  Anchor {
+   children [
+    Shape {
+     appearance Appearance {
+      material Material { diffuseColor 0.4 0.4 0.75 }
+      texture ImageTexture {
+       url "nextsegm.gif"
+      }
+     }
+     geometry Box { size 2 2 0.1 }
+    }
+    Transform {
+     translation -1.0 1.0 0.0
+     children [
+      Shape {
+       appearance Appearance {
+        material Material { diffuseColor 0.9 0.9 0.0 ambientIntensity 0.4 }
+       }
+       geometry Text {
+        string [ "Next Segment 00" ]
+       }
+      }
+     ]
+    }
+   ]
+   description "Next Segment 00"
+   url "resenter.wrl"
+  }
+ ]
+}
+
+# trees
+Transform {
+ translation -16 -5 80
+ children [
+  Inline { url "pinetree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}
+Transform {
+ translation -12 0 -8
+ children [
+  Inline { url "tree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}
+Transform {
+ translation 0 0 -110
+ children [
+  Inline { url "tree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}
+Transform {
+ translation 14 -5 -10
+ children [
+  Inline { url "pinetree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}
+Transform {
+ translation 60 0 50
+ children [
+  Inline { url "tree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}
+Transform {
+ translation 0 -5 -60
+ children [
+  Inline { url "pinetree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}
+
+# more trees
+Transform {
+ translation -10 0 -80
+ children [
+  Inline { url "tree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}
+Transform {
+ translation 40 0 20
+ children [
+  Inline { url "home.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}
+
+# land plots
+# All plots of land defined here can be allocated for a user to build upon
+
+# plot 6
+# To Matthew Muntean's site
+Transform {
+ translation -60 1.5 -50
+ children [
+  Inline { url "house.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 }
+ ]
+}

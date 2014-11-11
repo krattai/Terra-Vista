@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+<TITLE>Where the heck is Beausejour? (The main drag)</TITLE>
+<script language="JavaScript">
+<!-- Hide the script from old browsers --
+var timerID = null;
+var timerRunning = false;
+var id,pause=0,position=0;
+
+function ticker() {
+        var i,k,msg="     ";
+msg+="Welcome to Beausejour online!!!";
+msg+="";
+msg+="  Your hometown on the Web...  ";
+msg+="";
+msg+="  Check out the Billboard for monthly event listings...           ";
+        k=(50/msg.length)+1;
+        for(i=0;i<=k;i++) msg+=" "+msg;
+        document.form2.ticker.value=msg.substring(position,position+50);
+        if(position++==150) position=0;
+        id=setTimeout("ticker()",1000/10); }
+
+function action() {
+        if(!pause) {
+                clearTimeout(id);
+                pause=1; }
+
+        else {
+                ticker();
+                pause=0; } }
+// --End Hiding Here -->
+</script>
+</HEAD>
+<BODY BGCOLOR="#000fff" TEXT="#ffff00" LINK="#00ffff" VLINK="#000000" ALINK="#000000"
+ onLoad="ticker()">
+<CENTER>
+<a href="bj.wrl">
+<IMG SRC="../images/bjvrml.jpg" ALIGN=RIGHT ALT="Map" border=1></a>
+</CENTER><BR>
+<h4><i>NB:  Some weirdness until upgrade complete</i></h4>
+<h2>Towards a New Look and Feel</h2>
+<STRONG>Beausejour</STRONG> is a beautiful agricultural community
+ situated a mere 1 hour from Winnipeg, east on highway 44.  It is a
+ gateway to the Whiteshell Provincial Park and the Canadian Shield.
+  A very social town, it has activities for both young and old alike,
+ and recreational possibilities spaning all four seasons.
+<P>
+<CENTER>
+<form name="form2">
+<input type="text" name="ticker" size="50">
+</FORM>
+</CENTER>
+<A HREF="public/classif0.htm">[Classifieds]</A>
+<A HREF="residents/respages.htm">[Residents]</A>
+<a href="commercial/index.htm">[Businesses]</a>
+<A HREF="public/bjbill.htm">[Billboard]</A><br>
+<HR>
+Other Stuff:<br>
+<FORM NAME=hey_you method=POST ENCTYPE='multipart/form-data' ACTION='mailto:krattai@escape.ca?Subject=subscribe bjgen'>
+<INPUT type=hidden name=sub value='subscribe BJ'><p>
+A distinct Beausejour mailing list: <INPUT TYPE=submit value='Subscribe to BJ list'> (please click once only)<br>
+This will subscribe you to a newsletter from <i>home</i> once or twice per month.</FORM>
+<p>
+Click the following icon
+<a href="http://www.communityware.com/asp/community.asp?id=2865&sid=11395">
+<img src="http://www.communityware.com/images/lp_enter.gif"></a>
+ to register and access a free service for which includes conferencing,
+ chat, messaging, whiteboard, and other services relating to Beausejour
+ and surrounding areas.<br>
+<p>
+<A HREF="public/down.htm"><IMG SRC="../images/disk00.jpg" Align=middle ALT="3-1/2in FD" border=0>
+Downloadable</A> internet access software.
+<br>
+The local paper:<br>
+<A HREF="http://www.mts.net/~review"><IMG SRC="http://www.mts.net/~review/revban.gif" width=275 height=52></A>
+<br>
+eMail from the <A HREF="residents/edgemail.htm">edge!</A>
+<br>
+Hang out at the 
+<A HREF="public/chipstan.htm">ChipStand</A>.
+<br>
+The Beausejour Glass Works <A HREF="public/glaswrks.htm">history</A>.
+<br>
+Education available: <A HREF="http://www.mbnet.mb.ca/~edwschr">English</A>
+ or <A HREF="http://www.mbnet.mb.ca/~avachon">French Immersion</A>.<br>
+<a href="http://eastman.freenet.mb.ca/gov/beau/">Beausejour Town Information</a>
+ an excellent Town information resource.<br>
+<a href="http://eastman.freenet.mb.ca/gov/brokenhead/">R. M. of Brokenhead Information</a>
+ R. M. information resource.
+<p>
+Visit the
+ <a href="commun/surrnd.htm">surrounding area</a>.
+<p>
+Back to <A HREF="../index.htm">[Root]</A>
+<a href="http://www.granite.mb.ca">[Granite]</a>
+<!-- Begin Uvea I.S. Link -->
+<A HREF="http://www.escape.ca/~uvea">
+<IMG SRC="http://www.escape.ca/~uvea/images/uvea10.gif" 
+ALT="Uvea Logo" 
+WIDTH=100 HEIGHT=50 border=0 ALIGN=middle></A>
+<!-- End Uvea I.S. Link -->
+<hr>
+<CENTER>
+<a href="http://searchhound.com/cgi-bin/sh_index_page.cgi?sH1083">
+<img src="http://www.searchhound.com/images/ad2shan.gif" alt="Finally  Someone has made some sense of it all." border="0"></a>
+</CENTER>
+<!-- start Mail2friend Code -->
+<CENTER>
+<STRONG><A HREF="http://mail2friend.cjb.net"><SUP>Like this Site ? </SUP></A>
+<BR><A HREF="http://mail2friend.cjb.net"><IMG ALT="Mail2Freind : 1 Click 2 recommend !
+" SRC="http://chennaicine.hypermart.net/m1.gif"></A>
+<BR><A HREF="http://mail2friend.cjb.net"><SUP>Please email a friend ! </SUP></A>
+</STRONG>
+</CENTER>
+<!--end Mail2Friend Code -->
+<HR>
+Feel free to link this page to yours using the following:
+<xmp>
+<!-- Begin Beausejour Link -->
+<A HREF="http://www.escape.ca/~krattai/bjour/index.htm">
+<IMG SRC="http://www.escape.ca/~krattai/images/bjvrml.jpg" 
+ALT="BJ Pic" 
+WIDTH=100 HEIGHT=50 border=0 ALIGN=middle> Beausejour on the Web</A>
+<!-- End Beausejour Link -->
+</xmp>
+It will look like this:<BR>
+<A HREF="index.htm">
+<IMG SRC="../images/bjvrml.jpg" 
+ALT="BJ Pic" 
+WIDTH=100 HEIGHT=50 border=0 ALIGN=middle> Beausejour on the Web</A>
+<HR>
+This page has been accessed <IMG SRC="/cgi-bin/nph-count?link=bjour.htm&width=5"> times
+ since the last time this counter was reset.<BR>
+<p>
+<center>
+Do you have a web site?  Use <a href="http://www.addme.com">addme.com</a> to promote it free!
+</center>
+</BODY>
+</HTML>

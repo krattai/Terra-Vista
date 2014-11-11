@@ -1,0 +1,78 @@
+#VRML V2.0 utf8
+
+Transform {
+     translation  .23 0 .3 
+     rotation 0 1 0 1.57
+        children [
+      Shape {
+          appearance Appearance {
+             material Material { 
+             diffuseColor 1 0 0 } }
+        geometry IndexedFaceSet { 
+         solid FALSE
+        coord Coordinate {
+          point  [ -.05 -.1 0, -.05 .4 0, .3 .4 0 , .3 .3 0, 0 .3  0 ,0 -.1  0 ]
+             }
+           coordIndex [ 4,0,5,-1,
+                        1,0,4,-1,
+                        1,4,2,-1,
+                        4,3,2,-1
+                        ]
+        }
+    }    
+    ] 
+    }
+Transform {
+ rotation  1 0 0 1.57
+    children [
+       Shape {
+          appearance Appearance {
+             material Material {  } }
+        geometry Cylinder {
+         height 1
+         radius .22
+         }
+         }
+         ]
+ }
+ Transform {
+     translation  0 -.17 0
+     rotation  1 0 0 1.57
+        children [
+      Shape {
+          appearance Appearance {
+             material Material {  } }
+        geometry Box { size .43 1 .4  
+        } 
+        }
+    ] 
+ }
+ Transform {
+     translation  0 -.4 0
+        children [
+      Shape {
+          appearance Appearance {
+             material Material {
+             diffuseColor .7 .5 .3  } }
+        geometry Box { size .43 .05 1  
+        } 
+        }   
+    ] 
+ }
+ Transform {
+     translation  0 -1.1 0
+        children [
+      Shape {
+          appearance Appearance {
+             material Material {
+             diffuseColor .7 .5 .3  } }
+        geometry Box { size .2 1.5 .2  
+        } 
+        }    
+    ] 
+ } 
+WorldInfo {
+   title "Arcadia"
+   info [ "modeled by Andrew Reitemeyer kiwano@t-online.de
+          "]
+          }                    

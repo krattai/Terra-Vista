@@ -1,0 +1,65 @@
+#VRML V1.0 ascii
+#Ziggurat outside
+
+DEF Ziggurat Separator {
+	#DEF Details LOD { range [ 80 ] center 0 5 0
+		DEF CloseUp Separator {
+		# Here you put what the building will look like if the user is <40 within the range of the building
+		# Simple abode
+			Separator {
+			# Base
+				Material { diffuseColor 0.5 0.2 0.4 shininess 0.9 }
+				Transform {translation 0 2.5 0}
+				Cube {width 400 height 5 depth 400}
+				Transform {translation 0 5 0}
+				Cube {width 376 height 5 depth 376}
+				Transform {translation 0 5 0}
+				Cube {width 352 height 5 depth 352}
+				Transform {translation 0 5 0}
+				Cube {width 328 height 5 depth 328}
+				Transform {translation 0 5 0}
+				Cube {width 304 height 5 depth 304}
+				Transform {translation 0 5 0}
+				Cube {width 280 height 5 depth 280}
+				Transform {translation 0 5 0}
+				Cube {width 256 height 5 depth 256}
+				Transform {translation 0 5 0}
+				Cube {width 232 height 5 depth 232}
+				Transform {translation 0 5 0}
+				Cube {width 208 height 5 depth 208}
+				Transform {translation 0 5 0}
+				Cube {width 184 height 5 depth 184}
+				Transform {translation 0 5 0}
+				Cube {width 160 height 5 depth 160}
+				Transform {translation 0 5 0}
+				Cube {width 136 height 5 depth 136}
+				Transform {translation 0 5 0}
+				Cube {width 112 height 5 depth 112}
+				Transform {translation 0 5 0}
+				Cube {width 88 height 5 depth 88}
+				Transform {translation 0 5 0}
+				Cube {width 64 height 5 depth 64}
+				Transform {translation 0 5 0}
+				Cube {width 40 height 5 depth 40}
+				Transform {translation 0 5 0}
+				Cube {width 16 height 5 depth 16}
+			}
+			#DEF moreDetail LOD { range [ 40 ]
+			# ok, now we add more detail as the user get closer
+				DEF CloseUp Separator {
+				}
+				Separator {#Door
+					Material {diffuseColor 0.4 0.4 0.75}
+					Transform {translation 0 3.9 3.0}
+					WWWAnchor { name "vrmlwork.htm"
+						    description "Virtual Employmnet Office"
+					Cube {width 2 height 2 depth .1}
+				}
+			}
+		}
+
+		#End of close up details
+	#End LOD
+	#}
+#End Root separator
+}

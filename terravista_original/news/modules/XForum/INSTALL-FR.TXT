@@ -1,0 +1,670 @@
+/************************************************************************/
+/* POST-NUKE: Web Portal System version 0.6x                            */
+/* =========================================                            */
+/*                                                                      */
+/* Copyright (c) 2001 by Francisco Burzi (fbc@mandrakesoft.com)         */
+/* http://phpnuke.org                                                   */
+/*									*/
+/* The Post-Nuke developement team -- Names and Site addresses can be 	*/
+/* found on the site ( http://www.postnuke.com ).			*/
+/*									*/
+/*                                                                      */
+/* This program is free software. You can redistribute it and/or modify */
+/* it under the terms of the GNU General Public License as published by */
+/* the Free Software Foundation; either version 2 of the License.       */
+/************************************************************************/
+
+/************************************************************************/
+/* Credits: some stuffs about install script from http://www.uzine.net/ */
+/* SPIP script install system						*/
+/*									*/
+/* Une partie du script d'installation a été fortement inspirée par     */
+/* celle de SPIP, système de publication: http://www.uzine.net/         */
+/*									*/
+/*                                                                      */
+/* XMB Credits                                                          */
+/* ===========                                                          */
+/*                                                                      */
+/* Name - Nick Hamann							*/
+/* AIM (DONT ASK XMB QUESTIONS! POST AT THE BOARD) - HamaNicX		*/
+/* E-Mail (DONT ASK XMB QUESTIONS! POST AT THE BOARD) - nh@xmbforum.com	*/
+/* Site - http://www.xmbforum.com					*/
+/*                                                                      */
+/*                                                                      */
+/* XForum 	V B.3b (30/11/2001)	                                */
+/* =========					                        */
+/*                                                                      */
+/* Copyright (c) 2001 by Christophe Deltheil (trollix@hacknuke.com)     */
+/* http://hacknuke.com                                                  */
+/*									*/
+/* Credits								*/
+/* -------								*/
+/* Polish support: 	Morandir <morandir@angrenost.org>		*/
+/* Slovak support:	Ing. Ján Letko <Jan_Letko@ses.sk>		*/
+/* German support:	Hans-Peter Rangol <hprangol@gmx.de>		*/
+/* English support: 	xmb team (http://www.xmbforum.com)		*/
+/* Serbian support: 	Rade Šaptovic <yugovics@ptt.yu>			*/
+/* Italian support: 	lamanton@libero.it <lamanton@libero.it>		*/
+/* Spanish support: 	Marino Carlos <xaplo@postnuke-espanol.org>	*/
+/*                                                                      */
+/* This program is free software. You can redistribute it and/or modify */
+/* it under the terms of the GNU General Public License as published by */
+/* the Free Software Foundation; either version 2 of the License.       */
+*************************************************************************/
+
+Fichier INSTALL-FR.TXT
+----------------------
+
+
+Qu'est-ce que XForum? 
+------------------------
+XForum est à l'origine le portage sous forme de module du BBS XMB Forum. Au fur et à mesure
+de ses mises à jour le code est devenu indépendant de celui de XMB, corrigeant et nettoyant 
+les bugs et les imperfections du programme original.
+
+XForum est maintenant un projet autonome.
+
+Il est compatible avec les versions de PostNuke et PhpNuke versions 5.x.
+De même, son fichier langue ainsi que sa structure SQL sont les mêmes que les versions
+ 1.05 et 1.1 de XMB.
+
+Attention, il existe plusieurs versions de XForum, 
+celle distribuée dans ce package est celle qui est cochée:
+
+[ ] Version pour Nuke Hardcoded French
+[X] Version pour Php-Nuke 5.x
+[ ] Version pour Postnuke 0.6x
+
+
+
+IMPORTANT: INSTALLATION
+-----------------------
+
+3 types d'installation sont possibles:
+
+- L'installation automatique par script (Attention, ce script devra modifier des fichiers
+  pour la configuration de ce module. Certains hébergeurs (Online, free...) ont une politique
+  de sécurité qui empêche la modification par script ou bien manuelle de ces droits et ce script 
+  peut ne pas fonctionner.
+- L'installation manuelle.
+- La mise à jour manuelle
+
+
+
+-----------------------------------------------------------------------------------------
+1) INSTALLATION AUTOMATIQUE
+-----------------------------------------------------------------------------------------
+
+Cette distribution de XForum utilise un système d'installation.
+Pour installer cette version:
+
+1) téléchargez et copiez vos fichiers (ceux qui sont sous html)
+dans le répertoire cible de votre hébergeur. Celui-ci devra s'appeler XForum. On aura donc 
+l'arborescence suivante : [NUKE]/modules/XForum/[Fichiers de XForum]
+2) Mettez les droits en écriture sur settings.php (chmod 666 ou 766)
+3) Connectez vous comme administrateur dans votre site et lancez le script d'install comme ceci:
+http://[VotreSite]/modules.php?op=modload&name=XForum&file=install
+et suivez les instructions pas à pas.
+4) IMPORTANT: Veuillez vérifier que les répertoires 'modules/XForum/images/avatar' (avatars de XForum) 
+et 'images/avatar' (Avatars de Nuke) contiennent les mêmes fichiers d'avatars.
+5) Pour des soucis de maintenance, le nom de ce module est strictement
+codé en dur: XForum. Ne changez pas son nom sous risque de disfonctionnements graves.
+6) Ce module est maintenant compatible avec les spécifications PostNuke (valable pour Nuke aussi), 
+il ne nécessite plus de modifications dans le noyau.
+
+MISE A JOUR Beta1,Beta2 -> Beta3
+----------------------------------------
+Ne Choisissez la mise à jour que si votre forum est déjà opérationnel et installé.
+
+Suivre scrupuleusement les indications suivantes (Pour toutes les versions):
+1) Archivez vos fichiers en cas d'une mauvaise manipulation
+2) Supprimez le fichier config.php s'il existe
+3) Remplacez (écrasez) tous les fichiers SAUF settings.php
+4) Mettez les droits en écriture sur settings.php (chmod 666 ou 766)
+5) Executez http://[VotreSite]/modules.php?op=modload&name=XForum&file=install
+et choisissez votre langue, votre système et votre option (installation, désinstallation, upgrade) 
+puis suivez pas à pas les instructions données
+
+Il n'y a pas d'autres modifications à faire.
+
+
+MISE A JOUR Alpha -> Beta3
+----------------------------------------
+Ne faites la mise à jour qui si votre est déjà opérationnel et installé.
+
+Suivre scrupuleusement les indications suivantes (Pour toutes les versions):
+1) Archivez vos fichiers en cas d'une mauvaise manipulation
+2) supprimer et remplacer par les originaux de votre distribution les scripts 
+   authors.php et users.php situés dans admin/modules
+3) supprimer et remplacer par les originaux de votre distribution les scripts 
+   user.php et pntables.php situés dans la racine du site
+4) Mettez les droits en écriture sur settings.php (chmod 666 ou 766)
+5) supprimer et remplacer l'ensemble des fichiers php situés dans le répertoire 
+   XForum, SAUF config.php et settings.php sinon vous allez supprimer les paramètre de votre config.
+6) Remplacer également le fichier langue french.lang.php
+7) Executez http://[VotreSite]/modules.php?op=modload&name=XForum&file=install
+   et choisissez votre langue et votre option (installation, désinstallation, upgrade) 
+   puis suivez pas à pas les instructions données
+
+Il n'y a pas d'autres modifications à faire.
+
+
+
+
+-----------------------------------------------------------------------------------------
+2) INSTALLATION MANUELLE
+-----------------------------------------------------------------------------------------
+
+Voici comment procéder pour une installation manuelle:
+
+1) Téléchargez et copiez les fichiers de XForum dans le répertoire cible de votre hébergeur. 
+   Celui-ci devra s'appeler impérativement XForum (respect des majuscules) et devra être 
+   situé dans le répertoire "modules". On aura donc l'arborescence suivante : 
+   [NUKE]/modules/XForum/[Fichiers de XForum]
+2) Paramétrage de settings.php: Editer puis transférer le fichier settings.php et mettez lui 
+   des droits en écriture (chmod 666 ou 766 à l'aide de votre cleint FTP) 
+   Voir en annexe A un exemple de settings.php
+3) Création des tables MySQL: A l'aide de phpMyAdmin ou d'un autre gestionnaire de base SQL, 
+   lancez les requêtes de l'annexe B
+4) Connectez vous comme administrateur (celui de votre Nuke) dans votre site et lancez 
+   le script du Forum de cette manière:
+   http://[VotreSite]/modules.php?op=modload&name=XForum&file=index
+   La mention "Vous êtes connecté en tant que [votre_log_admin] doit apparaître.
+5) IMPORTANT: Veuillez vérifier que les répertoires 'modules/XForum/images/avatar' 
+   (avatars de XForum) et 'images/avatar' (Avatars de Nuke) contiennent les mêmes fichiers 
+   d'avatars.
+6) Pour des soucis de maintenance, le nom de ce module est strictement codé en dur: XForum. 
+   Ne changez pas son nom sous risque de disfonctionnements graves.
+7) Ce module est maintenant compatible avec les spécifications PostNuke 
+   (valable pour Nuke aussi), il ne nécessite plus de modifications dans le noyau.
+
+
+ANNEXE A: Mon fichier settings.php 
+----------------------------------
+Rem: dans "nuke_xmb", "nuke" est le $prefix du config.php de Nuke.
+
+<?
+$nukesystem = "postnuke6x";
+$tablepre = "nuke_xmb_"; 
+$table_banned = "nuke_xmb_banned";
+$table_forums = "nuke_xmb_forums";
+$table_members = "nuke_xmb_members";
+$table_posts = "nuke_xmb_posts";
+$table_ranks = "nuke_xmb_ranks";
+$table_smilies = "nuke_xmb_smilies";
+$table_themes = "nuke_xmb_themes";
+$table_threads = "nuke_xmb_threads";
+$table_u2u = "nuke_xmb_u2u";
+$table_whosonline = "nuke_xmb_whosonline";
+$table_words = "nuke_xmb_words";
+
+$langfile = "english";
+$bbname = "Trollix Forums";
+$postperpage = "20";
+$topicperpage = "20";
+$hottopic = "20";
+$XFtheme = "gray";
+$bbstatus = "on";
+$whosonlinestatus = "off";
+$regstatus = "on";
+$bboffreason = "";
+$regviewonly = "off";
+$floodctrl = "5";
+$memberperpage = "45";
+$catsonly = "off";
+$hideprivate = "on";
+$showsort = "on";
+$emailcheck = "off";
+$bbrules = "on";
+$bbrulestxt = "Merci de votre participation";
+$searchstatus = "on";
+$faqstatus = "on";
+$memliststatus = "on";
+$piconstatus = "on";
+$sitename = ".:Trollix.com:.";
+$siteurl = "http://www.trollix.com/";
+$avastatus = "on";
+$noreg = "off";
+$gzipcompress = "on";
+$boardurl = "http://www.trollix.com/modules.php?op=modload&name=XForum&file=index";
+$coppa = "off";
+$timeformat = "24";
+$adminemail = "trollix@hacknuke.com";
+$dateformat = "dd/mm/yy";
+$statspage = "on";
+$affheader = "on";
+$afffooter = "on";
+$sigbbcode = "on";
+$sightml = "off";
+$indexstats = "on";
+$reportpost = "on";
+$showtotaltime = "on";
+$dbuser = "SQLUSER";
+$dbpw = "PASSWDUSER";
+$dbhost = "HOST";
+?>
+
+Remplacez nuke_xmb, SQLUSER, PASSWDUSER, HOST  par vos propres valeurs
+
+
+ANNEXE B: Création des tables 
+-----------------------------
+Rem: Attention de remplacer nuke_xmb par la valeur de $tablepre que vous avez défini dans settings.php
+
+CREATE TABLE nuke_xmb_banned (
+  ip1 smallint(3) NOT NULL default '0',
+  ip2 smallint(3) NOT NULL default '0',
+  ip3 smallint(3) NOT NULL default '0',
+  ip4 smallint(3) NOT NULL default '0',
+  dateline bigint(30) NOT NULL default '0',
+  id smallint(6) NOT NULL default '0',
+  PRIMARY KEY (id)
+) TYPE=MyISAM;
+
+CREATE TABLE nuke_xmb_forums (
+  type varchar(15) NOT NULL default '',
+  fid smallint(6) NOT NULL auto_increment,
+  name varchar(50) NOT NULL default '',
+  status varchar(15) NOT NULL default '',
+  lastpost varchar(30) NOT NULL default '',
+  moderator varchar(100) NOT NULL default '',
+  displayorder smallint(6) NOT NULL default '0',
+  private varchar(30) default NULL,
+  description text,
+  allowhtml char(3) NOT NULL default '',
+  allowsmilies char(3) NOT NULL default '',
+  allowbbcode char(3) NOT NULL default '',
+  guestposting char(3) NOT NULL default '',
+  userlist text NOT NULL,
+  theme varchar(30) NOT NULL default '',
+  posts int(100) NOT NULL default '0',
+  threads int(100) NOT NULL default '0',
+  fup smallint(6) NOT NULL default '0',
+  postperm char(3) NOT NULL default '',
+  allowimgcode char(3) NOT NULL default '',
+  PRIMARY KEY (fid)
+) TYPE=MyISAM;
+
+CREATE TABLE nuke_xmb_members (
+  uid smallint(6) NOT NULL auto_increment,
+  username varchar(25) NOT NULL default '',
+  password varchar(18) NOT NULL default '',
+  regdate bigint(30) NOT NULL default '0',
+  postnum smallint(6) NOT NULL default '0',
+  email varchar(60) default NULL,
+  site varchar(75) default NULL,
+  aim varchar(40) default NULL,
+  status varchar(35) NOT NULL default '',
+  location varchar(50) default NULL,
+  bio text,
+  sig text,
+  showemail varchar(15) NOT NULL default '',
+  timeoffset int(5) NOT NULL default '0',
+  icq varchar(30) NOT NULL default '',
+  avatar varchar(90) default NULL,
+  yahoo varchar(40) NOT NULL default '',
+  customstatus varchar(100) NOT NULL default '',
+  theme varchar(30) NOT NULL default '',
+  bday varchar(50) default NULL,
+  langfile varchar(40) NOT NULL default '',
+  tpp smallint(6) NOT NULL default '0',
+  ppp smallint(6) NOT NULL default '0',
+  newsletter char(3) NOT NULL default '',
+  regip varchar(40) NOT NULL default '',
+  timeformat int(5) NOT NULL default '0',
+  msn varchar(40) NOT NULL default '',
+  dateformat varchar(10) NOT NULL default '',
+  ignoreu2u text,
+  lastvisit bigint(30) NOT NULL default '0',
+  PRIMARY KEY (uid)
+) TYPE=MyISAM;
+
+CREATE TABLE nuke_xmb_posts (
+  fid smallint(6) NOT NULL default '0',
+  tid smallint(6) NOT NULL default '0',
+  pid smallint(8) NOT NULL auto_increment,
+  author varchar(40) NOT NULL default '',
+  message text NOT NULL,
+  dateline bigint(30) NOT NULL default '0',
+  icon varchar(50) default NULL,
+  usesig varchar(15) NOT NULL default '',
+  useip varchar(40) NOT NULL default '',
+  bbcodeoff varchar(15) NOT NULL default '',
+  smileyoff varchar(15) NOT NULL default '',
+  emailnotify varchar(15) NOT NULL default '',
+  PRIMARY KEY (pid),
+  KEY dateline(dateline)
+) TYPE=MyISAM;
+
+CREATE TABLE nuke_xmb_ranks (
+  title varchar(40) NOT NULL default '',
+  posts smallint(6) NOT NULL default '0',
+  id smallint(6) NOT NULL auto_increment,
+  stars smallint(6) NOT NULL default '0',
+  allowavatars char(3) NOT NULL default '',
+  avatarrank varchar(90) default NULL,
+  PRIMARY KEY (id)
+) TYPE=MyISAM;
+
+CREATE TABLE nuke_xmb_smilies (
+  type varchar(15) NOT NULL default '',
+  code varchar(40) NOT NULL default '',
+  url varchar(40) NOT NULL default '',
+  id smallint(6) NOT NULL auto_increment,
+  PRIMARY KEY (id)
+) TYPE=MyISAM;
+
+CREATE TABLE nuke_xmb_themes (
+  name varchar(30) NOT NULL default '',
+  bgcolor varchar(15) NOT NULL default '',
+  altbg1 varchar(15) NOT NULL default '',
+  altbg2 varchar(15) NOT NULL default '',
+  link varchar(15) NOT NULL default '',
+  bordercolor varchar(15) NOT NULL default '',
+  header varchar(15) NOT NULL default '',
+  headertext varchar(15) NOT NULL default '',
+  top varchar(15) NOT NULL default '',
+  catcolor varchar(15) NOT NULL default '',
+  tabletext varchar(15) NOT NULL default '',
+  text varchar(15) NOT NULL default '',
+  borderwidth varchar(15) NOT NULL default '',
+  tablewidth varchar(15) NOT NULL default '',
+  tablespace varchar(15) NOT NULL default '',
+  font varchar(40) NOT NULL default '',
+  fontsize varchar(40) NOT NULL default '',
+  altfont varchar(40) NOT NULL default '',
+  altfontsize varchar(40) NOT NULL default '',
+  replyimg varchar(50) default NULL,
+  newtopicimg varchar(50) default NULL,
+  boardimg varchar(50) default NULL,
+  postscol varchar(5) NOT NULL default ''
+) TYPE=MyISAM;
+
+CREATE TABLE nuke_xmb_threads (
+  tid smallint(6) NOT NULL auto_increment,
+  fid smallint(6) NOT NULL default '0',
+  subject varchar(100) NOT NULL default '',
+  lastpost varchar(30) NOT NULL default '',
+  views int(100) NOT NULL default '0',
+  replies int(100) NOT NULL default '0',
+  author varchar(40) NOT NULL default '',
+  message text NOT NULL,
+  dateline bigint(30) NOT NULL default '0',
+  icon varchar(50) default NULL,
+  usesig varchar(15) NOT NULL default '',
+  closed varchar(15) NOT NULL default '',
+  topped smallint(6) NOT NULL default '0',
+  useip varchar(40) NOT NULL default '',
+  bbcodeoff varchar(15) NOT NULL default '',
+  smileyoff varchar(15) NOT NULL default '',
+  emailnotify varchar(15) NOT NULL default '',
+  PRIMARY KEY (tid),
+  KEY lastpost(lastpost),
+  KEY dateline(dateline),
+  KEY fid(fid)
+) TYPE=MyISAM;
+
+CREATE TABLE nuke_xmb_u2u (
+  u2uid smallint(6) NOT NULL auto_increment,
+  msgto varchar(40) NOT NULL default '',
+  msgfrom varchar(40) NOT NULL default '',
+  dateline bigint(30) NOT NULL default '0',
+  subject varchar(75) NOT NULL default '',
+  message text NOT NULL,
+  folder varchar(40) NOT NULL default '',
+  block text,
+  PRIMARY KEY (u2uid)
+) TYPE=MyISAM;
+
+CREATE TABLE nuke_xmb_whosonline (
+  username varchar(40) NOT NULL default '',
+  ip varchar(40) NOT NULL default '',
+  time bigint(40) NOT NULL default '0',
+  location varchar(150) NOT NULL default ''
+) TYPE=MyISAM;
+
+CREATE TABLE nuke_xmb_words (
+  find varchar(60) NOT NULL default '',
+  replace1 varchar(60) NOT NULL default '',
+  id smallint(6) NOT NULL auto_increment,
+  PRIMARY KEY (id)
+) TYPE=MyISAM;
+
+INSERT INTO nuke_xmb_themes VALUES ( 'gray', '#ffffff', '#dededf', '#eeeeee', '#333399', '#778899', '#778899', '#ffffff', '#eeeeee', '#dcdcde', '#000000', '#000000', '1', '97%', '6', 'Arial', '12px', 'Verdana', '10px', '', '', 'images/logo1.gif', '2col');
+INSERT INTO nuke_xmb_themes VALUES ( 'blue', '#ffffff', '#b0c0d0', '#d0e0f0', '#cc6600', '#000000', '#e0f0f9', '#000000', '#d0e0f0', '#b0c0d4', '#000000', '#000000', '1', '97%', '6', 'Arial', '12px', 'Verdana', '10px', '', '', 'images/logo1.gif', '2col');
+INSERT INTO nuke_xmb_themes VALUES ( 'hacknuke', '#2a2f79', '#2a2f79', '#2a2f79', '#ff9900', '#000000', '#ff9900', '#000000', '#000000', '#2a2f79', '#ffffff', '#000000', '1', '97%', '2', 'Arial', '12px', 'Verdana', '10px', '', '', 'images/logo1.gif', '2col');
+INSERT INTO nuke_xmb_themes VALUES ( 'coursapied', '#ffffff', '#dededf', '#eeeeee', '#333399', '#9999ff', '#9999ff', '#ffffff', '#eeeeee', '#dcdcde', '#000000', '#000000', '1', '97%', '6', 'Arial', '12px', 'Arial', '10px', '', '', '', '2col');
+INSERT INTO nuke_xmb_themes VALUES ( 'postnuke', '#f6f7eb', '#e1e4ce', '#f6f7eb', '#000000', '#b1b78b', '#d9dcc2', '#000000', '#b1b78b', '#e1e4ce', '#000000', '#000000', '1', '97%', '4', 'Arial', '12px', 'Verdana', '10px', '', '', '', '2col');
+INSERT INTO nuke_xmb_themes VALUES ( 'default', '#ffffff', '#ffffff', '#ffffff', '#000000', '#000000', '#ffffff', '#000000', '#ffffff', '#ffffff', '#000000', '#000000', '1', '97%', '4', 'Arial', '12px', 'Verdana', '10px', '', '', '', '2col');
+INSERT INTO nuke_xmb_themes VALUES ( 'XMB2', '#ffffff', '#e3e3ea', '#eeeef6', '#404060', '#ffffff', '#505070', '#ffffff', '#ffffff', '#dedee6', '#000033', '#000022', '1', '90%', '4', 'Arial', '12px', 'Verdana', '10px', '', '', '', '2col');
+
+
+
+INSERT INTO nuke_xmb_whosonline VALUES ('onlinerecord', '-1', '', '');
+
+INSERT INTO nuke_xmb_smilies VALUES ( 'smiley', ':)', 'smilies/smile.gif', '1');
+INSERT INTO nuke_xmb_smilies VALUES ( 'smiley', ':(', 'smilies/sad.gif', '2');
+INSERT INTO nuke_xmb_smilies VALUES ( 'smiley', ':D', 'smilies/bigsmile.gif', '3');
+INSERT INTO nuke_xmb_smilies VALUES ( 'smiley', ';)', 'smilies/wink.gif', '4');
+INSERT INTO nuke_xmb_smilies VALUES ( 'smiley', ':cool:', 'smilies/cool.gif', '5');
+INSERT INTO nuke_xmb_smilies VALUES ( 'smiley', ':mad:', 'smilies/mad.gif', '6');
+INSERT INTO nuke_xmb_smilies VALUES ( 'smiley', ':o', 'smilies/shocked.gif', '7');
+INSERT INTO nuke_xmb_smilies VALUES ( 'smiley', ':P', 'smilies/tongue.gif', '8');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/smile.gif', '9');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/sad.gif', '10');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/bigsmile.gif', '11');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/wink.gif', '12');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/cool.gif', '13');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/mad.gif', '14');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/shocked.gif', '15');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/tongue.gif', '16');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/exclamation.gif', '17');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/question.gif', '18');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/thumbup.gif', '19');
+INSERT INTO nuke_xmb_smilies VALUES ( 'picon', '', 'smilies/thumbdown.gif', '20');
+
+INSERT INTO nuke_xmb_words VALUES ('damn', '****', '');
+INSERT INTO nuke_xmb_words VALUES ('shit', '****', '');
+INSERT INTO nuke_xmb_words VALUES ('fuck', '****', '');
+INSERT INTO nuke_xmb_words VALUES ('bitch', '*****', '');
+INSERT INTO nuke_xmb_words VALUES ('ass', '***', '');
+
+INSERT INTO nuke_xmb_ranks VALUES ('Newbie', '1', '', '1', 'yes', '');
+INSERT INTO nuke_xmb_ranks VALUES ('Junior Member', '2', '', '2', 'yes', '');
+INSERT INTO nuke_xmb_ranks VALUES ('Member', '100', '', '3', 'yes', '');
+INSERT INTO nuke_xmb_ranks VALUES ('Senior Member', '500', '', '4', 'yes', '');
+INSERT INTO nuke_xmb_ranks VALUES ('Posting Freak', '1000', '', '5', 'yes', '');
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+3) UPGRADE MANUELLE
+-----------------------------------------------------------------------------------------
+
+Apparemment l'upgrade de XForum pose des problèmes à certains alors qu'elle se fait sans emcombre 
+pour d'autres. Devant la multiplicité des problèmes à gérer (différents hébergeurs avec leur gestion 
+des droits, possibilité ou pas de mise à jour du settings.php...), je m'aperçois qu'une upgrade 
+automatique avec mise à jour des fichiers n'est pas viable. 
+Nous allons donc repasser à la vieille méthode du script à configurer à la main. 
+Par conséquent, voilà comment procéder manuellement:
+
+1) Archivez vos fichiers en cas d'une mauvaise manipulation
+2) Supprimez le fichier config.php s'il existe
+3) Editez le fichier settings.php fourni dans l'archive de XForum B3 
+   et mettez-le à jour avec vos propres paramètres récupérés dans votre 
+   ancien settings.php
+3) Remplacez (écrasez) tous les anciens fichiers
+4) Mettez les droits en écriture sur settings.php (chmod 666 ou 766)
+5) Si vous utilisez une version antérieure à la B1 (Alpha, B0) alors procédez dans phpMyAdmin 
+   aux mises à jour SQL suivantes:
+
+ALTER TABLE `nuke_xmb_banned` CHANGE `dateline` `dateline` BIGINT (30) DEFAULT '0' not null;
+ALTER TABLE `nuke_xmb_members` CHANGE `regdate` `regdate` BIGINT (30) DEFAULT '0' not null ;
+ALTER TABLE `nuke_xmb_members` CHANGE `lastvisit` `lastvisit` BIGINT (30) DEFAULT '0' not null ;
+ALTER TABLE `nuke_xmb_posts` CHANGE `dateline` `dateline` BIGINT (30) DEFAULT '0' not null ;
+ALTER TABLE `nuke_xmb_threads` CHANGE `dateline` `dateline` BIGINT (30) DEFAULT '0' not null ;
+ALTER TABLE `nuke_xmb_whosonline` CHANGE `time` `time` BIGINT (40) DEFAULT '0' not null ;
+
+
+Annexe: mon fichier settings.php après installation:
+
+<?
+$nukesystem = "postnuke6x_";
+$tablepre = "nuke_xmb"; 
+$table_banned = "nuke_xmb_banned";
+$table_forums = "nuke_xmb_forums";
+$table_members = "nuke_xmb_members";
+$table_posts = "nuke_xmb_posts";
+$table_ranks = "nuke_xmb_ranks";
+$table_smilies = "nuke_xmb_smilies";
+$table_themes = "nuke_xmb_themes";
+$table_threads = "nuke_xmb_threads";
+$table_u2u = "nuke_xmb_u2u"; 
+$table_whosonline = "nuke_xmb_whosonline";
+$table_words = "nuke_xmb_words";
+
+$langfile = "english";
+$bbname = "Trollix Forums";
+$postperpage = "20";
+$topicperpage = "20";
+$hottopic = "20";
+$XFtheme = "gray";
+$bbstatus = "on";
+$whosonlinestatus = "off";
+$regstatus = "on";
+$bboffreason = "";
+$regviewonly = "off";
+$floodctrl = "5";
+$memberperpage = "45";
+$catsonly = "off";
+$hideprivate = "on";
+$showsort = "on";
+$emailcheck = "off";
+$bbrules = "on";
+$bbrulestxt = "Merci de votre participation";
+$searchstatus = "on";
+$faqstatus = "on";
+$memliststatus = "on";
+$piconstatus = "on";
+$sitename = ".:Trollix.com:.";
+$siteurl = "http://www.trollix.com/";
+$avastatus = "on";
+$noreg = "off";
+$gzipcompress = "on";
+$boardurl = "http://www.trollix.com/modules.php?op=modload&name=XForum&file=index";
+$coppa = "off";
+$timeformat = "24";
+$adminemail = "trollix@hacknuke.com";
+$dateformat = "dd/mm/yy";
+$statspage = "on";
+$affheader = "on";
+$afffooter = "on";
+$sigbbcode = "on";
+$sightml = "off";
+$indexstats = "on";
+$reportpost = "on";
+$showtotaltime = "on";
+$dbuser = "SQLUSER";
+$dbpw = "PASSWDUSER";
+$dbhost = "HOST";
+?>
+
+Remplacez "nuke_xmb", SQLUSER, PASSWDUSER, HOST  par vos propres valeurs
+
+Notez que le nom des tables donné ici doit être changé en fonction de vos paramètres.
+ex: nuke_xmb_banned -> "nuke" est le $prefix de votre nuke
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------
+Changelogs
+-----------------------------------------------------------------------------------------
+
+Beta.2 vers Beta.3 (23/11/2001)
+
+1) Fix du bug des stats (division par zero).
+2) Fix dans le système de gestion des accès privés qui semble fonctionner correctement.
+3) Fix de "signaler article".
+4) Fix de "supprimer theme".
+5) Fix Bug template de viewthread. Le theme ne ''bave'' plus.
+6) Liste des Membres complète.
+7) Optimisations SQL.
+8) Possibilité de cacher les headers de Nuke.
+9) Nouveau systeme de traduction. Utilisation du système PostNuke (define).
+10) Réécriture du "print.php".
+11) Syndication des articles. Script XForumrdf.php à la racine du site.
+
+
+Beta.1 vers Beta.2 (12/10/2001)
+
+1) Encore plus de rapidité avec une gestion de la synchronisation optimisée. 
+2) Correction du bug de mélange des thèmes (Nuke/XForum) du à la variable $theme
+   commune aux deux systèmes. 
+3) Mise en place d'un système de thèmes basé sur celui de Nuke, avec les couleurs 
+   de Nuke, et non issu des préférences (dans mySQL) comme c'est le cas aujourd'hui... 
+4) Correction d'un bug dans les stats 
+5) Ajout du nombre de messages lus dans les stats 
+6) Accès direct au dernier thread depuis l'index 
+7) Correction du bug de synchronisation des signatures 
+8) Amélioration dans la liste des membres (ranking) 
+9) Support du Slovake, Polonais et de l'Allemand
+
+
+Beta.0 vers Beta.1 (02/10/2001)
+
+1) Correction des templates et des fermetures de tables
+2) Correction du bug d'enregistrement des utilisateurs apparaissant lorsque le referer était 'chercher' ou 'liste des membres'
+3) Grosses optimisations de code (remplacement des fonctions ereg(i) par preg et suppression des mysql_result)
+4) Correction du Bug  de l'utilisateur anonyme
+5) Correction du bug de l'avatar
+6) Correction du mauvais lien renvoyé lors d'une signalisation d'email
+
+
+Alpha.3 vers Beta 0 (12/09/2001)
+
+1) Module suivant les spécifications PostNuke (Pas de modification du noyau (excepté le nom)
+2) Bug de l'an 2001 ( le timeStamp Unix est >1 billion) corrigé  parla version 1.1 de XMB
+3) Nouveau script d'installation (permet aussi l'upgrade et la désinstallation)
+
+
+Alpha.3 vers Alpha 4 (Only postnuke)
+
+1) Mise en conformité PostNuke 0.63
+2) Url http:// possible dans les avatars et les images
+
+
+Alpha.2 vers Alpha.3
+
+1) Suppression de la double authentification. 
+2) Correction de quelques défauts de mise en page. 
+3) Lien de l'enregistrement directement vers celui de Nuke. 
+
+
+Alpha.1 vers Alpha.2
+
+1) Correction de l'enregistrement et de la suppression des administrateurs du système. (ajout du fichier authors.php situé dans le répertoire admin/modules).
+2) Correction du script d'install (impossibilité pour un non-administrateur de le lancer).
+3) Modification des liens de l'enregistrement dans le forum. Celui-ci est redirigé vers le user.php de Nuke.
+Fichier touchés: functions.php, post.php, member.php, misc.php, header.php .
+4) Correction de quelques erreurs du fichier de langue.
+
+
+
+
+SUPPORT
+-------
+
+1) XMB pur et dur : http://www.xmbforum.com
+2) XForum : http://www.hacknuke.com - Utilisez le forum
+3) FAQ de http://www.hacknuke.com
+
+
+Merci de me faire parvenir toute remarque sur le forum de http://www.hacknuke.com en signalant votre version de Nuke, votre OS, et la version de php.
+
+Trollix.

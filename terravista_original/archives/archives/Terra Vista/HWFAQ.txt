@@ -1,0 +1,152 @@
+Q.  What is Hospitality World?
+
+A.  Hospitality World is a model for a new way of doing business. Spiro
+Goumas, the originator of the concept has been a "mover and shaker" in
+the restaurant/catering business in the Canton/Akron, Ohio area for
+many years. He served for 6 years as a manager of the IX Center, the
+Cleveland area Exhibition Center and has served for many years as a
+consultant to some of the areas best reataurants. In 1982 Spiro got an
+idea to centralize the type of services that were available only every
+other year at the Chicago Food Mart, the major exhibition for the food
+industry. The concept was to provide an area for food operations
+people to get access to food service providers and restaurant
+suppliers. The idea was widely praised and got much press but proved
+to be too costly to implement. Spiro has also been involved with the
+World Futures Society and attended several major events over the
+years. The idea dimmed but never faded. We, Suzi and I, met Spiro
+about 6 months ago through a mutual friend (part of a very cosmic
+gathering of minds). He had been looking into the concept of the
+internet and what it was all about. As we began to talk about his
+ideas of of balance and asset distribution, within the food industry
+specifically, and in the universe in general , sparks began to fly.
+The thought of using the internet to develop his Hospitality World
+were immediately evident and a bond was formed...a node, if you will.
+We began to meet on a regular basis. Our Internet Service Provider,
+Dave and Rita Bigham (Cantec) were drawn in as a important piece of
+this puzzle. The fellow who had introduced us to Spiro, Jim Naus, is
+the owner of Coffee Configurations, a "cyber cafe" near the University
+of Akron. Jim has since put the restaurant up for sale and is working
+full time developing and promoting Hospitality World and sells for
+pidwanger productions, our Multimedia design firm. Randy Linquist,
+owner of Trivium ( a popular local coffee house) is also involved as a
+writer and philosopher and, we are using his restaurant as a meeting
+place and to give HW a sense of place. We also have an office in Bath,
+Ohio where we can meet people from the Cleveland Area. Suzi and I work
+at home and Dave and Rita do the same. In the course of "growing" HW
+(it IS very organic) I stumbled across Terra Vista. Stumbled being the
+operative term here as I came on rather strong. But, my initial idea
+was to take an existing MU VRML world and give it a sense of purpose
+and some help. I was a little disappointed at what I found but the
+vision and spirit are here. I really got psysched and presented the
+idea to the HW BOD to incorporate TV into HW. The reception was luke
+warm but I see how it fits together, I can see it.  Spiro came back 
+to me 2 weeks later, after having pondered it and said basically, 
+"That's it, that's the missing piece! We didn't have the community 
+large enough." He was thinking in terms of the Hospitality World 
+community and hadn't included the rest of the world. He realizes that 
+the virtual community is an essential part of the concept and is 
+willing to commit whatever resources are available to us for 
+furthering this concept.
+
+In summary, HW is a place for people in the restaurant business to
+stay in touch with suppliers, customers and each other in a symbiotic
+relationship. The underlying theme is people, balance and  fairness.
+The "Share the Wealth" Concept is also at the root. The idea there is
+sharing profit among the employees and owners of a business according
+to some very simple rules. We have the software for this already and I
+can demo it to anyone interested but it is not necessarily part of TV.
+
+Q.  Why are we doing it, what's in it for Terra Vista?
+
+A.  Free rent, a place to build, a place to play, increased publicity, a
+chance to participate in a Social Transformation. The possibility to
+take part in a new model of doing business. No strings, no
+restrictions other than self imposed, a chance to show everyone what
+you can (or cannot) build. A place to meet people, a place to check
+the local restaurants, movie schedules, order pizza.......need I
+continue :-)HW will exist in some form or another but it works better
+and easier if we can work with an established community and people who
+understand what this is all about...not many people do. Where are you?
+What's going on in your town, village, state? We are going to expand
+this to the rest of the planet....not tomorrow, but soon. Wanna get
+involved?
+
+Q.  Is it a new Zone?
+
+A.  I think so but you tell me.
+
+Q.  Who is the Zowner?
+
+A.  Hospitality World. From your point of view (Terra Vistans) it will be
+Suzi and I as pidwanger productions. We will maintain control over
+this area as we are responsible to the businesses who will pay us.
+
+Q.  Who will be able to view it?
+
+A.  Anyone, though we may chose to have areas that have restricted 
+access.  Pricing, services etc may not be available to the general 
+public.
+
+Q.  Are there minimum requirements?
+
+A.  I would guess that we are going set a P100 with a decent video 
+card as the target system. This is not a restriction, anyone can 
+develop worlds aimed at slower machines but that is a bad road for 
+businesses.  The machines are getting better, the rendering engines 
+are getting better, VRML is getting better (arguable I'm sure). We 
+want what we design today to be good tomorrow.
+
+Q.  Is the basis for Hospitality World, within the confines of the  
+"real world"?  Including, are the buildings representing existing 
+architecture?
+
+A.  The broadway buildings are all real but this is not a 
+requirement. I like it better if the stuff has at least some bbasis 
+in fact. It's nice for a business owner to see "his" building on the 
+site but many don't have, or are not proud of, their locations in 
+which case we can design spaces.
+
+Q.  Is the intent of the project to be for "entertainment", or are we 
+trying to promote the associated companies through "classic" style 
+advertisement.
+
+A.  I want to avoid all traditional means of advertising. I am not 
+against displaying signs etc in the "business" areas, but I don't 
+want to have people bombarded with pictures and slogans and I hate 
+banner ads.
+
+Q.  Do we want people to enter the donut shop and be able to throw 
+donuts at the clown, or are we simply trying to show the shop, it's 
+architecture, and it's cozy atmosphere? 
+
+A.  The actual means of presenting a business will have to be 
+determined by the owner. It is our job to convince him that we are 
+looking for interesting content and context. Most of the businesses 
+we are talking to understand this and are in full agreement.
+
+Q.  Do you have any more focused knowledge of our business target 
+market and is the purpose of Hospitality World to attract a "classic" 
+market to these companies, or are we looking for more?
+
+A.  We aren't doing classic anything!!! We are breaking the mold here 
+and I want to emphasize this! We are involved at the very root of 
+designing a new paradigm, what Marilyn Ferguson calls a Social 
+Transformation. That may sound grandiose but that's my middle name 
+:-)  The rules are changing and we are writing new rules. We have a 
+groundwork of businesses and organizations and communities who 
+realize this and are willing to work together to accomplish this. As 
+far as focused knowledge of our target, Spiro has some of the best 
+contacts in the business and is a reknowned expert in the Hospitality 
+field, but we are already seeing the market expand astronomically and 
+we are going to try to attract experts in each field with the same 
+vision. We were fortunate to meet the owner of the Mustard Seed 
+Market the other day. The Mustard Seed is rated as one of the best 
+Organic Food Markets and restaurants in the country, it is 20,000 sq 
+ft.. Phillip Nabors looks like Pete Townsend with a pony tail and had 
+on Bugs Bunny socks and red Converse All Stars. He has lived in 
+communes and is very politically involved including appearing before 
+the senate committee with Ben Cohen (Ben and Jerry's) on the ban of 
+Bovine Growth Hormones. His vision is to build a virtual market where 
+you can click on any product and see where it comes from, how it is 
+made etc. BTW he has already done the research and knows where every 
+product comes from. I reiterate, "We are not doing anything Classic!!

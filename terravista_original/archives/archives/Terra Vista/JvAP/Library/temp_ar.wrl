@@ -1,0 +1,337 @@
+#VRML V2.0 utf8
+WorldInfo {
+ title "temple"
+ info "VRML home space part"
+} 
+
+Group {   
+ children [
+   Transform {
+     translation 8 -1.2 8
+     children [
+      DEF SAULE_BASIS Shape {
+      appearance Appearance 
+        {material Material {
+        ambientIntensity .9
+        diffuseColor .7 .7 .7 
+        emissiveColor .2 .2 .2 
+        } 
+       # texture DEF MARB ImageTexture { 
+       # }
+        }
+        geometry Box { size 1.25 .8 1.25}
+        }
+      ]
+    }
+    Transform {
+     translation -8 -1.2 8
+     children [
+        USE SAULE_BASIS
+      ]
+    }    
+  Transform {
+     translation 8 -1.2 -8
+     children [
+        USE SAULE_BASIS
+      ]
+    }    
+  Transform {
+     translation -8 -1.2 -8
+     children [
+        USE SAULE_BASIS
+      ]
+    }    
+    Transform {
+     translation -4 -1.2 -8
+     children [
+        USE SAULE_BASIS
+      ]
+    }
+    Transform {
+     translation 0 -1.2 -8
+     children [
+        USE SAULE_BASIS
+      ]
+    } 
+    Transform {
+     translation 4 -1.2 -8
+     children [
+        USE SAULE_BASIS
+      ]
+    }  
+    Transform {
+     translation -8 -1.2 -4
+     children [
+        USE SAULE_BASIS
+      ]
+    }
+    Transform {
+     translation -8 -1.2 0
+     children [
+        USE SAULE_BASIS
+      ]
+    } 
+    Transform {
+     translation -8 -1.2 4
+     children [
+        USE SAULE_BASIS
+      ]
+    } Transform {
+     translation 8 -1.2 -4
+     children [
+        USE SAULE_BASIS
+      ]
+    } 
+    Transform {
+     translation 8 -1.2 0
+     children [
+        USE SAULE_BASIS
+      ]
+    } 
+    Transform {
+     translation 8 -1.2 4
+     children [
+        USE SAULE_BASIS
+      ]
+    }                   
+    Transform {
+     translation 4 -1.2 8
+     children [
+        USE SAULE_BASIS
+      ]
+    } 
+    Transform {
+     translation -4 -1.2 8
+     children [
+        USE SAULE_BASIS
+      ]
+    }                                               
+ Transform {
+   translation  -8 2.9 -8
+   children [
+     DEF SAULE Shape {
+      appearance Appearance 
+        {material Material {
+        ambientIntensity .9
+        diffuseColor .7 .7 .7 
+        emissiveColor .2 .2 .2 
+        } 
+       # texture USE MARB 
+        }
+      geometry Cylinder {
+        radius  .42
+        height 7.9
+        top FALSE
+        bottom FALSE
+        }
+      }
+     
+    ]
+  }
+  Transform { 
+    translation 8 2.9 8
+     children [
+        USE SAULE
+      ]
+    } 
+    Transform { 
+    translation -8 2.9 4
+     children [
+        USE SAULE
+      ]
+    } 
+    Transform { 
+    translation -8 2.9 0
+     children [
+        USE SAULE
+      ]
+    } 
+    Transform { 
+    translation -8 2.9 -4
+     children [
+        USE SAULE
+      ]                                
+    } 
+    
+  Transform { 
+    translation -8 2.9 8
+     children [
+        USE SAULE
+      ]
+    }    
+    Transform { 
+    translation 8 2.9 4
+     children [
+        USE SAULE
+      ]
+    } 
+    Transform { 
+    translation 8 2.9 0
+     children [
+        USE SAULE
+      ]
+    } 
+    Transform { 
+    translation 8 2.9 -4
+     children [
+        USE SAULE
+      ]
+    } 
+    Transform { 
+    translation 4 2.9 -8
+     children [
+        USE SAULE
+      ]
+    } 
+    Transform { 
+    translation 0 2.9 -8
+     children [
+        USE SAULE
+      ]
+    } 
+    Transform { 
+    translation -4 2.9 -8
+     children [
+        USE SAULE
+      ]
+    } 
+    Transform { 
+    translation 8 2.9 -8
+     children [
+        USE SAULE
+      ]
+    }   
+    Transform { 
+    translation 4 2.9 8
+     children [
+        USE SAULE
+      ]
+    } 
+    Transform { 
+    translation -4 2.9 8
+     children [
+        USE SAULE
+      ]
+    }     
+   ]
+}
+
+ Transform {
+   translation  0 -1.7 0
+   children [
+     Shape {
+      appearance Appearance 
+        {material Material {
+        ambientIntensity .9
+        diffuseColor .7 .7 .7 
+        
+        }          
+        } #floor
+      geometry Cylinder {
+        radius 15
+        height .25
+        top TRUE
+        bottom FALSE
+        }
+      }
+     
+    ]
+  }
+  Transform { 
+    translation 0 6.9 -.6
+     children [
+        
+         Shape {
+      appearance Appearance 
+        {material Material {
+        ambientIntensity .9
+        diffuseColor .7 .7 .7 
+        emissiveColor .2 .2 .2 
+        } 
+       # texture USE MARB  
+        }
+        geometry Box { size 22 .1 21.5} #celBlock
+        }
+       ]
+    }     
+     Shape {
+     appearance Appearance 
+        {material Material { } 
+       # texture USE MARB
+        }
+      #roof
+      geometry IndexedFaceSet
+          
+       {  
+       solid TRUE
+       coord Coordinate {
+       point [ -11 6.9 10, 11 6.9 10,
+               0 11 10, -11 6.9 -11,
+               11 6.9 -11, 0 11 -11 ]
+        }
+        coordIndex [ 0,1,2,-1,
+                     4,2,1 -1,
+                     5,2,4,-1,
+                     3,5,4,-1,
+                     0,5,3,-1,
+                     0,2,5,-1,
+                     ]
+      }
+      }
+       Transform {
+         translation 0 -1.45 0
+         scale .6 .6 .6
+  children [
+   Shape {               #altar
+     appearance Appearance 
+        {material Material { } }
+      geometry IndexedFaceSet { 
+       coord Coordinate {
+       point [ -3 0 0, -3 3 0, 0 1.5 0,
+               3 0 0, 3 3 0, 1 2 0, -1 2 0,
+               -3 0 -3, -3 3 -3, 0 1.5 -3,
+               3 0 -3, 3 3 -3, 1 2 -3, -1 2 -3]
+        }
+        coordIndex [ 
+                     2,1,0,-1,
+                     3,2,0,-1,
+                     4,2,3,-1,
+                     2,5,6,-1,#
+                     0,1,8,-1,
+                     8,7,0,-1,
+                     6,8,1,-1,
+                     6,13,8,-1,
+                     12,13,6,-1,#
+                     6,5,12,-1,#
+                     12,5,4,-1,
+                     4,11,12,-1,
+                     3,11,4,-1,
+                     3,10,11,-1,
+                     10,9,11,-1,
+                     9,10,7,-1,
+                     7,8,9,-1,
+                     13,12,9,-1  #
+                  ]
+                  color  Color {
+                    color [
+                     .2 .2 .2
+                     1 .3 .3 
+                      ]
+                     }
+                    colorIndex [0,0,0,1,0,0,0,0,1,1,0,0,0,0,0,0,0,1
+                     ]
+                    colorPerVertex FALSE
+        }
+                  
+      }
+   ]
+         
+} 
+
+WorldInfo {
+   title "Arcadia"
+   info [ "modeled by Andrew Reitemeyer kiwano@t-online.de
+          if you want to use any of this for non-commercial purposes
+          then a mention would be nice. For commercial applications  
+          a more substantial thankyou would be appreciated"]
+          }            

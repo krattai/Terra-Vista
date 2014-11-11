@@ -1,0 +1,22 @@
+#VRML V2.0 utf8
+#
+# Electic VRML Minds
+# Entrance - describes any predispositions of the wrl
+
+PointLight {
+ on TRUE
+ intensity 1
+ color 0.8 0.8 0.8
+ location 0 100 0
+}
+
+Viewpoint {
+ position 0 1.6 99
+}
+
+Inline { 
+ url "gt01.wrl"
+ bboxCenter 0 0 0
+ bboxSize 100 0.02 100
+}
+# end entrance

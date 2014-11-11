@@ -1,0 +1,35 @@
+#VRML V1.0 ascii
+
+#Sign for asking
+
+Separator {
+  LOD {range [ 80 ] center 0 5 0
+    Separator {
+	Separator {
+		Material {diffuseColor 1 0 0}
+		Cylinder {radius 1.5 height 8}
+	}
+	Separator {
+		Material {diffuseColor 1 1 1}
+		Transform {translation 0 2 2}
+		Cube {width 10 height 4 depth 0.1}
+		Material {diffuseColor 0 0 1}
+		Transform {translation 0 0.25 0.5}
+		FontStyle {size 2}
+		AsciiText {string "Lot's for
+the asking!" justification CENTER}
+	}
+    }
+    Separator {
+	Separator {
+		Material {diffuseColor 1 0 0}
+		Cube {height 8 width 3 depth 3}
+	}
+	Separator {
+		Material {diffuseColor 1 1 1}
+		Transform {translation 0 2 2}
+		Cube {width 10 height 4 depth 0.1}
+	}
+    }
+  }
+}

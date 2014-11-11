@@ -1,0 +1,21 @@
+#VRML V1.0 ascii
+
+Separator {
+   Material {diffuseColor 1 1 1}
+   Translation {translation 0 1 0}
+   Cone {bottomRadius 3 height 1}
+   Translation {translation 0 -2.5 0}
+   Cylinder {radius 3 height 0.125}
+   Translation {translation 0 0.5 -2.5}
+   DEF Post Separator {
+      Cube {width 0.5 height 1 depth 0.5}
+      Translation {translation 0 1 0}
+      Cylinder {radius 0.125 height 1}
+   }
+   Translation {translation 2.5 0 1.5}
+   USE Post
+   Translation {translation 0 0 2}
+   USE Post
+   Translation {translation -2.5 0 1.5}
+   USE Post
+}

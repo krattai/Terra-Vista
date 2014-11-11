@@ -1,0 +1,60 @@
+#VRML V1.0 ascii
+#Rat's outside
+
+DEF RatsBuilding Separator {
+	#DEF Details LOD { range [ 80 ] center 0 5 0
+		DEF CloseUp Separator {
+		# Here you put what the building will look like if the user is <40 within the range of the building
+		# Simple abode
+			Separator {
+			# Base
+				Material { diffuseColor 2 1 1 shininess 1 }
+				Cylinder { parts ALL radius 9 height 4.5 }
+			}
+			Separator {
+			# Igloo
+				Material { diffuseColor 1 2 1 }
+				Transform { translation 0 5 -10 }
+				Sphere { radius 9 }
+			}
+			#DEF moreDetail LOD { range [ 40 ]
+			# ok, now we add more detail as the user get closer
+				DEF CloseUp Separator {
+					Separator {
+						Material { diffuseColor 0 0 0.5 }
+						Transform { translation 0 4 6 }
+						WWWAnchor { name "index.htm"
+							description "HTML: To 2D Docs"
+							Cube { width 2 height 2 depth 0.2 }
+						}
+					}
+					Separator {
+					# Mailtree...
+						Material { diffuseColor 1 0.5 0 }
+						Transform { translation 4.5 5 10 }
+						Cylinder { parts ALL radius 0.5 height 10 }
+						Material { diffuseColor 0 1 0 }
+						Transform { translation 0 5 0 }
+						WWWAnchor { name "mailto:krattai@escape.ca"
+							description "Email: Click here to mail me"
+							Sphere { radius 1.5 }
+						}
+					}
+				}
+				DEF FarAway Separator {
+				}
+			# end of more details
+			#}
+
+		#End of close up details
+		}
+
+		#DEF FarAway Separator {
+		#	Material { diffuseColor 1 2 1 }
+		#	Transform { translation 0 7.5 -9 }
+		#	Cube { width 18 depth 28 height 15 }
+		#}
+	#End LOD
+	#}
+#End Root separator
+}

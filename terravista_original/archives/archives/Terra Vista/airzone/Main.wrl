@@ -1,0 +1,127 @@
+#VRML V1.0 ascii
+#
+#Jeremy's NEW Air Link Zone...  :)
+#Back and Ready to rock...!
+
+Separator {
+	DEF BackgroundColor Info { string " 0 0 0 " }
+	DEF Cameras Switch {
+		whichChild 0
+		DEF Entrance PerspectiveCamera {
+			position 0 175 500
+			orientation 0 0 0 1
+			focalDistance 100
+		}
+		DEF Pad_1 PerspectiveCamera {
+			position -130 120 75
+			orientation 0 0 1 1.1
+			focalDistance 100
+		}
+		DEF Pad_2 PerspectiveCamera {
+			position 120 112 75
+			orientation 0 0 0 1
+			focalDistance 100
+		}
+		DEF Pad_3 PerspectiveCamera {
+			position 0 308 75
+			orientation 0 0 0 1
+			focalDistance 100
+		}
+		DEF Pad_4 PerspectiveCamera {
+			position -170 154 -170
+			orientation 0 1 0 3.97
+			focalDistance 100
+		}
+		DEF Links PerspectiveCamera {
+			position 175 175 0
+			orientation 0 1 0 1.57
+			focalDistance 100
+		}
+	}
+	Separator { #Base and Pole
+		Material {diffuseColor 0 1 0}
+		Cone {height 50 bottomRadius 100}
+		Transform{translation 0 150 0}
+		Cone {height 300 bottomRadius 25}
+	}
+	Separator { #Arms...
+		Material {diffuseColor 0.7 0.5 0}
+		Separator { # Arm 1
+			Transform {translation -70 75 0}
+			DEF Arm Separator {
+				Transform {rotation 0 0 1 1.1}
+				Cylinder {radius 5 height 125
+					parts SIDES}
+			}
+		}
+		Separator { # Arm 2
+			Transform {translation 70 75 0
+				rotation 0 1 0 -3.14}
+			USE Arm
+		}
+		Separator { # Arm 3
+			Transform {translation -45 150 -45
+				rotation 0 0 1 1.57}
+			Transform {rotation 1 0 0 -0.8}
+			Cylinder {radius 5 height 125
+				parts SIDES}
+		}
+		Separator { # Link Arm...
+			Transform {translation 44 175 0
+				rotation 0 0 1 1.57}
+			Cylinder {radius 2 height 80
+				parts SIDES}
+		}
+	}
+	Separator { #Pads...
+		Material {diffuseColor 0.2 0.9 0.2}
+		Separator { # Pad 1
+			Transform {translation -130 110 0
+				rotation 0 0 1 1.1}
+			DEF Pad Cylinder {radius 75 height 5}
+			Transform {translation 0 3 0}
+			WWWInline {name "pad_1.wrl"}
+		}
+		Separator { # Pad 2
+			Transform {translation 123 103 0}
+			USE Pad
+			Transform {translation 0 2.75 0}
+			WWWInline {name "pad_2.wrl"}
+		}
+		Separator { # Pad 3
+			Transform {translation 0 300 0}
+			USE Pad
+			Transform {translation 0 2.75 0}
+			WWWInline {name "pad_3.wrl"}
+		}
+		Separator { # Pad 4
+			Transform {translation -100 150 -100
+				rotation 0 1 0 0.8}
+			WWWInline {name "AirOld.wrl"
+				bboxSize 30 30 80
+				bboxCenter 0 15 38
+			}
+		}
+		Separator { # Link Sphere
+			Transform {translation 80 175 0}
+			Material {diffuseColor 0 0 1}
+			Sphere {radius 10}
+			Separator { # DownTown!
+				Transform {translation 7 7 0
+					rotation 0 0 1 -0.8}
+				WWWAnchor {name "http://www.hway.net/jcvrosen/vc/downtown/downtown.wrl"
+					description "Jay's Downtown!"
+					WWWInline {name "http://www.hway.net/jcvrosen/vc/downtown/jayswrl.wrl"}
+				}
+			}
+			Separator { # Flux!
+				Transform {translation 0 -10 0
+					rotation 0 1 0 0.8}
+				Material {diffuseColor 0.7 0.5 0}
+				Cube {height 20 width 1 depth 1}
+				Transform {translation 0 -10 0}
+				WWWInline {name "http://www.alaska.net/~pfennig/flux/fluxport.wrl"}
+			}
+		}
+	}
+}

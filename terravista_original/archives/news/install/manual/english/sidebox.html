@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>SideBox README files</title>
+</head>
+</body>
+
+
+<h1><font face="arial">New SideBox Information</font></h1>
+
+<font face="arial" size="3">
+<font color="red"><u>PHP-Nuke Addons & Modules System</u></font>
+<p align="justify">Since PHP-Nuke 5.0 you can add new modules, addons or plugins simply
+copying the addons files into a directory. With this feature, PHP-Nuke
+gains modularity and you, the webmaster, the choice to install and/or
+unistall the modules you want with an easy step.<br><br>
+Now this new idea come out from Rob Sutton is to make it even modular. Current module
+system will force developer to edit mainfile.php especially if you want to add sidebox.
+With this new system user don't have to worried anymore. As long you used the themes
+come with the package. Woalla!<br><br>
+This document has two main parts, one for webmasters/users and other
+for Addons developers.<br><br>
+Please read it carefully and remember that this system, as the whole
+NukeAddOn comes without any warranty and all you do from here is under
+your own responsability and risk. Always remember to backup your
+database and all your files before doing anything.</p>
+
+<font color="red"><u>1. Information for Webmasters/Users</u></font>
+<p align="justify">The new sidebox system is now can be place easily without changing anything
+on your mainfile. This way it's really modular. This system invented by Rob
+Sutton and now bundle into our current AddOn.<br><br>
+In order to make the box appear correctly you must have replace all themes
+files include on NukeAddOn and then to add it you just need to create
+a new sidebox. However you must replace the comment in the contents field
+you need to place the exact URL where the modules script located. E,g. 
+Calendar modules url are modules/Calendar/addonblock.php.</p>
+
+<font color="red"><u>2. Information for Addons Developers</u></font>
+<p align="justify">Making a new box addon with this system is pretty easy. Developer just need to know
+a few rules:<br><br>
+Create the scripts like usuall, you can view the example from a couple of my code.
+However you need to put this into your theme.php which is the one who will call the
+code out.<br><br>
+
+# The Code<br>
+#############<br><br>
+
+if (file_exists($content)) {<br>
+	$fp = fopen ($content, "r");<br>
+	$content = fread($fp, filesize($content));<br>
+	fclose ($fp);<br>
+	$content = "?>$content<?";<br>
+	echo eval($content);<br>
+} else {<br>
+	echo $content;<br>
+}<br><br>
+
+############<br>
+# End Code<br><br>
+That all folks.</p>
+<hr>
+Have fun now!<br>
+Special thanks goes to Rob Sutton the original authors!
+
+<form>
+<input type="button" value="Back" onclick="history.back()">
+</form>
+
+</font>
+<hr>
+<div align="center"><small>Copyright © 2001 NukeAddOn.com</font></div>
+
+</body>
+</html>
+
+

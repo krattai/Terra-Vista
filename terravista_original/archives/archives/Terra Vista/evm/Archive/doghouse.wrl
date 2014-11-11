@@ -1,0 +1,26 @@
+#VRML V2.0 utf8
+#
+# The dOghouse
+# Entrance - describes any predispositions of the wrl
+
+Background {
+ skyColor [ 0.4 0.3 0.3 ]
+}
+
+PointLight {
+ on TRUE
+ intensity 1
+ color 0.8 0.8 0.8
+ location 0 100 0
+}
+
+Viewpoint {
+ position 0 1.6 99
+}
+
+Inline { 
+ url "doggy00.wrl"
+ bboxCenter 0 0 0
+ bboxSize 100 0.02 100
+}
+# end entrance

@@ -1,0 +1,68 @@
+#VRML V1.0 ascii
+Separator {
+	LOD {range [ 125,300 ] center 0 3 0
+		Separator {# Fountain
+			Separator {# base and tiers
+				Material {diffuseColor 0.5 0.2 0.2}
+				Transform {translation 0 1 0}
+				Cone {bottomRadius 6 height 2}
+				Transform {translation 0 1 0}
+				Cylinder {radius 2 height 3}
+				Transform {translation 0 3 0
+					rotation 1 0 0 3.14}
+				Cone {bottomRadius 8 height 2}
+				Transform {translation 0 -3 0}
+				Cone {bottomRadius 5 height 2}
+				Transform {translation 0 -3.5 0}
+				Cone {bottomRadius 3 height 2}
+			}
+			Separator {# Water in tiers
+				Material {diffuseColor 0 0 1}
+				Transform {translation 0 6 0}
+				Cylinder {radius 7 height 0.1}
+				Transform {translation 0 3 0}
+				Cylinder {radius 5 height 0.1}
+				Transform {translation 0 3.5 0}
+				Cylinder {radius 3 height 0.1}
+			}
+			Separator {
+				Material {diffuseColor 0 0 1
+					transparency 0.8}
+				Transform {translation 0 7.5 0}
+				Cylinder {parts SIDES radius 5.1 height 3}
+				Transform {translation 0 3.25 0}
+				Cylinder {parts SIDES radius 3.1 height 3.5}
+			}
+		}
+		Separator{ #
+			Separator {# base and tiers
+				Material {diffuseColor 0.5 0.2 0.2}
+				Transform {translation 0 1 0}
+				Cone {bottomRadius 6 height 2}
+				Transform {translation 0 1 0}
+				Cylinder {radius 2 height 3}
+				Transform {translation 0 3 0
+					rotation 1 0 0 3.14}
+				Cone {bottomRadius 8 height 2}
+				Transform {translation 0 -3 0}
+				Cone {bottomRadius 5 height 2}
+				Transform {translation 0 -3.5 0}
+				Cone {bottomRadius 3 height 2}
+			}
+			Separator {# Water in tiers
+				Material {diffuseColor 0 0 1}
+				Transform {translation 0 6 0}
+				Cylinder {radius 7 height 0.1}
+				Transform {translation 0 3 0}
+				Cylinder {radius 5 height 0.1}
+				Transform {translation 0 3.5 0}
+				Cylinder {radius 3 height 0.1}
+			}
+		}
+		Separator { #Far...
+			Material {diffuseColor 0.5 0.2 0.2}
+			Transform {translation 0 5 0}
+			Cube {height 15 width 11 depth 11}
+		}
+	}
+}

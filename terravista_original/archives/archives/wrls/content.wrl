@@ -1,0 +1,91 @@
+#VRML V1.0 ascii
+#Innards
+
+DEF Segment Separator {
+	DEF floor Separator {
+		DEF floorArea Separator {
+			Material { diffuseColor 0 0.6 0 ambientColor 0 0.1 0 }
+			Coordinate3 { point [ -100 0 -100, 100 0 -100, 100 0 100, -100 0 100. ] }
+			IndexedFaceSet { coordIndex [ 2, 1, 0, -1, 3, 2, 0, -1, ] }
+		}
+	}
+	# end of exits
+	DEF scenary Separator {
+		DEF LeftTrees Separator {
+			Transform { translation -16 0 80 }
+			DEF tree Separator { WWWInline { name "tree.wrl" bboxSize 6 7 6 bboxCenter 0 3.5 0 } }
+			Transform { translation -12 0 -8 } USE tree
+			Transform { translation 0 0 -110 } USE tree
+			Transform { translation 14 0 -10 } USE tree }
+		DEF RightTrees Separator {
+			Transform { translation 60 0 50 } USE tree
+			Transform { translation 0 0 -60 } USE tree }
+		DEF TopTrees Separator {
+			Transform { translation -10 0 -80 } USE tree
+			Transform { translation 20 0 0 } USE tree }			
+	}
+   DEF Directions Separator {
+      Material {diffuseColor 0.50 0.25 0}
+      Translation {translation 0 1 0}
+      Cylinder {radius 0.125 height 2}
+      Translation {translation 0 -0.25 0}
+      Rotation {rotation 1.0 0.0 0.0 1.571}
+      DEF Arrow Separator {
+         Translation {translation 0 0.5 0}
+         Cylinder {radius 0.0625 height 1}
+         Translation {translation 0 0.5 0}
+         Cone {bottomRadius 0.125 height 0.5}
+      }
+      Rotation {rotation 0.0 0.0 1.0 3.142}
+      USE Arrow
+      Translation {translation 0 0 -0.25}
+      Rotation {rotation 0.0 0.0 1.0 0.785}
+      WWWAnchor {
+   		name "http://webking.com/cgibin/outland/matrix.cgi SG=T,BB_W=30,PN=Origin,BB_D=30"
+   		description "Outland"
+         USE Arrow
+      }
+      Rotation {rotation 0.0 0.0 1.0 3.142}
+      WWWAnchor {
+         name "http://www.interport.net/~mash/7islands.wrl"
+         description "Seven Islands"
+         USE Arrow
+      }
+      Translation {translation 0 0 -0.25}
+      Rotation {rotation 0.0 0.0 1.0 0.785}
+      WWWAnchor {
+         name "http://www.softronics.com/users/jeremy/world.wrl"
+         description "Air Link Zone"
+         USE Arrow
+      }
+      Rotation {rotation 0.0 0.0 1.0 3.142}
+      WWWAnchor {
+         name "http://www.co.umist.ac.uk/~georgep/vc/entrance.wrl"
+         description "New George Towne"
+         USE Arrow
+      }
+      Translation {translation 0 0 -0.25}
+      Rotation {rotation 0.0 0.0 1.0 0.785}
+      WWWAnchor {
+         name "http://www.alaska.net/~pfennig/flux/flux.wrl"
+         description "Flux"
+         USE Arrow
+      }
+      Rotation {rotation 0.0 0.0 1.0 3.142}
+      WWWAnchor {
+   		name "bj.wrl"
+   		description "Beausejour"
+         USE Arrow
+      }
+   }
+	DEF landPlots Separator {
+	# All plots of land defined here can be allocated for a user to build upon
+		DEF plot6 Separator {
+			# Owned by Kevin Rattai
+			Transform { translation 0 0.05 -28 rotation 0 1 0 -0.7854 }
+			WWWInline { name "house.wrl" bboxSize 20 5 20 bboxCenter 0 2.5 0 }
+		}
+	# end of land plots
+	}
+#end of segment 1
+}

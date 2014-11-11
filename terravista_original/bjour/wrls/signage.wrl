@@ -1,0 +1,16 @@
+#VRML V1.0 ascii
+#
+# A sign:  By Kevin Rattai
+
+DEF Sign Separator {
+	Transform { translation 0 1 0 }
+	Material { diffuseColor 1 1 1 }
+	Coordinate3 { point [ -2 0.25 0, 2 0.25 0, 2 -0.25 0, -2 -0.25 0. ] }
+	IndexedFaceSet { coordIndex [ 2, 1, 0, -1, 3, 2, 0, -1, ] }
+	Material { diffuseColor 0.5 0.25 0 }
+	Transform { translation -2 -0.5 0 }
+	Cube { width 0.05 height 1.5 depth 0.05 }
+	Transform { translation 4 0 0 }
+	Cube { width 0.05 height 1.5 depth 0.05 }
+#end of sign
+}

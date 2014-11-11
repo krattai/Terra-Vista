@@ -1,0 +1,112 @@
+Q.  What is Terra Vista?
+
+A.  Terra Vista is a colaborative VRML environment.
+
+Q.  Where is Terra Vista?
+
+A.  Some say Terra Vista is in "CyberSpace".  Some of us believe it
+_IS_ Cyberspace.  Terra Vista exists on the internet.
+
+Q.  Why is Terra Vista?
+
+A.  When Terra Vista began, it was agreed a large portion of what was
+missing in VRML was large, linked, navagable VRML environments.  We
+are striving to create exactly that.
+
+Q.  How to join the Terra Vista list?
+
+A. To subscribe to the list send email to:
+
+majordomo@terravista.org
+
+with the body:
+
+subscribe village
+
+As a result of this, you will get a message asking you to confirm your
+subscription request by sending another mail to majordomo. It will
+contain a line of text that must be in the the body of the message.
+The mail itself will include more information and instructions, so
+just read and follow.
+
+To unsubscribe, send email to
+
+majordomo@terrvista.org
+
+with the mesage body
+
+unsubscribe village
+
+That's it!
+
+
+Q.  Who can participate?
+
+A.  Anyone is welcome to participate within Terra Vista.  It is not
+exclusive.  One of our goals is to create guidelines for creating
+environments with the Terra Vista model which are easy to duplicate.
+
+Q.  Who does participate?
+
+A.  People from many different industry sectors participate in Terra
+Vista.  From graphic artists, historians, programmers, engineers.  We
+even have the Hospitality Industry participating.
+
+Q.  How do I get into Terra Vista?
+
+A.  The primary enterance to Terra Vista is through:
+http://www.terravista.org
+
+and there are many entry portals to the VRML, most specifically Flux:
+
+geeze, spent 15 minutes looking for the new FLUX address!  &@#%^**! 
+Jay, where'd ya put it?
+
+is a great start.
+
+Q.  What do I need to visit Terra Vista?
+
+A.  A computer, and internet connection, and a VRML browser or plugin
+for an HTML browser.  Certainly, the faster the computer, the better
+the results.
+
+Q.  Can I get a domain name and address in Terra Vista?
+
+A.  Yes you can.  A Zone can be given a dynamic terravista.org domain
+name.  And, you can get a personal email address @terravista.org.
+
+Q.  How do I build for Terra Vista?
+
+A.  To best answer that question, go to the Terra Vista technical
+pages and read the tutorials.  And, if you have any further questions,
+ask the list and we will help out.
+
+Q.  I've heard there are a lot of restrictions, is this true?
+
+A.  Early in the Terra Vista development, restrictions on certain
+Zones were created by the Zowners.  There was some concern about files
+being too large and large computers required.  Any restrictions there
+may have been do not apply to everyone.  Build to your own
+specifications as a Zowner.
+
+Q.  How do I contribute to Terra Vista?
+
+A.  Become a member, participate on the list serve, add links to Terra
+Vista on your web space, create mesh or ask to contribute on an
+ongoing project, write articles for the Verbal.  There are many ways
+to contribute, everyone's input is welcome.
+
+Q.  I built my world, but I don't have any content in it.  How do I
+get some?
+
+A.  An excellent way to get content on your Zone is to ask for
+contributions from the list members.  We are also slowly archiving
+mesh contributed to the community by past and current members. 
+Anything from flora to fauna, urban to suburban objects.  And the
+community always welcomes more contributions for mesh.
+
+Q.  Is Terra Vista?
+
+A.  I suspect that question has many subjective answers.  Certainly, 
+those without a browser do not know how Vista the Terra...  Next 
+question?  =)

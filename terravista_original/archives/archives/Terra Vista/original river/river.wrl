@@ -1,0 +1,207 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+ title "River World "
+ info [" This world is a Terra Vista v.Johnny Appleseed Zone and is so free to use,alter, copy and distribute"
+       " as long as this credit remains intact. For information on how to improve and add to this world "
+       " or see the range of worlds available see http://www.escape.ca/~krattai/vcproj/jvap00.htm or  "
+       "contact the author, Andrew Reitemeyer kiwano@t-online.de "
+       ] 
+ }
+EXTERNPROTO Flag [
+ exposedField  MFString Source 
+ exposedField  MFString Destination 
+ exposedField  SFString Descrip
+ ]
+ "flagv.wrl"
+
+ 
+Viewpoint {
+ position 320 2 1250
+ }
+Background {
+ skyColor .5 .7 1
+ groundColor  0 1 0
+ }
+
+
+Transform {               # Mountains
+ children [
+   Shape {
+    appearance Appearance { 
+       material Material {
+         emissiveColor .4 .2 1
+         }
+       }
+     geometry ElevationGrid {
+     creaseAngle .25
+       xDimension 20
+       zDimension 4
+       xSpacing 100
+       zSpacing 100
+       height [200, 220,  200,  300,  250,   250,  230,  250,  350,  250,  340, 200,  260,  320,  200,  350,  340,  200,  250,  200, 
+               160, 100,  220,  150,  200,   300,  120,  350,  280,  100,  200, 130,  250,   70,  180,  410,  300,  110,  320,  180, 
+              140,  0,     30,   50,  120,     0,    0,  100,  120,   80,   50,   0,   50,   20,   70,   40,  160,   10,   90,  100, 
+              0,    0,      0,    0,    0,     0,    0,    0,    0,    0,    0,   0,    0,    0,    0,    0,    0,    0,    0,    0,  
+               ]                                                                                               
+    } 
+   }
+ ]
+},
+Transform {               #Hills
+  translation 0 -3 200
+ # scale 10 10 10
+ children [
+   Shape {
+    appearance Appearance { 
+       material Material {
+         diffuseColor 0 1 0
+         }
+       }
+     geometry ElevationGrid {
+     creaseAngle .75
+       xDimension 20
+       zDimension 4
+       xSpacing 100
+       zSpacing 100
+       height [ 140, 110,  110,  130,   40,   80,   30,  170,  200,  150,   80,  60,  160,  120,   40,  130,  120,  180,  150,   30, 
+                 80,  90,  150,   80,  120,   60,  110,  150,  130,   20,    0,  40,   50,   70,  120,  110,   50,    0,  140,   20, 
+                 0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   0,    0,    0,    0,    0,    0,    0,    0,    0,  
+                 0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,   0,    0,    0,    0,    0,    0,    0,    0,    0,  
+               ]                                                                                         
+    } 
+   }
+   
+ ]
+}, 
+Transform {               #Plain
+  translation 0 -3 400
+  
+ children [
+   Shape {
+    appearance Appearance { 
+       material Material {
+         diffuseColor 0 1 0
+         }
+       }
+     geometry ElevationGrid {
+     creaseAngle .75
+       xDimension 20
+       zDimension 16
+       xSpacing 100
+       zSpacing 100
+       height [100, 50,   40,   50,    0,   0,   0,   0,  30,  60,  50,  90,  70,   50,  60,  40,   4,   0,   0,   0, 
+               60,  40,   20,   30,   20, -60,   0,   0,   0,   0,  20,  60,  50,   60,  70, 100,  50,   0,   0,   0, 
+               70,  60,   40,   40,   60, -60,   0,   0,   0,   0,   0,  40,   0,   70,  50,  10,   0,   0,   0,   0, 
+               40,  60,   30,   20,   40, -60,   0,   0,   0,   0,   0,  0,   10,   40,  40,  20,   0,   0,   0,   0, 
+               20,  50,   60,   30,    0, -60,   0,   0,   0,   0,   0,  0,   20,   30,  80,  60,   0,   0,   0,   0, 
+               70,  20,   40,    0,    0, -60,   0,   0,   0,   0,   0,  0,   40,   40,  50,  30,   0,   0,   0,   0, 
+               20,  50,    0,    0,    0, -60,   0,   0,   0,   0,   0,  0,   0,    30,  20,   0,   0,   0,   0,   0, 
+               30,  30,    0,    0,    0, -60,   0,   0,   0,   0,   0,  0,   0,    30,   0,   0,   0,   0,   0,   0, 
+               30,  20,    0,    0,    0, -60,   0,   0,   0,   0,   0,  0,   0,    10,   0,   0,   0,   0,   0,   0, 
+               10,   0,    0,    0,    0, -60,   0,   0,   0,   0,   0,  0,   0,     0,   0,   0,   0,   0,   0,   0, 
+               0,    0,    0,    0,    0, -60,   0,   0,   0,   0,   0,  0,   0,     0,   0,   0,   0,   0,   0,   0, 
+               0,    0,    0,    0,    0, -60,   0,   0,   0,   0,   0,  0,   0,     0,   0,   0,   0,   0,   0,   0, 
+               0,    0,    0,    0,    0, -60,   0,   0,   0,   0,   0,  0,   0,     0,   0,   0,   0,   0,   0,   0, 
+               0,    0,    0,    0,    0, -60,   0,   0,   0,   0,   0,  0,   0,     0,   0,   0,   0,   0,   0,   0, 
+               0,    0,    0,    0,    0, -60,   0,   0,   0,   0,   0,  0,   0,     0,   0,   0,   0,   0,   0,   0, 
+               0,    0,    0,    0,    0, -60,   0,   0,   0,   0,   0,  0,   0,     0,   0,   0,   0,   0,   0,   0, 
+               ]         
+    } 
+   }
+ ]
+},
+
+Transform {
+ scale 1 1 1
+ translation 500 -5 500
+   children [
+     Shape {
+       appearance Appearance {
+         material Material {
+             diffuseColor 0 0 1
+             }
+           }
+           geometry IndexedFaceSet { 
+           coord Coordinate {
+                point [  -100  0 1400, 100 0 1400, 100 0 -100, -100 0 -100, 
+                         ]
+                         }
+           coordIndex [ 0,1,3,-1
+                        1,2,3,-1
+         ]              
+            }
+          }
+        ]
+      } 
+Transform {
+scale 2 2 2       # this field controls the size of the object
+rotation 0 1 0 -1.57        #this field controls the orientation of the object
+  translation 300 -1 1200    #this field controls the location of the object           
+  children [
+    Anchor {
+     url " http://www.escape.ca/~krattai/vcproj/jvap00.htm "
+     description "v.Johnny Appleseed Home Page"
+     children [
+   Inline {
+     url "cabin.wrl"
+     bboxSize 10 10 10 
+     }
+     ]
+    } 
+  ]
+}      
+Transform {         #this is the link to the Flux which Terra Vista Worlds require
+scale 6 6 6
+  translation 0 300 200               
+  children [
+   Inline {
+     url "fluxport.wrl"
+     bboxSize 10 10 10
+     }
+  ]
+}
+Transform {         #this is the link to  v.City
+scale 2 2 2
+  translation 305 10 1110               
+  children [
+   Flag {
+     Source  "vcitflag.jpg"
+     Destination "http://www.well.com/user/adamgru/vCity/cover.htm "
+     Descrip "v.City"
+     }
+  ]
+}
+Transform {         #this is the link to  Terra Vista
+scale 2 2 .8
+  translation 315 10 1110               
+  children [
+   Flag {
+     Source  "crest.jpg"
+     Destination "http://www.terravista.org"
+     Descrip "Terra Vista Home Pages" 
+     }
+  ]
+}
+DEF Sail Transform {         #this is the link to  author's gallery
+scale 2 2 2
+  translation 500 -3 1000               
+  children [
+   Inline {
+     url "raft.wrl"
+     bboxSize 5 5 5
+     }
+    DEF See VisibilitySensor {}
+  ]
+}
+DEF Away PositionInterpolator {
+    key [0, .5, 1]
+    keyValue [500 -3 800, 500 -3 1500, 500 -3 800    ]
+    }
+DEF Clock TimeSensor {
+    cycleInterval 360
+    loop TRUE
+    }
+ROUTE See.enterTime TO Clock.set_startTime
+ROUTE Clock.fraction_changed TO Away.set_fraction
+ROUTE Away.value_changed TO Sail.set_translation                         

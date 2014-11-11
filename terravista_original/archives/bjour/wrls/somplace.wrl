@@ -1,0 +1,51 @@
+#VRML V1.0 ascii
+#
+# Somepl@ce Web VRML
+#  Designed by Kevin Rattai, Uvea I.S.
+#   http://www.escape.ca/~krattai
+#   krattai@escape.ca
+#
+
+DEF Entrance PerspectiveCamera { position 10 50 400 }
+Separator {
+ DEF floor Separator {
+   DEF floorArea Separator {
+    Material { diffuseColor 0 0.6 0 ambientColor 0 0.1 0 }
+    Coordinate3 { point [ -250 0 -250, 250 0 -250, 250 0 250, -250 0 250. ] }
+    IndexedFaceSet { coordIndex [ 2, 1, 0, -1, 3, 2, 0, -1, ] }
+   }
+ }
+ DEF exits Separator {
+   Transform { translation 0 60 125 }
+   WWWInline { name "signage.wrl" bboxSize 4 1.5 0.05 bboxCenter 0 0.75 0 }
+   FontStyle { size 26 style BOLD }
+   Transform { translation 0 0.9 0.01 }
+   Material { diffuseColor 1 0.8 0.1 }
+   AsciiText { string "Somepl@ce" justification CENTER }
+ }
+ Material { emissiveColor 0 0 1.0 }
+ Separator {
+  Coordinate3 {  # The Somepl@ce pyramid 
+   point [
+    -100 0 0, 100 0 0, 100 0 -200, -100 0 -200,
+    -10 125 -90, 10 125 -90, 10 125 -90, -10 125 -90,
+    1 0 -7.2, 1 2 -7.2, -1 2 -7.2, -1 0 -7.2,
+    -1 0 0, 1 0 0
+    ]
+  }
+  IndexedFaceSet {
+   coordIndex [
+    4, 5, 6, 7, -1,
+    0, 1, 5, 4, -1,
+    1, 2, 6, 5, -1,
+    2, 3, 7, 6, -1,
+    3, 0, 4, 7, -1,
+    0, 4, 5, 1, 13,
+    9, 10, 12, -1,
+    13, 8, 9, -1,
+    8, 9, 10, 11, -1,
+    11, 10, 12, -1
+    ]
+  }
+ }
+}
